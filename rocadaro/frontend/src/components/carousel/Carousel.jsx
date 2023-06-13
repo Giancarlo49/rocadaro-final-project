@@ -5,14 +5,14 @@ function DarkVariantExample() {
   return (
     <Carousel variant="dark">
       <Carousel.Item>
-        <img
+      <img 
           className="d-block w-100"
-          src="https://images.pexels.com/photos/17043049/pexels-photo-17043049/free-photo-of-notizbuch-bleistift-fotografie-technologie.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.pexels.com/photos/593324/pexels-photo-593324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Laptop,Handy & Kamera Zubehör </h5>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -22,22 +22,28 @@ function DarkVariantExample() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Garten Zubehör</h5>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+          <h5>Schuhe</h5>
+          </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://images.unsplash.com/photo-1580929753603-10519c6e480a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Four slide"
+        />
+        <Carousel.Caption>
+          <h5>Haushaltswaren</h5>
+          </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
