@@ -1,3 +1,4 @@
+import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 
 function DarkVariantExample() {
@@ -6,7 +7,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=f5f5f5"
+          src="https://images.pexels.com/photos/17043049/pexels-photo-17043049/free-photo-of-notizbuch-bleistift-fotografie-technologie.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +18,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img 
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
+          src="https://images.pexels.com/photos/7782086/pexels-photo-7782086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Second slide"
         />
         <Carousel.Caption>
