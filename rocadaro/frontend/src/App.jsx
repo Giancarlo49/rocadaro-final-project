@@ -1,11 +1,15 @@
 import "./App.css";
 
-function App() {
+import Navbar from "./components/navbar/Navbar.jsx";
+
+// Pfade können je nach Ordnerstruktur variieren
+
+const App = () => {
   return (
-    <>
-      <h1>Hellooooo</h1>
-    </>
+    <div>
+      <Navbar />
+    </div>
   );
-}
+};
 
 export default App;
