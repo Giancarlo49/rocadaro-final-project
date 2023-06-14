@@ -1,0 +1,11 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: rgb(2, 35, 97);
+
+  /* Weitere Styling-Eigenschaften für die Navbar */
+}
+
+.nav-item {
+  margin-left: 50px;
+}
