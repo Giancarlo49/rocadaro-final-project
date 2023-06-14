@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const Navbar = () => {
 //   return (
 //     <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
@@ -92,6 +93,16 @@ const Navbar = () => {
       className="navbar navbar-expand-lg bg-darkblue fixed-top"
       data-bs-theme="light"
     >
+=======
+import "./Navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+const Navbar = () => {
+  return (
+    <nav className="mynavbar navbar navbar-expand-lg " data-bs-theme="dark">
+>>>>>>> 2da44ec97bdc436c502f05dcb0504ec2d5edc19c
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           RoCaDaRo
@@ -130,23 +141,33 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
+<<<<<<< HEAD
                 Contacts
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
                 Login
+=======
+                Contact
+>>>>>>> 2da44ec97bdc436c502f05dcb0504ec2d5edc19c
               </a>
             </li>
           </ul>
           <form className="d-flex">
-            <input
+            {/* <input
               className="form-control me-sm-2"
               type="search"
               placeholder="Search"
             />
+            <button>
+              <i className="bi bi-search"></i>
+            </button> */}
             <button className="btn btn-secondary my-2 my-sm-0" type="submit">
-              Search
+              Login
+            </button>
+            <button>
+              <i className="bi bi-cart"></i>
             </button>
           </form>
         </div>

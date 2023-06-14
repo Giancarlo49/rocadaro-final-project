@@ -1,9 +1,11 @@
 #root {
   max-width: 1280px;
+  height: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+<<<<<<< HEAD
 body {
   background-color: #726b6b;
   font-family: "Roboto", sans-serif;
@@ -11,3 +13,5 @@ body {
   line-height: 1.5;
   color: #333;
 }
+=======
+>>>>>>> 2da44ec97bdc436c502f05dcb0504ec2d5edc19c
