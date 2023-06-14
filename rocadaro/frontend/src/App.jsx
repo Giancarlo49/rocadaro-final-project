@@ -1,11 +1,16 @@
 import "./App.css";
+import DarkVariantExample from "./components/carousel/Carousel.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
 
-function App() {
+// Pfade können je nach Ordnerstruktur variieren
+
+const App = () => {
   return (
-    <>
-      <h1>Hellooooo</h1>
-    </>
+    <div>
+      <Navbar />
+      <DarkVariantExample />
+    </div>
   );
-}
+};
 
 export default App;
