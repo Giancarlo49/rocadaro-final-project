@@ -150,7 +150,7 @@ const Navbar = () => {
                 Login
 =======
                 Contact
->>>>>>> 2da44ec97bdc436c502f05dcb0504ec2d5edc19c
+>>>>>>> 2da44ec97bdc436c502f
               </a>
             </li>
           </ul>
