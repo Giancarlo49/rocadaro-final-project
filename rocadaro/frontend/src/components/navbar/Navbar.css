@@ -1,0 +1,13 @@
+
+.nav-link-active {
+  color: white;
+}
+.mynavbar {
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(190, 76, 235, 0.2);
+  width: 100%;
+  padding: 2rem;
+
+}
+/* hallo */
