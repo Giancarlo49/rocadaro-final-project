@@ -5,14 +5,13 @@ function DarkVariantExample() {
   return (
     <Carousel variant="dark">
       <Carousel.Item>
-      <img 
+        <img
           className="d-block w-100"
           src="https://images.pexels.com/photos/593324/pexels-photo-593324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="First slide"
         />
         <Carousel.Caption>
           <h5>Laptop,Handy & Kamera Zubehör </h5>
-          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
