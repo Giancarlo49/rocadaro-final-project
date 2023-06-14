@@ -1,6 +1,11 @@
+import "./Navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav className="mynavbar navbar navbar-expand-lg " data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           RoCaDaRo
@@ -29,50 +34,34 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Pricing
+                Products
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                About
+                Brands
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contact
               </a>
-              <div className="dropdown-menu">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  Separated link
-                </a>
-              </div>
             </li>
           </ul>
           <form className="d-flex">
-            <input
+            {/* <input
               className="form-control me-sm-2"
               type="search"
               placeholder="Search"
             />
+            <button>
+              <i className="bi bi-search"></i>
+            </button> */}
             <button className="btn btn-secondary my-2 my-sm-0" type="submit">
-              Search
+              Login
+            </button>
+            <button>
+              <i className="bi bi-cart"></i>
             </button>
           </form>
         </div>
