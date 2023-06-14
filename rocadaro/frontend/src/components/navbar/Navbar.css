@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-/* Navbar.css */
 
-.navbar {
-  background-color: rgb(2, 35, 97);
-
-  /* Weitere Styling-Eigenschaften für die Navbar */
-}
-
-.nav-item {
-  margin-left: 50px;
-=======
 .nav-link-active {
   color: white;
 }
@@ -19,5 +8,5 @@
   background-color: rgb(190, 76, 235, 0.2);
   width: 100%;
   padding: 2rem;
->>>>>>> 2da44ec97bdc436c502f05dcb0504ec2d5edc19c
+
 }
