@@ -1,12 +1,10 @@
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 const Navbar = () => {
   return (
     <nav className="mynavbar navbar navbar-expand-lg " data-bs-theme="dark">
-      <div className="container-fluid">
+      <div className="text container-fluid">
         <a className="navbar-brand" href="#">
           RoCaDaRo
         </a>
