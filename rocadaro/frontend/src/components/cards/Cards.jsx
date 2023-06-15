@@ -23,11 +23,6 @@ const cardsData = [
     text: 'Contenido de la tarjeta 3',
     image: 'https://example.com/image3.jpg',
   },
-  {
-    title: 'Mode',
-    text: 'Contenido de la tarjeta 3',
-    image: 'https://example.com/image3.jpg',
-  },
 ];
 
 function GroupExample() {
