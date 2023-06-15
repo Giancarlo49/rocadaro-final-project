@@ -1,3 +1,4 @@
+
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -42,7 +43,9 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
+
                 Contact
+
               </a>
             </li>
           </ul>
