@@ -24,6 +24,7 @@
 
 import { useState } from "react";
 import "./Home.css";
+import GroupExample from "../components/cards/Cards.jsx";
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
 
@@ -61,7 +62,7 @@ const Home = () => {
           </div>
         </div>
         <div className="karusselTest">
-          <h1>KARUSSEL</h1>
+          <GroupExample />
         </div>
         {/* Weitere Inhalte für Home */}
       </div>
