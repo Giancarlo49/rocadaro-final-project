@@ -1,27 +1,33 @@
+import './Cards.css';
+// import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Garden from './imagesCard/daniel-watson-8vBpYpTGo90-unsplash.jpg';
+import Haushaltsware from './imagesCard/scott-umstattd-wxruheY5nG8-unsplash.jpg';
+import Elektro from './imagesCard/Elektro.jpg';
+import Mode from './imagesCard/CardMode.jpg'
 
 
 const cardsData = [
   {
     title: 'Haushaltsware',
-    text: 'Hier kann man finden die besten Haushaltsware',
-    image: 'https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_640.jpg',
+    // text: 'Hier kann man finden die besten Haushaltsware',
+    image: Haushaltsware,
   },
   {
     title: 'Elektro',
-    text: 'Contenido de la tarjeta 2',
-    image: 'https://example.com/image2.jpg',
+    // text: 'Contenido de la tarjeta 2',
+    image: Elektro,
   },
   {
     title: 'Garten',
-    text: 'Contenido de la tarjeta 3',
-    image: 'https://example.com/image3.jpg',
+    // text: 'Contenido de la tarjeta 3',
+    image: Garden,
   },
   {
     title: 'Mode',
-    text: 'Contenido de la tarjeta 3',
-    image: 'https://example.com/image3.jpg',
+    // text: 'Contenido de la tarjeta 3',
+    image: Mode,
   },
 ];
 
@@ -31,15 +37,15 @@ function GroupExample() {
       {cardsData.map((card, index) => (
 
       <Card key={index}>
-      <Card.Img variant="top" src={card.image} />
+      <Card.Img className="cardImage" variant="top" src={card.image} />
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
-        <Card.Text>
-          {card.text}
-        </Card.Text>
+        
       </Card.Body>
       <Card.Footer>
-        <small className="text-muted">Last updated 3 mins ago</small>
+      {/* <Link to="/#"> */}
+        <button>GO!!</button>
+      {/* </Link> */}
       </Card.Footer>
       </Card>
 
