@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="mynavbar navbar navbar-expand-lg">
       <div className="container-fluid">
         <div className="navbar-brand">
-          <img src="./src/images/Logo/Logo.png" alt="Logo" className="logo" />
+          <img src="../src/images/Logo/Logo.png" alt="Logo" className="logo" />
         </div>
         <div>
           <button

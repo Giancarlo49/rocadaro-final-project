@@ -1,8 +1,6 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar.jsx";
-import DarkVariantExample from "./components/carousel/Carousel.jsx";
 
-import GroupExample from "./components/cards/Cards.jsx";
 import VariationsExample from "./components/footer/Footerbuttons.jsx";
 import AnimationExample from "./components/footer/Endproject.jsx";
 import Home from "./pages/Home";
@@ -20,20 +18,10 @@ const App = () => {
         <Products />
         <Brands />
       </div>
-      {/* Carousel */}
-      <DarkVariantExample />
-      <br />
-      <br />
 
-      <br />
-      {/* CARDS */}
-      <GroupExample />
-      <br />
-      <br />
       {/*Footer-Buttons */}
       <VariationsExample />
-      <br />
-      <br />
+
       {/* Endproject Zeichen */}
       <AnimationExample />
     </div>
