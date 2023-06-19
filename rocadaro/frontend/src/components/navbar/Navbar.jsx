@@ -49,7 +49,7 @@
 // export default Navbar;
 
 //
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
