@@ -21,7 +21,7 @@ const Navbar = () => {
             type="button"
             onClick={handleMenuToggle}
           >
-            <i class="bi bi-list"></i>
+            <i className="bi bi-list"></i>
           </button>
         </div>
 
