@@ -43,8 +43,10 @@ const Home = () => {
   return (
     <>
       <div className="page">
-        <h1>RoCaDaRo</h1>
-        <h2>**SLOGAN**</h2>
+        <div className="slogan">
+          <h1>RoCaDaRo</h1>
+          <h2>**SLOGAN**</h2>
+        </div>
 
         {/* SEARCHBAR */}
         <div className="searchTest">
