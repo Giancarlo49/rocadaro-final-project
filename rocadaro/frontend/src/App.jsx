@@ -1,24 +1,30 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar.jsx";
 import DarkVariantExample from "./components/carousel/Carousel.jsx";
-import ImgOverlayExample from "./components/brands/Brands.jsx";
+
 import GroupExample from "./components/cards/Cards.jsx";
 import VariationsExample from "./components/footer/Footerbuttons.jsx";
 import AnimationExample from "./components/footer/Endproject.jsx";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Brands from "./pages/Brands";
+
 // Pfade können je nach Ordnerstruktur variieren
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Navbar />
-      <br />
-      <br />
+      <div className="pageContainer">
+        <Home />
+        <Products />
+        <Brands />
+      </div>
       {/* Carousel */}
       <DarkVariantExample />
       <br />
       <br />
-      {/* BRANDS */}
-      <ImgOverlayExample />
+
       <br />
       {/* CARDS */}
       <GroupExample />
@@ -30,9 +36,6 @@ const App = () => {
       <br />
       {/* Endproject Zeichen */}
       <AnimationExample />
-      
-      
-
     </div>
   );
 };
