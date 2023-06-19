@@ -1,5 +1,5 @@
 import './Cards.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Garden from './imagesCard/daniel-watson-8vBpYpTGo90-unsplash.jpg';
@@ -24,7 +24,7 @@ const cardsData = [
     // text: 'Contenido de la tarjeta 3',
     image: Garden,
   },
-  {Launch
+  {
     title: 'Mode',
     // text: 'Contenido de la tarjeta 3',
     image: Mode,
