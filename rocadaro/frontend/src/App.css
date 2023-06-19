@@ -5,7 +5,6 @@
   padding: 2rem;
   text-align: center;
 }
-
 body {
   background-color: #726b6b;
   font-family: "Roboto", sans-serif;
@@ -13,6 +12,7 @@ body {
   line-height: 1.5;
   color: #333;
 }
+
 
 .app {
   display: flex;
@@ -30,3 +30,4 @@ body {
   margin-top: 60px;
   min-height: 100%;
 }
+

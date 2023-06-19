@@ -1,13 +1,55 @@
-
-.nav-link-active {
-  color: white;
-}
 .mynavbar {
-  position: fixed;
-  z-index: 1;
-  background-color: rgb(190, 76, 235, 0.2);
-  width: 100%;
-  padding: 2rem;
-
+  background-color: rgb(
+    107,
+    230,
+    207
+  ); /* Hintergrundfarbe der Navbar anpassen */
+  color: #fff; /* Textfarbe der Navbar anpassen */
+  height: 80px; /* Höhe der Navbar anpassen */
+  padding: 20px; /* Innenabstand der Navbar anpassen */
 }
-/* hallo */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  /* Textfarbe des Brand-Logos anpassen */
+}
+
+.logo {
+  margin-right: 10px; /* Abstand zwischen Logo und anderen Navbar-Inhalten anpassen */
+  width: 20%; /* Beispiel: Bild auf 20% der Breite des Elternelements setzen */
+  height: auto; /* Beispiel: Höhe automatisch anpassen */
+  /* Weitere Anpassungen und Stile hier */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255); /* Textfarbe der Nav-Links anpassen */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #aaa; /* Textfarbe der Nav-Links bei Hover anpassen */
+}
+
+.navbar-toggler {
+  background-color: #fff; /* Hintergrundfarbe des Navbar-Togglers anpassen */
+  border-color: #fff; /* Randfarbe des Navbar-Togglers anpassen */
+  color: #333; /* Textfarbe des Navbar-Togglers anpassen */
+}
+
+.navbar-toggler-icon {
+  /* Hintergrundbild des Navbar-Togglers anpassen */
+  background-image: url("path/to/toggler-icon.png");
+}
+
+.btn-secondary {
+  background-color: #aaa; /* Hintergrundfarbe des Login-Buttons anpassen */
+  color: #fff; /* Textfarbe des Login-Buttons anpassen */
+}
+
+
+.bi-cart {
+  color: red;
+  /* Stile für das Warenkorb-Symbol anpassen */
+}
