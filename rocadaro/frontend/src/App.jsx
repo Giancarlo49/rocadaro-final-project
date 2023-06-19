@@ -24,7 +24,7 @@ const App = () => {
       <GroupExample />
       <br />
       <br />
-      {/*BRANDS  */}
+      {/*Footer-Buttons */}
       <VariationsExample />
       <br />
       <br />
