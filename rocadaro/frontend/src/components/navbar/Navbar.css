@@ -6,13 +6,13 @@
   ); /* Hintergrundfarbe der Navbar anpassen */
   color: #fff; /* Textfarbe der Navbar anpassen */
   height: 80px; /* Höhe der Navbar anpassen */
-  padding: 10px 20px; /* Innenabstand der Navbar anpassen */
+  padding: 20px; /* Innenabstand der Navbar anpassen */
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
-  color: #fff; /* Textfarbe des Brand-Logos anpassen */
+  /* Textfarbe des Brand-Logos anpassen */
 }
 
 .logo {
@@ -25,7 +25,7 @@
 }
 
 .navbar-nav .nav-link {
-  color: #fff; /* Textfarbe der Nav-Links anpassen */
+  color: rgb(255, 255, 255); /* Textfarbe der Nav-Links anpassen */
 }
 
 .navbar-nav .nav-link:hover {
