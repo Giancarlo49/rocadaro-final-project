@@ -1,5 +1,5 @@
 import "./Navbar.css";
-
+import "bootstrap-icons/font/bootstrap-icons.css";
 const Navbar = () => {
   return (
     <nav className="mynavbar navbar navbar-expand-lg">
