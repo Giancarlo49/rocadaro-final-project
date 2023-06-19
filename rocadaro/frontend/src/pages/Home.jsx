@@ -22,7 +22,7 @@
 
 // export default Home;
 
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Home.css";
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
