@@ -24,7 +24,7 @@ const cardsData = [
     // text: 'Contenido de la tarjeta 3',
     image: Garden,
   },
-  {
+  {Launch
     title: 'Mode',
     // text: 'Contenido de la tarjeta 3',
     image: Mode,
