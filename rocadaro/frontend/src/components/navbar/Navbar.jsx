@@ -3,6 +3,8 @@ import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ModalComponents from "../ModalComponents";
 // import Modal from "./src/modal/Modal.jsx";
+import { Link } from "react-scroll";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,25 +39,25 @@ const Navbar = () => {
         >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <Link to="home" className="nav-link active">
                 Home
                 <span className="visually-hidden">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="products" className="nav-link">
                 Products
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="brands" className="nav-link">
                 Brands
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="contact" className="nav-link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
           <form className="d-flex">
