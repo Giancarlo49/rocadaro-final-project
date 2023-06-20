@@ -25,6 +25,7 @@
 import { useState } from "react";
 import "./Home.css";
 import GroupExample from "../components/cards/Cards.jsx";
+import DarkVariantExample from "../components/carousel/Carousel";
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
 
@@ -42,11 +43,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="page">
-        <div className="slogan">
-          <h1>RoCaDaRo</h1>
-          <h2>**SLOGAN**</h2>
-        </div>
+      <section className="page" id="home">
+        
 
         {/* SEARCHBAR */}
         <div className="searchTest">
@@ -63,11 +61,9 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="karusselTest">
-          <GroupExample />
-        </div>
-        {/* Weitere Inhalte für Home */}
-      </div>
+        <DarkVariantExample/>
+        
+      </section>
     </>
   );
 };
