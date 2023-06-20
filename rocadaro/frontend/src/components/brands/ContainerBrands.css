@@ -1,0 +1,20 @@
+.brands-container{
+    width: 1100px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+}
+.brands-container img {
+    width: 200px; /* Cambia el ancho de las imágenes */
+    height: 100px; /* Mantiene la proporción de aspecto */
+  }
+
+.moreBrands{
+    text-align:center;
+    border: none;
+    background:white;
+    width:91%;
+}
