@@ -1,25 +1,35 @@
+import { useState } from "react";
 import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="mynavbar navbar navbar-expand-lg">
       <div className="container-fluid">
         <div className="navbar-brand">
-          <img src="./src/images/Logo/Logo.png" className="logo" />
+          <img src="../src/images/Logo/Logo.png" alt="Logo" className="logo" />
         </div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <div>
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={handleMenuToggle}
+          >
+            <i className="bi bi-list"></i>
+          </button>
+        </div>
+
+        <div
+          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+          id="navbarColor01"
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarColor01">
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <a className="nav-link active" href="#">
                 Home

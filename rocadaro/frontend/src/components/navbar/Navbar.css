@@ -1,55 +1,65 @@
 .mynavbar {
-  background-color: rgb(
-    107,
-    230,
-    207
-  ); /* Hintergrundfarbe der Navbar anpassen */
-  color: #fff; /* Textfarbe der Navbar anpassen */
-  height: 80px; /* Höhe der Navbar anpassen */
-  padding: 20px; /* Innenabstand der Navbar anpassen */
+  background-color: rgb(107, 230, 207);
+  color: #fff;
+  height: 80px;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
-  /* Textfarbe des Brand-Logos anpassen */
+  color: #fff;
 }
 
 .logo {
-  margin-right: 10px; /* Abstand zwischen Logo und anderen Navbar-Inhalten anpassen */
-  width: 20%; /* Beispiel: Bild auf 20% der Breite des Elternelements setzen */
-  height: auto; /* Beispiel: Höhe automatisch anpassen */
-  /* Weitere Anpassungen und Stile hier */
+  margin: 2px 0 2px 2px;
+  max-width: 100%;
+  max-height: 76px;
+  object-fit: contain;
   display: inline-block;
   vertical-align: middle;
 }
 
-.navbar-nav .nav-link {
-  color: rgb(255, 255, 255); /* Textfarbe der Nav-Links anpassen */
-}
-
-.navbar-nav .nav-link:hover {
-  color: #aaa; /* Textfarbe der Nav-Links bei Hover anpassen */
-}
-
 .navbar-toggler {
-  background-color: #fff; /* Hintergrundfarbe des Navbar-Togglers anpassen */
-  border-color: #fff; /* Randfarbe des Navbar-Togglers anpassen */
-  color: #333; /* Textfarbe des Navbar-Togglers anpassen */
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
 }
 
 .navbar-toggler-icon {
-  /* Hintergrundbild des Navbar-Togglers anpassen */
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   background-image: url("path/to/toggler-icon.png");
 }
 
-.btn-secondary {
-  background-color: #aaa; /* Hintergrundfarbe des Login-Buttons anpassen */
-  color: #fff; /* Textfarbe des Login-Buttons anpassen */
+.navbar-nav .nav-link {
+  color: #fff;
 }
 
+.navbar-nav .nav-link:hover {
+  color: #aaa;
+}
+
+.btn-secondary {
+  background-color: #aaa;
+  color: #fff;
+}
 
 .bi-cart {
   color: red;
-  /* Stile für das Warenkorb-Symbol anpassen */
 }
