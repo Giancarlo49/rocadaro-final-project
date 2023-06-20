@@ -4,7 +4,7 @@ const data = {
       {
         id: 1,
         title: "",
-        price: ,
+        price: 6,
         image: require(''),
         category: "",
         
@@ -12,7 +12,7 @@ const data = {
       {
         id: 2,
         title: "",
-        price: ,
+        price: 7,
         image: require(''),
         category: "",
         
@@ -20,7 +20,7 @@ const data = {
       {
         id: 3,
         title: "",
-        price: ,
+        price: 8,
         image: require(''),
         category: "",
         
