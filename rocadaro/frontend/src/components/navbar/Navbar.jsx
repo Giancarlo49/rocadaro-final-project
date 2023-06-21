@@ -3,7 +3,9 @@ import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ModalComponents from "../ModalComponents";
 // import Modal from "./src/modal/Modal.jsx";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -18,69 +20,72 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="mynavbar navbar navbar-expand-lg fixed-top">
-      <div className="container-fluid">
-        <div className="navbar-brand ">
-          <img src="../src/images/Logo/Logo.png" alt="Logo" className="logo" />
-        </div>
-        <div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            onClick={handleMenuToggle}
-          >
-            <i className="bi bi-list"></i>
-          </button>
-        </div>
-
-        <div
-          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
-          id="navbarColor01"
-        >
-          <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <Link to="home" className="nav-link active">
-                Home
-                <span className="visually-hidden">(current)</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="products" className="nav-link">
-                Products
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="brands" className="nav-link">
-                Brands
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <form className="d-flex">
+    <>
+      <nav className="mynavbar navbar navbar-expand-lg fixed-top">
+        <div className="container-fluid">
+          <div className="navbar-brand ">
+            <img src="../src/images/Logo/Logo.png" alt="Logo" className="logo" />
+          </div>
+          <div>
             <button
-              className="btn btn-secondary me-2"
+              className="navbar-toggler"
               type="button"
-              onClick={handleModalToggle}
+              onClick={handleMenuToggle}
             >
-              Login
+              <i className="bi bi-list"></i>
             </button>
-            <button className="btn btn-light">
-              <i className="bi bi-cart"></i>
-            </button>
-          </form>
+          </div>
+  
+          <div
+            className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+            id="navbarColor01"
+          >
+            <ul className="navbar-nav mx-auto">
+              <li className="nav-item">
+                <NavLink to="/" className="nav-link active">
+                  Home
+                  <span className="visually-hidden">(current)</span>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="products" className="nav-link">
+                  Products
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="brands" className="nav-link">
+                  Brands
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="contact" className="nav-link">
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+            <form className="d-flex">
+              <button
+                className="btn btn-secondary me-2"
+                type="button"
+                onClick={handleModalToggle}
+              >
+                Login
+              </button>
+              <button className="btn btn-light">
+                <i className="bi bi-cart"></i>
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-      {/* {isModalOpen && <Modal onClose={handleModalToggle} />}{" "} */}
-      {/* Zeige das Modal-Fenster, wenn isModalOpen true ist */}
-      <ModalComponents
-        isModalOpen={isModalOpen}
-        handleModalToggle={handleModalToggle}
-      />
-    </nav>
+        {/* {isModalOpen && <Modal onClose={handleModalToggle} />}{" "} */}
+        {/* Zeige das Modal-Fenster, wenn isModalOpen true ist */}
+        <ModalComponents
+          isModalOpen={isModalOpen}
+          handleModalToggle={handleModalToggle}
+        />
+      </nav>
+      <Outlet/>
+    </>
   );
 };
 
