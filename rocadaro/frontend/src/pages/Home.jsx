@@ -1,32 +1,15 @@
-// import "./Home.css";
-
-// // import DarkVariantExample from "./components/carousel/Carousel.jsx";
-
-// const Home = () => {
-//   return (
-//     <>
-//       <div className="page">
-//         <h1>RoCaDaRo</h1>
-//         <h2>**SLOGAN**</h2>
-
-//         <div className="searchTest">
-//           <h3>This is a test</h3>
-//         </div>
-
-//         {/* <DarkVariantExample /> */}
-//         {/* Weitere Inhalte für Home */}
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Home;
-
 import { useState } from "react";
 import "./Home.css";
 // import GroupExample from "../components/cards/Cards.jsx";
 import DarkVariantExample from "../components/carousel/Carousel";
+
+import Products from "./Products";
+import Brands from "./Brands";
+import VariationsExample from "../components/footer/Footerbuttons";
+import AnimationExample from "../components/footer/Endproject";
+
 import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
 
@@ -61,6 +44,12 @@ const Home = () => {
           </div>
         </div>
         <DarkVariantExample />
+
+        <Products />
+        <Brands />
+        <VariationsExample />
+        <AnimationExample />
+
       </section>
     </>
   );
