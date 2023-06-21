@@ -8,4 +8,8 @@ body {
   margin: auto;
 }
 
-
+/* Carousel grösse */
+.d-block {
+  height: 450px;
+  
+}
