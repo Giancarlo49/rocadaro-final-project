@@ -21,6 +21,13 @@
   background-color: #ffffff;
   margin: 10px;
 }
+<<<<<<< HEAD
+=======
+.brands-container img {
+    width: 200px; 
+    height: 100px; 
+  }
+>>>>>>> development
 
 .row {
   display: flex;

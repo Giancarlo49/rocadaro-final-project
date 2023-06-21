@@ -1,13 +1,18 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar.jsx";
 
-import VariationsExample from "./components/footer/Footerbuttons.jsx";
-import AnimationExample from "./components/footer/Endproject.jsx";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Brands from "./pages/Brands";
 
-// import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
+
+// import GroupExample from "./components/cards/Cards";
+
+import Elektro from './pages/Elektro';
+import Haushaltsware from './pages/Haushaltsware';
+import Garten from './pages/Garten';
+import Mode from './pages/Mode';
+
+import { Routes, Route } from "react-router-dom";
 
 // Pfade können je nach Ordnerstruktur variieren
 
@@ -16,17 +21,21 @@ const App = () => {
     <div className="app">
         <Navbar />
         <Home/>
-        <Products/>
-        <Brands/>
         
-      
-     
+        {/* <GroupExample /> */}
+      <Routes>  
+          
+          <Route path="/elektro" element={<Elektro/>}/>
+          <Route path="/haushaltware" element={<Haushaltsware/>}/>
+          <Route path="/garten" element={<Garten/>}/>
+          <Route path="/mode" element={<Mode/>}/>
 
-      {/*Footer-Buttons */}
-      <VariationsExample />
-
-      {/* Endproject Zeichen */}
-      <AnimationExample />
+        
+        
+      </Routes>
+        
+        
+        
     </div>
   );
 };

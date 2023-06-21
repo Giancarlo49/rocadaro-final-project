@@ -11,22 +11,22 @@ import { useNavigate } from 'react-router-dom';
 const cardsData = [
   {
     title: "Haushaltsware",
-    // text: 'Hier kann man finden die besten Haushaltsware',
+    
     image: Haushaltsware,
   },
   {
     title: "Elektro",
-    // text: 'Contenido de la tarjeta 2',
+    
     image: Elektro,
   },
   {
     title: "Garten",
-    // text: 'Contenido de la tarjeta 3',
+    
     image: Garden,
   },
   {
     title: "Mode",
-    // text: 'Contenido de la tarjeta 3',
+    
     image: Mode,
   },
 ];
@@ -35,8 +35,16 @@ function GroupExample() {
 
   const navigate = useNavigate();
 
-  const handleButtonClick = () => {
-    navigate('/haushaltwaren');
+  const handleButtonClick = (title) => {
+    if (title === "Elektro") {
+      navigate('/elektro'); // Navigiere zur Elektro-Seite
+    } else if (title === "Haushaltsware") {
+      navigate('/haushaltsware'); // Navigiere zur Haushaltswaren-Seite
+    } else if (title === "Garten") {
+      navigate('/garten'); // Navigiere zur Gartenschau-Seite
+    } else if (title === "Mode") {
+      navigate('/mode'); // Navigiere zur Moden-Seite
+    }
   };
 
 
@@ -50,7 +58,7 @@ function GroupExample() {
           </Card.Body>
           <Card.Footer>
             {/* <Link to="/#"> */}
-            <button onClick={handleButtonClick} className="buttonGo">GO!!</button>
+            <button onClick={()=>{handleButtonClick(card.title)}} className="buttonGo">GO!!</button>
             {/* </Link> */}
           </Card.Footer>
         </Card>
