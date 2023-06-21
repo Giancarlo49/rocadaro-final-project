@@ -10,7 +10,9 @@ function DarkVariantExample() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h5 className="bg-dark text-white p-3 caro-titel rounded ">Laptop,Handy & Kamera Zubehör </h5>
+          <h5 className="bg-dark text-white p-3 caro-titel rounded ">
+            Laptop,Handy & Kamera Zubehör{" "}
+          </h5>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -20,7 +22,9 @@ function DarkVariantExample() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h5 className="bg-dark text-white p-3 caro-titel rounded ">Garten Zubehör</h5>
+          <h5 className="bg-dark text-white p-3 caro-titel rounded ">
+            Garten Zubehör
+          </h5>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -40,7 +44,9 @@ function DarkVariantExample() {
           alt="Four slide"
         />
         <Carousel.Caption>
-          <h5 className="bg-dark text-white p-3 caro-titel rounded ">Haushaltswaren</h5>
+          <h5 className="bg-dark text-white p-3 caro-titel rounded ">
+            Haushaltswaren
+          </h5>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
