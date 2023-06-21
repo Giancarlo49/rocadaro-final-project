@@ -8,8 +8,8 @@
     justify-content: center;
 }
 .brands-container img {
-    width: 200px; /* Cambia el ancho de las imágenes */
-    height: 100px; /* Mantiene la proporción de aspecto */
+    width: 200px; 
+    height: 100px; 
   }
 
 .moreBrands{
