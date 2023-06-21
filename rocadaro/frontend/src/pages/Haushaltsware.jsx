@@ -1,17 +1,19 @@
 import ProductCard from "../components/ProductCard/ProductCard";
-import Navbar from "../components/navbar/Navbar";
 
-const Haushaltswaren = () => {
+
+const Haushaltsware = () => {
   return (
-    <>
-      <Navbar />
-
-      <section className="page" id="Haushaltwaren">
-        <h1>Haushaltswaren</h1>
-        <ProductCard />
-      </section>
-    </>
+      <>
+          
+          <section className="page" id="Haushaltsware">
+            <h1>Haushaltsware</h1>
+            <ProductCard/>
+            
+            
+          </section>
+      </>
+    
   );
 };
 
-export default Haushaltswaren;
+export default Haushaltsware;
