@@ -2,10 +2,14 @@ import { useState } from "react";
 import "./Home.css";
 // import GroupExample from "../components/cards/Cards.jsx";
 import DarkVariantExample from "../components/carousel/Carousel";
+
 import Products from "./Products";
 import Brands from "./Brands";
 import VariationsExample from "../components/footer/Footerbuttons";
 import AnimationExample from "../components/footer/Endproject";
+
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
 
@@ -35,15 +39,17 @@ const Home = () => {
               onChange={handleChange}
             />
             <button className="search-button" onClick={handleSearch}>
-              Suchen
+              <i className="bi bi-search"></i>
             </button>
           </div>
         </div>
         <DarkVariantExample />
+
         <Products />
         <Brands />
         <VariationsExample />
         <AnimationExample />
+
       </section>
     </>
   );
