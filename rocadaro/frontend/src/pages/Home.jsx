@@ -26,7 +26,7 @@ import { useState } from "react";
 import "./Home.css";
 // import GroupExample from "../components/cards/Cards.jsx";
 import DarkVariantExample from "../components/carousel/Carousel";
-
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
 
@@ -45,8 +45,6 @@ const Home = () => {
   return (
     <>
       <section className="page" id="home">
-        
-
         {/* SEARCHBAR */}
         <div className="searchTest">
           <h3>This is a test</h3>
@@ -58,13 +56,11 @@ const Home = () => {
               onChange={handleChange}
             />
             <button className="search-button" onClick={handleSearch}>
-              Suchen
+              <i className="bi bi-search"></i>
             </button>
           </div>
         </div>
-        <DarkVariantExample/>
-        
-        
+        <DarkVariantExample />
       </section>
     </>
   );
