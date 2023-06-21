@@ -6,6 +6,7 @@ import Garden from "./imagesCard/daniel-watson-8vBpYpTGo90-unsplash.jpg";
 import Haushaltsware from "./imagesCard/scott-umstattd-wxruheY5nG8-unsplash.jpg";
 import Elektro from "./imagesCard/Elektro.jpg";
 import Mode from "./imagesCard/CardMode.jpg";
+import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
   {
@@ -31,6 +32,14 @@ const cardsData = [
 ];
 
 function GroupExample() {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/haushaltwaren');
+  };
+
+
   return (
     <CardGroup>
       {cardsData.map((card, index) => (
@@ -41,7 +50,7 @@ function GroupExample() {
           </Card.Body>
           <Card.Footer>
             {/* <Link to="/#"> */}
-            <button className="buttonGo">GO!!</button>
+            <button onClick={handleButtonClick} className="buttonGo">GO!!</button>
             {/* </Link> */}
           </Card.Footer>
         </Card>

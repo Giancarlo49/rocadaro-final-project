@@ -6,6 +6,7 @@ import AnimationExample from "./components/footer/Endproject.jsx";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Brands from "./pages/Brands";
+
 // import { Routes, Route } from "react-router-dom";
 
 // Pfade können je nach Ordnerstruktur variieren
@@ -17,6 +18,7 @@ const App = () => {
         <Home/>
         <Products/>
         <Brands/>
+        
       
      
 

@@ -30,7 +30,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../src/images/Schuhe/schuhe2.jpg"
+          src="../src/images/Schuhe/Schuhe2.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>
