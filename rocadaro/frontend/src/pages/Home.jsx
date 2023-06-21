@@ -24,8 +24,9 @@
 
 import { useState } from "react";
 import "./Home.css";
-import GroupExample from "../components/cards/Cards.jsx";
+// import GroupExample from "../components/cards/Cards.jsx";
 import DarkVariantExample from "../components/carousel/Carousel";
+
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
 
@@ -62,6 +63,7 @@ const Home = () => {
           </div>
         </div>
         <DarkVariantExample/>
+        
         
       </section>
     </>
