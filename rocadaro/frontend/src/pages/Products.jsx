@@ -1,13 +1,20 @@
+import GroupExample from "../components/cards/Cards";
 import "./Products.css";
-import DarkVariantExample from "../components/carousel/Carousel.jsx";
+// import GroupExample from "../components/cards/Cards";
+// import { Routes, Route } from "react-router-dom"
+// import Elektro from "./Elektro";
+// import Haushaltswaren from "./Haushaltsware";
+// import Garten from "./Garten";
+// import Mode from "./Mode";
+
 const Products = () => {
   return (
-    <div className="page">
+    <section className="page" id="products">
       <h1>Products</h1>
-      {/* Weitere Inhalte für Page 2 */}
-      {/* Carousel */}
-      <DarkVariantExample />
-    </div>
+
+      <GroupExample/>
+      
+    </section>
   );
 };
 

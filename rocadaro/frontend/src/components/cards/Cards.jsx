@@ -6,31 +6,48 @@ import Garden from "./imagesCard/daniel-watson-8vBpYpTGo90-unsplash.jpg";
 import Haushaltsware from "./imagesCard/scott-umstattd-wxruheY5nG8-unsplash.jpg";
 import Elektro from "./imagesCard/Elektro.jpg";
 import Mode from "./imagesCard/CardMode.jpg";
+import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
   {
     title: "Haushaltsware",
-    // text: 'Hier kann man finden die besten Haushaltsware',
+    
     image: Haushaltsware,
   },
   {
     title: "Elektro",
-    // text: 'Contenido de la tarjeta 2',
+    
     image: Elektro,
   },
   {
     title: "Garten",
-    // text: 'Contenido de la tarjeta 3',
+    
     image: Garden,
   },
   {
     title: "Mode",
-    // text: 'Contenido de la tarjeta 3',
+    
     image: Mode,
   },
 ];
 
 function GroupExample() {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = (title) => {
+    if (title === "Elektro") {
+      navigate('/elektro'); // Navigiere zur Elektro-Seite
+    } else if (title === "Haushaltsware") {
+      navigate('/haushaltsware'); // Navigiere zur Haushaltswaren-Seite
+    } else if (title === "Garten") {
+      navigate('/garten'); // Navigiere zur Gartenschau-Seite
+    } else if (title === "Mode") {
+      navigate('/mode'); // Navigiere zur Moden-Seite
+    }
+  };
+
+
   return (
     <CardGroup>
       {cardsData.map((card, index) => (
@@ -41,7 +58,7 @@ function GroupExample() {
           </Card.Body>
           <Card.Footer>
             {/* <Link to="/#"> */}
-            <button className="buttonGo">GO!!</button>
+            <button onClick={()=>{handleButtonClick(card.title)}} className="buttonGo">GO!!</button>
             {/* </Link> */}
           </Card.Footer>
         </Card>

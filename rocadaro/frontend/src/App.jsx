@@ -1,29 +1,36 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar.jsx";
 
-import VariationsExample from "./components/footer/Footerbuttons.jsx";
-import AnimationExample from "./components/footer/Endproject.jsx";
 import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Brands from "./pages/Brands";
+
+
+
+import Elektro from "./pages/Elektro";
+import Haushaltsware from "./pages/Haushaltsware";
+import Garten from "./pages/Garten";
+import Mode from "./pages/Mode";
+
+import { Routes, Route } from "react-router-dom";
+
 
 // Pfade können je nach Ordnerstruktur variieren
 
 const App = () => {
   return (
     <div className="app">
-      <Navbar />
-      <div className="pageContainer">
-        <Home />
-        <Products />
-        <Brands />
-      </div>
+      
+      <Routes>
+        
 
-      {/*Footer-Buttons */}
-      <VariationsExample />
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
 
-      {/* Endproject Zeichen */}
-      <AnimationExample />
+          <Route path="elektro" element={<Elektro />} />
+          <Route path="haushaltsware" element={<Haushaltsware />} />
+          <Route path="garten" element={<Garten />} />
+          <Route path="mode" element={<Mode />} />
+        </Route>
+      </Routes>
     </div>
   );
 };
