@@ -3,7 +3,7 @@ import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ModalComponents from "../ModalComponents";
 // import Modal from "./src/modal/Modal.jsx";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 import { Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
           <div className="navbar-brand ">
-            <img src="../src/images/Logo/Logo.png" alt="Logo" className="logo" />
+            <img src="../src/images/Logo/LogoRocadaro.png" alt="Logo" className="logo" />
           </div>
           <div>
             <button
@@ -48,19 +48,19 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="products" className="nav-link">
+                <Link to="products" className="nav-link">
                   Products
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink to="brands" className="nav-link">
+                <Link to="brands" className="nav-link">
                   Brands
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink to="contact" className="nav-link">
+                <Link to="contact" className="nav-link">
                   Contact
-                </NavLink>
+                </Link>
               </li>
             </ul>
             <form className="d-flex">
