@@ -4,15 +4,16 @@ function DarkVariantExample() {
   return (
     <Carousel variant="dark">
       <Carousel.Item>
+      
         <img
           className="d-block w-100"
-          src="../src/images/Elektro/Elektro1.jpg"
+          src="../src/images/Logo/LogoHeader.png"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h5 className="bg-dark text-white p-3 caro-titel rounded ">
+          {/* <h5 className="bg-dark text-white p-3 caro-titel rounded ">
             Laptop,Handy & Kamera Zubehör{" "}
-          </h5>
+          </h5> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -24,6 +25,18 @@ function DarkVariantExample() {
         <Carousel.Caption>
           <h5 className="bg-dark text-white p-3 caro-titel rounded ">
             Garten Zubehör
+          </h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../src/images/Elektro/Elektro1.jpg"
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h5 className="bg-dark text-white p-3 caro-titel rounded ">
+          Laptop,Handy & Kamera Zubehör
           </h5>
         </Carousel.Caption>
       </Carousel.Item>
