@@ -11,38 +11,58 @@ const data = {
       },
       {
         id: 2,
-        title: "",
+        title: "Digicam",
         price: 7,
-        image: '',
-        category: "",
+        image: './images/Elektro/Digicam4.jpg',
+        category: "Elektro",
         
       },
       {
         id: 3,
-        title: "",
+        title: "Rasen",
         price: 8,
-        image: '',
-        category: "",
+        image: './images/Garten/Rasen.jpg',
+        category: "Garten",
         
       },
       {
         id: 4,
-        title: "",
+        title: "Mode",
         price: 50,
         image: '',
-        category: "HOODIE",
+        category: "Mode",
       },
-      {
-        id: 5,
-        title: "MAD RABBIT, Dark Blau",
-        price: 30,
-        image: '',
-        category: "T-SHIRT",
-      },
-        
-
       
     ],
+    categorys: [
+      {
+        id: 1,
+        
+        image: "./public/images/imagesCard/scott-umstattd-wxruheY5nG8-unsplash.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 2,
+        
+        image: './public/images/imagesCard/Elektro.jpg',
+        category: "Elektro",
+        
+      },
+      {
+        id: 3,
+        
+        image: './public/images/imagesCard/daniel-watson-8vBpYpTGo90-unsplash.jpg',
+        category: "Garten",
+        
+      },
+      {
+        id: 4,
+        
+        image: '/public/images/imagesCard/CardMode.jpg',
+        category: "Mode",
+      },
+    ]
   };
   
   export default data;

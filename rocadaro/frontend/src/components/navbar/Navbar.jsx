@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
           <div className="navbar-brand ">
-            <img src="../src/images/Logo/LogoRocadaro.png" alt="Logo" className="logo" />
+            <img src="./public/images/Logo/LogoRocadaro.png" alt="Logo" className="logo" />
           </div>
           <div>
             <button
