@@ -1,7 +1,7 @@
 
 import data from '../../data.js';
 import './ProductCard.css';
-
+// kommentare
 const ProductCard = () => {
 
   
