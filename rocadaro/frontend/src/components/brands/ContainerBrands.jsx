@@ -70,25 +70,92 @@ function ContainerBrands() {
     <div>
       <div className="brands-container">
         <div className="row">
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
         </div>
         <div className="row">
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
         </div>
         <div className="row">
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <div className="row">
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
+          <div className="box">
+            <a href="https://www.adidas.com">
+              <img src="./src/images/brands/adidas.jpeg" alt="Logo" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
