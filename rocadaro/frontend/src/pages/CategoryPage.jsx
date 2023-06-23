@@ -1,14 +1,20 @@
+import ProductCard from "../components/ProductCard/ProductCard";
+import { useParams } from "react-router-dom";
+import data from "../data";
 
-import data from '../../data.js';
-import './ProductCard.css';
 
-const ProductCard = () => {
+const CategoryPage = () => {
+  const {category} = useParams();
 
-  
+  const filterItems = data.items.filter((item)=>item.category === category)
+  console.log(filterItems)
   return (
-  
       <>
-        {data.items.map((item, index) => (
+          
+          <section className="page" id="Haushaltsware">
+            <h1>{category}</h1>
+            
+        {filterItems.map((item, index) => (
           <div key={index} className="product-card">
             <img
               className="product-image"
@@ -25,8 +31,13 @@ const ProductCard = () => {
             </div>
           </div>
           ))}
-        </>
-    );
-  };
-  
-  export default ProductCard;
+        
+            
+            
+          </section>
+      </>
+    
+  );
+};
+
+export default CategoryPage;
