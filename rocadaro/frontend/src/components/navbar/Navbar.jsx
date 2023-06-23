@@ -42,10 +42,12 @@ const Navbar = () => {
           >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <NavLink to="/" className="nav-link active">
-                  Home
-                  <span className="visually-hidden">(current)</span>
-                </NavLink>
+                {/* <Link to="home" className="nav-link"> */}
+                  <NavLink to="/" className="nav-link active">
+                    Home
+                    <span className="visually-hidden">(current)</span>
+                  </NavLink>
+                {/* </Link> */}
               </li>
               <li className="nav-item">
                 <Link to="products" className="nav-link">
