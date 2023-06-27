@@ -20,10 +20,13 @@ const Navbar = () => {
   };
   const handleBrandsLinkClick = (event) => {
     event.preventDefault();
-    const brandsElement = document.getElementById("brands");
-    if (brandsElement) {
-      brandsElement.scrollIntoView({ behavior: "smooth" });
-    }
+    navigate("/");
+    setTimeout(() => {
+      const brandsElement = document.getElementById("brands");
+      if (brandsElement) {
+        brandsElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
 
   const handleProductsLinkClick = (event) => {
