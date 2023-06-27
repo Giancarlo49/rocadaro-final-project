@@ -2,7 +2,6 @@ body {
   position: relative;
   overflow: auto;
   background-color: transparent;
-  backdrop-filter: blur(10px);
 }
 
 .background-layer {
@@ -16,12 +15,12 @@ body {
   background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
   z-index: -1;
 }
+
 .caro-titel {
   width: fit-content;
   margin: auto;
 }
 
-/* Carousel grösse */
 .d-block {
   height: 450px;
   border-radius: 6px;
