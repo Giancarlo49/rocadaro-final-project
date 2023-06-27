@@ -1,7 +1,16 @@
 body {
-  background-color: rgb(205, 198, 198);
+  background-image: url("images/background/bgNewYork.jpg");
+  backdrop-filter: blur(5px);
 }
 
+.navbar-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  backdrop-filter: none;
+}
 
 .caro-titel {
   width: fit-content;
@@ -11,5 +20,4 @@ body {
 /* Carousel grösse */
 .d-block {
   height: 450px;
-  
 }

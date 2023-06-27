@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="mynavbar navbar navbar-expand-lg fixed-top">
+      <nav className="mynavbar navbar navbar-expand-lg navbar-blur">
         <div className="container-fluid">
           <div className="navbar-brand ">
             <img
