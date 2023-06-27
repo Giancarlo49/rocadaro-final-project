@@ -4,7 +4,6 @@ function DarkVariantExample() {
   return (
     <Carousel variant="dark">
       <Carousel.Item>
-      
         <img
           className="d-block w-100"
           src="/images/Logo/LogoHeader.png"
@@ -18,7 +17,7 @@ function DarkVariantExample() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block"
           src="/images/Garten/gartenkanne1.jpg"
           alt="Second slide"
         />
@@ -36,7 +35,7 @@ function DarkVariantExample() {
         />
         <Carousel.Caption>
           <h5 className="bg-dark text-white p-3 caro-titel rounded ">
-          Laptop,Handy & Kamera Zubehör
+            Laptop,Handy & Kamera Zubehör
           </h5>
         </Carousel.Caption>
       </Carousel.Item>
