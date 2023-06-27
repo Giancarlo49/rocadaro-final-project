@@ -23,6 +23,7 @@ const App = () => {
           
           <Route path="category/:category" element={<CategoryPage />} />
           
+          
         </Route>
       </Routes>
     </div>

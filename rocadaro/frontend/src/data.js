@@ -5,7 +5,7 @@ const data = {
         id: 1,
         title: "Topf",
         price: 6,
-        image: "images/Garten/Deko.jpg",
+        image: "../images/Haushaltswaren/Topf.jpg",
         category: "Haushaltswaren",
         
       },
@@ -13,7 +13,7 @@ const data = {
         id: 2,
         title: "Digicam",
         price: 7,
-        image: 'images/Elektro/Digicam4.jpg',
+        image: '../images/Elektro/Digicam4.jpg',
         category: "Elektro",
         
       },
