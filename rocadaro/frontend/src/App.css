@@ -31,3 +31,7 @@ body {
   margin-top: 60px;
   min-height: 100%;
 }
+
+.d-block {
+  height: auto;
+}
