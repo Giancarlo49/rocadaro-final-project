@@ -41,7 +41,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="mynavbar navbar navbar-expand-lg navbar-blur">
+      <nav className="mynavbar navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
           <div className="navbar-brand ">
             <img
