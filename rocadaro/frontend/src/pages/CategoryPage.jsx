@@ -1,4 +1,4 @@
-// import ProductCard from "../components/ProductCard/ProductCard";
+
 import  "./CategoryPage.css"
 import { useParams } from "react-router-dom";
 import data from "../data";
