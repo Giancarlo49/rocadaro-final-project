@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ModalComponents from "../ModalComponents";
-// import Modal from "./src/modal/Modal.jsx";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import { Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -10,6 +10,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
+  const navigate = useNavigate();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,7 +18,24 @@ const Navbar = () => {
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
   };
+  const handleBrandsLinkClick = (event) => {
+    event.preventDefault();
+    const brandsElement = document.getElementById("brands");
+    if (brandsElement) {
+      brandsElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
+  const handleProductsLinkClick = (event) => {
+    event.preventDefault();
+    navigate("/");
+    setTimeout(() => {
+      const productsElement = document.getElementById("products");
+      if (productsElement) {
+        productsElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
   return (
     <>
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
@@ -52,16 +70,29 @@ const Navbar = () => {
                   </NavLink>
                 </Link>
               </li>
+
               <li className="nav-item">
-                <Link to="products" className="nav-link">
+                <Link
+                  to="home"
+                  className="nav-link"
+                  onClick={handleProductsLinkClick}
+                >
                   Products
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="brands" className="nav-link">
+                <Link
+                  to="brands"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                  onClick={handleBrandsLinkClick}
+                >
                   Brands
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to="contact" className="nav-link">
                   Contact
