@@ -20,4 +20,6 @@ body {
 /* Carousel grösse */
 .d-block {
   height: 450px;
+  border-radius: 6px;
+  border: 5px solid rgb(43, 165, 226);
 }
