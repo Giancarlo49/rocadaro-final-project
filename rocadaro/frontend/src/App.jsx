@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 
 import { Routes, Route } from "react-router-dom";
 import CategoryPage from "./pages/CategoryPage";
+import ListCart from "./pages/ListCart";
 
 
 // Pfade können je nach Ordnerstruktur variieren
@@ -22,7 +23,8 @@ const App = () => {
 
           
           <Route path="category/:category" element={<CategoryPage />} />
-          
+          <Route path="cart" element={<ListCart/>} />
+
           
         </Route>
       </Routes>

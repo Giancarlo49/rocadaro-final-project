@@ -3,11 +3,15 @@ import  "./CategoryPage.css"
 import { useParams } from "react-router-dom";
 import data from "../data";
 import { useState } from "react";
+import Store from "../store/Context";
 
 const CategoryPage = () => {
 
   //add to cart.
-  const [cart, setCart] = useState([]);
+  const {cart, setCart} = Store()
+
+  
+  // const [cart, setCart] = useState([]);
 
   const addCart = (id) => {
     const product = filterItems.find((item) => item.id === id);

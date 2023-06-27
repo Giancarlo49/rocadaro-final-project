@@ -4,10 +4,12 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import ModalComponents from "../ModalComponents";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+// import Store from "../../store/Context";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
   const navigate = useNavigate();
@@ -110,9 +112,15 @@ const Navbar = () => {
               >
                 Login
               </button>
-              <button className="btn btn-light">
-                <i className="bi bi-cart"></i>
-              </button>
+              
+                
+                  <button className="btn btn-light"
+                  type="button"
+                  onClick={() => {navigate("/cart")}}>
+                    <i className="bi bi-cart"></i>
+                  </button>
+                
+              
             </form>
           </div>
         </div>
