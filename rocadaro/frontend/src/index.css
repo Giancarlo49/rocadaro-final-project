@@ -1,7 +1,9 @@
-body {
+dasvon dir gezeigte CSS-Styling sieht grundsätzlich korrekt aus, um ein Hintergrundbild mit einem Blur-Effekt zu erstellen. Hier sind jedoch einige Hinweise zur Optimierung und möglichen Verbesserungen: css
+  Copy code body {
   position: relative;
   overflow: auto;
   background-color: transparent;
+  backdrop-filter: blur(10px);
 }
 
 .background-layer {
@@ -11,7 +13,8 @@ body {
   width: 100%;
   height: 100%;
   background-image: url("images/background/bgNewYork.jpg");
-  backdrop-filter: blur(5px);
+  background-size: cover; /* Das Hintergrundbild wird auf die volle Größe skaliert */
+  background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
   z-index: -1;
 }
 .caro-titel {
