@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import { useNavigate } from 'react-router-dom';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import data from "../../data";
 
 
