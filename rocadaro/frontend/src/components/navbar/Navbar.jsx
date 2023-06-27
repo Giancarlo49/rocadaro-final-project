@@ -2,17 +2,17 @@ import { useState } from "react";
 import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ModalComponents from "../ModalComponents";
-import { useNavigate } from "react-router-dom";
+
 import { Link } from "react-scroll";
-import { Navigate, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-// import Store from "../../store/Context";
+
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
-  const navigate = useNavigate();
+  
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
