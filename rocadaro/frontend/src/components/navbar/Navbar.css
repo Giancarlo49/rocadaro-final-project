@@ -1,17 +1,11 @@
-/* .mynavbar {
-  background-color: #02c2c9;
-  color: #fff;
-  height: 80px;
-  padding: 0;
-} */
 
-/* .mynavbar {
+.mynavbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
-} */
+}
 
 .container-fluid {
   padding: 0;
