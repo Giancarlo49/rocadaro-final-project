@@ -7,7 +7,7 @@ function DarkVariantExample() {
       
         <img
           className="d-block w-100"
-          src="./public/images/Logo/LogoHeader.png"
+          src="/images/Logo/LogoHeader.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -19,7 +19,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./public/images/Garten/gartenkanne1.jpg"
+          src="/images/Garten/gartenkanne1.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -31,7 +31,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./public/images/Elektro/Elektro1.jpg"
+          src="/images/Elektro/Elektro1.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -43,7 +43,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../public/images/Schuhe/Schuhe2.jpg"
+          src="/images/Schuhe/Schuhe2.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -53,7 +53,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../public/images/Haushaltswaren/hw2.jpg"
+          src="/images/Haushaltswaren/hw2.jpg"
           alt="Four slide"
         />
         <Carousel.Caption>
