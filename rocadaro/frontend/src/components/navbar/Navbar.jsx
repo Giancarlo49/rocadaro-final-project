@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <div className="navbar-brand ">
             <img
-              src="./public/images/Logo/LogoRocadaro.png"
+              src="/images/Logo/LogoRocadaro.png"
               alt="Logo"
               className="logo"
             />
