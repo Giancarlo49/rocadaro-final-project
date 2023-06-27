@@ -1,6 +1,6 @@
 .page {
-  height: 100vh;
-  padding-top: 100px;
+  min-height: 100vh;
+  padding-top: 80px;
 }
 
 /* .slogan {
@@ -15,9 +15,6 @@
   margin-bottom: 50px;
 } */
 
-
-.searchbar{
+.searchbar {
   width: 100%;
 }
-
-

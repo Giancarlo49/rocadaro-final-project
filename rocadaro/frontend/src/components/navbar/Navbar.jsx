@@ -7,7 +7,6 @@ import { Link } from "react-scroll";
 import { Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
@@ -24,7 +23,11 @@ const Navbar = () => {
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
           <div className="navbar-brand ">
-            <img src="../src/images/Logo/LogoRocadaro.png" alt="Logo" className="logo" />
+            <img
+              src="/images/Logo/LogoRocadaro.png"
+              alt="Logo"
+              className="logo"
+            />
           </div>
           <div>
             <button
@@ -35,19 +38,19 @@ const Navbar = () => {
               <i className="bi bi-list"></i>
             </button>
           </div>
-  
+
           <div
             className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
             id="navbarColor01"
           >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                {/* <Link to="home" className="nav-link"> */}
+                <Link to="home" className="nav-link">
                   <NavLink to="/" className="nav-link active">
                     Home
                     <span className="visually-hidden">(current)</span>
                   </NavLink>
-                {/* </Link> */}
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="products" className="nav-link">
@@ -86,7 +89,7 @@ const Navbar = () => {
           handleModalToggle={handleModalToggle}
         />
       </nav>
-      <Outlet/>
+      <Outlet />
     </>
   );
 };
