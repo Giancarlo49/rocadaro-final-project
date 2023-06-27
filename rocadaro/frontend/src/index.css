@@ -1,5 +1,4 @@
-dasvon dir gezeigte CSS-Styling sieht grundsätzlich korrekt aus, um ein Hintergrundbild mit einem Blur-Effekt zu erstellen. Hier sind jedoch einige Hinweise zur Optimierung und möglichen Verbesserungen: css
-  Copy code body {
+body {
   position: relative;
   overflow: auto;
   background-color: transparent;
