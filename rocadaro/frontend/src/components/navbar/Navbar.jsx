@@ -6,9 +6,11 @@ import ModalComponents from "../ModalComponents";
 import { Link } from "react-scroll";
 import { Outlet, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import Store from "../../store/Context";
 
 
 const Navbar = () => {
+  const { cart } = Store()
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
@@ -114,11 +116,16 @@ const Navbar = () => {
               </button>
               
                 
-                  <button className="btn btn-light"
-                  type="button"
-                  onClick={() => {navigate("/cart")}}>
-                    <i className="bi bi-cart"></i>
-                  </button>
+                  <div className="CartButton">
+                    
+                    <button className="btn btn-light"
+                    type="button"
+                    onClick={() => {navigate("/cart")}}>
+                      
+                      <i className="bi bi-cart"></i>
+                      <span className="total-Items">{cart.length}</span>
+                    </button>
+                  </div>
                 
               
             </form>
