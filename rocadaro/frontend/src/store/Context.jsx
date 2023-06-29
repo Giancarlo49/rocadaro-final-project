@@ -17,7 +17,7 @@ export function ParentContext({ children }) {
 
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([...data.items]);
-
+  //Fuctionen
   const handleHomeLinkClick = (event) => {
     event.preventDefault();
     navigate("/");
@@ -28,8 +28,26 @@ export function ParentContext({ children }) {
       }
     }, 100);
   };
-
-  //Fuctionen
+  const handleBrandsLinkClick = (event) => {
+    event.preventDefault();
+    navigate("/");
+    setTimeout(() => {
+      const brandsElement = document.getElementById("brands");
+      if (brandsElement) {
+        brandsElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+  const handleProductsLinkClick = (event) => {
+    event.preventDefault();
+    navigate("/");
+    setTimeout(() => {
+      const productsElement = document.getElementById("products");
+      if (productsElement) {
+        productsElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   //Schließen
   const toggleClose = () => {
@@ -89,6 +107,8 @@ export function ParentContext({ children }) {
     setProducts,
     removeItemCart,
     handleHomeLinkClick,
+    handleBrandsLinkClick,
+    handleProductsLinkClick,
   };
   //Koponents
 

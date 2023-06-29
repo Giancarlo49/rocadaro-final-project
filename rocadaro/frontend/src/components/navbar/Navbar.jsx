@@ -7,7 +7,12 @@ import { Outlet, useNavigate } from "react-router-dom";
 import Store from "../../store/Context";
 
 const Navbar = () => {
-  const { cart, handleHomeLinkClick } = Store();
+  const {
+    cart,
+    handleHomeLinkClick,
+    handleBrandsLinkClick,
+    handleProductsLinkClick,
+  } = Store();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
@@ -18,37 +23,7 @@ const Navbar = () => {
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
   };
-  const handleBrandsLinkClick = (event) => {
-    event.preventDefault();
-    navigate("/");
-    setTimeout(() => {
-      const brandsElement = document.getElementById("brands");
-      if (brandsElement) {
-        brandsElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  };
-  // const handleHomeLinkClick = (event) => {
-  //   event.preventDefault();
-  //   navigate("/");
-  //   setTimeout(() => {
-  //     const homeElement = document.getElementById("home");
-  //     if (homeElement) {
-  //       homeElement.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   }, 100);
-  // };
 
-  const handleProductsLinkClick = (event) => {
-    event.preventDefault();
-    navigate("/");
-    setTimeout(() => {
-      const productsElement = document.getElementById("products");
-      if (productsElement) {
-        productsElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  };
   return (
     <>
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
