@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import data from "../data";
 import { useState } from "react";
 import Store from "../store/Context";
+import LikeButton from "../components/Like";
 
 const CategoryPage = () => {
 
@@ -30,14 +31,14 @@ const CategoryPage = () => {
   return (
     <>
       <section className="page" id="Haushaltsware">
-        <h1>{category}</h1>
+        <h1 className="titleCategory">{category}</h1>
 
         {filterItems.map((item, index) => (
           <div key={index} className="product-card">
             <img className="product-image" src={item.image} alt="Producto" />
             <div className="product-info">
               <h2 className="product-title">{item.title}</h2>
-              <p className="product-price">{item.price}</p>
+              <p className="product-price">{item.price}€</p>
               <div className="product-actions">
                 <button
                   className="add-to-cart-button"

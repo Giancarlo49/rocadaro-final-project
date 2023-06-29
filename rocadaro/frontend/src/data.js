@@ -18,6 +18,14 @@ const data = {
         
       },
       {
+        id: 2,
+        title: "Digicam",
+        price: 7,
+        image: '../images/Elektro/Digicam4.jpg',
+        category: "Elektro",
+        
+      },
+      {
         id: 3,
         title: "Rasen",
         price: 8,
