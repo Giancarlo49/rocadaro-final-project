@@ -1,68 +1,126 @@
 import { useState } from "react";
 import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import ModalComponents from "../ModalComponents";
+import { Link } from "react-scroll";
+import { Outlet, useNavigate } from "react-router-dom";
+import Store from "../../store/Context";
 
 const Navbar = () => {
+  const {
+    cart,
+    handleHomeLinkClick,
+    handleBrandsLinkClick,
+    handleProductsLinkClick,
+  } = Store();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const handleModalToggle = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
-    <nav className="mynavbar navbar navbar-expand-lg">
-      <div className="container-fluid">
-        <div className="navbar-brand">
-          <img src="../src/images/Logo/Logo.png" alt="Logo" className="logo" />
-        </div>
-        <div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            onClick={handleMenuToggle}
-          >
-            <i className="bi bi-list"></i>
-          </button>
-        </div>
+    <>
+      <nav className="mynavbar navbar navbar-expand-lg fixed-top">
+        <div className="container-fluid">
+          <div className="navbar-brand ">
+            <img
+              src="/images/Logo/LogoRocadaro.png"
+              alt="Logo"
+              className="logo"
+            />
+          </div>
+          <div>
+            <button
+              className="navbar-toggler"
+              type="button"
+              onClick={handleMenuToggle}
+            >
+              <i className="bi bi-list"></i>
+            </button>
+          </div>
 
-        <div
-          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
-          id="navbarColor01"
-        >
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link active" href="#">
-                Home
-                <span className="visually-hidden">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Products
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Brands
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <form className="d-flex">
-            <button className="btn btn-secondary me-2" type="submit">
-              Login
-            </button>
-            <button className="btn btn-light">
-              <i className="bi bi-cart"></i>
-            </button>
-          </form>
+          <div
+            className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+            id="navbarColor01"
+          >
+            <ul className="navbar-nav mx-auto">
+              <li className="nav-item">
+                <Link
+                  to="home"
+                  className="nav-link"
+                  onClick={handleHomeLinkClick}
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link
+                  to="home"
+                  className="nav-link"
+                  onClick={handleProductsLinkClick}
+                >
+                  Products
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="brands"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                  onClick={handleBrandsLinkClick}
+                >
+                  Brands
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="contact" className="nav-link">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+            <form className="d-flex">
+              <button
+                className="btn btn-secondary me-2"
+                type="button"
+                onClick={handleModalToggle}
+              >
+                Login
+              </button>
+
+              <div className="CartButton">
+                <button
+                  className="btn btn-light"
+                  type="button"
+                  onClick={() => {
+                    navigate("/cart");
+                  }}
+                >
+                  <i className="bi bi-cart"></i>
+                  <span className="total-Items">{cart.length}</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+        {/* {isModalOpen && <Modal onClose={handleModalToggle} />}{" "} */}
+        {/* Zeige das Modal-Fenster, wenn isModalOpen true ist */}
+        <ModalComponents
+          isModalOpen={isModalOpen}
+          handleModalToggle={handleModalToggle}
+        />
+      </nav>
+      <Outlet />
+    </>
   );
 };
 

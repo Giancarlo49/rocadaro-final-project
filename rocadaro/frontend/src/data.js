@@ -1,124 +1,68 @@
+
 const data = {
-    status: "success",
     items: [
       {
         id: 1,
-        title: "",
+        title: "Topf",
         price: 6,
-        image: require(''),
-        category: "",
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
         
       },
       {
         id: 2,
-        title: "",
+        title: "Digicam",
         price: 7,
-        image: require(''),
-        category: "",
+        image: '../images/Elektro/Digicam4.jpg',
+        category: "Elektro",
         
       },
       {
         id: 3,
-        title: "",
+        title: "Rasen",
         price: 8,
-        image: require(''),
-        category: "",
+        image: 'images/Garten/Rasen.jpg',
+        category: "Garten",
         
       },
       {
         id: 4,
-        title: "",
+        title: "Mode",
         price: 50,
-        image: require(''),
-        category: "HOODIE",
+        image: '',
+        category: "Mode",
       },
-      {
-        id: 5,
-        title: "MAD RABBIT, Dark Blau",
-        price: 30,
-        image: require('./images/04-delante.png'),
-        category: "T-SHIRT",
-      },
-        {
-        id: 6,
-        title: "MAD RABBIT, Dark Red: Groove",
-        price: 30,
-        image: require('./images/05-delante.png'),
-        category: "T-SHIRT",
-      },
-      {
-        id: 7,
-        title: "MAD RABBIT, Grey: Groove",
-        price: 30,
-        image: require('./images/06-delante.png'),
-        category: "T-SHIRT",
-      },
-      {
-        id: 8,
-        title: "MAD RABBIT, Black: Groove",
-        price: 30,
-        image: require('./images/07-delante.jpg'),
-        category: "T-SHIRT",
-      },
-      {
-        id: 9,
-        title: "MAD RABBIT, Basic",
-        price: 30,
-        image: require('./images/08.png'),
-        category: "T-SHIRT",
-      },
-      {
-        id: 10,
-        title: "MAD RABBIT, Basic",
-        price: 30,
-        image: require('./images/09.png'),
-        category: "T-SHIRT",
-      },
-      {
-        id: 11,
-        title: "MAD RABBIT UNISEX BASIC ",
-        price: 60,
-        image: require('./images/10-delante.jpg'),
-        category: "HOODIE",
-      },
-      {
-        id: 12,
-        title: "MAD RABBIT UNISEX BASIC ",
-        price: 60,
-        image: require('./images/10-delante.jpg'),
-        category: "HOODIE",
-      },
-      {
-        id: 13,
-        title: "MAD RABBIT UNISEX BASIC ",
-        price: 60,
-        image: require('./images/10-delante.jpg'),
-        category: "HOODIE",
-      },
-      {
-        id: 14,
-        title: "MAD RABBIT UNISEX BASIC ",
-        price: 60,
-        image: require('./images/10-delante.jpg'),
-        category: "HOODIE",
-      },
-      {
-        id: 15,
-        title: "MAD RABBIT UNISEX BASIC ",
-        price: 60,
-        image: require('./images/10-delante.jpg'),
-        category: "HOODIE",
-      },
-      {
-        id: 16,
-        title: "MAD RABBIT UNISEX BASIC ",
-        price: 60,
-        image: require('./images/10-delante.jpg'),
-        category: "HOODIE",
-      },
-
       
     ],
+    categorys: [
+      {
+        id: 1,
+        title: "Haushaltswaren",
+        image: "images/imagesCard/scott-umstattd-wxruheY5nG8-unsplash.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 2,
+        title: "Elektro",
+        image: 'images/imagesCard/Elektro.jpg',
+        category: "Elektro",
+        
+      },
+      {
+        id: 3,
+        title: "Garten",
+        image: 'images/imagesCard/daniel-watson-8vBpYpTGo90-unsplash.jpg',
+        category: "Garten",
+        
+      },
+      {
+        id: 4,
+        title: "Mode",
+        image: 'images/imagesCard/CardMode.jpg',
+        category: "Mode",
+      },
+    ]
   };
   
   export default data;

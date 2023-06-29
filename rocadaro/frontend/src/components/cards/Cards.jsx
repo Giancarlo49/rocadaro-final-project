@@ -1,48 +1,37 @@
 import "./Cards.css";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
-import Garden from "./imagesCard/daniel-watson-8vBpYpTGo90-unsplash.jpg";
-import Haushaltsware from "./imagesCard/scott-umstattd-wxruheY5nG8-unsplash.jpg";
-import Elektro from "./imagesCard/Elektro.jpg";
-import Mode from "./imagesCard/CardMode.jpg";
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import data from "../../data";
 
-const cardsData = [
-  {
-    title: "Haushaltsware",
-    // text: 'Hier kann man finden die besten Haushaltsware',
-    image: Haushaltsware,
-  },
-  {
-    title: "Elektro",
-    // text: 'Contenido de la tarjeta 2',
-    image: Elektro,
-  },
-  {
-    title: "Garten",
-    // text: 'Contenido de la tarjeta 3',
-    image: Garden,
-  },
-  {
-    title: "Mode",
-    // text: 'Contenido de la tarjeta 3',
-    image: Mode,
-  },
-];
 
-function GroupExample() {
+
+function Cards() {
+  const [newData, setNewData] = useState(data)
+  console.log(newData)
+
+
+
+ 
+  const navigate = useNavigate();
+
+
+
   return (
     <CardGroup>
-      {cardsData.map((card, index) => (
+      {newData.categorys.map((card, index) => (
         <Card key={index}>
           <Card.Img className="cardImage" variant="top" src={card.image} />
+          {console.log(card)}
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>
           </Card.Body>
           <Card.Footer>
-            {/* <Link to="/#"> */}
-            <button className="buttonGo">GO!!</button>
-            {/* </Link> */}
+            <Link to={`/category/${card.category}`}>
+            <button  className="buttonGo">GO!!</button>
+            </Link>
           </Card.Footer>
         </Card>
       ))}
@@ -50,4 +39,4 @@ function GroupExample() {
   );
 }
 
-export default GroupExample;
+export default Cards;

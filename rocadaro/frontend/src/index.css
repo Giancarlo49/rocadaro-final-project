@@ -1,11 +1,33 @@
 body {
-  background-color: rgb(205, 198, 198);
+  position: relative;
+  overflow: auto;
+  background-color: transparent;
 }
 
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/background/Fondo1.jpg");
+  background-size: cover; /*Das Hintergrundbild wird auf die volle Größe skaliert */
+  background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
+  z-index: -1;
+}
 
 .caro-titel {
   width: fit-content;
   margin: auto;
 }
 
+.d-block {
+  height: 450px;
+  border-radius: 6px;
+  border: 5px solid rgb(43, 165, 226);
+}
 
+/* Carousel grösse */
+.d-block {
+  height: 750px;
+}
