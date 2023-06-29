@@ -18,7 +18,16 @@ export function ParentContext({ children }) {
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([...data.items]);
 
- 
+  const handleHomeLinkClick = (event) => {
+    event.preventDefault();
+    navigate("/");
+    setTimeout(() => {
+      const homeElement = document.getElementById("home");
+      if (homeElement) {
+        homeElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   //Fuctionen
 
@@ -32,7 +41,7 @@ export function ParentContext({ children }) {
     setMenu(true);
   };
 
-  // Neue ID generieren.            
+  // Neue ID generieren.
   //=>Hier
   // Helpers
   const generateId = () => {
@@ -47,8 +56,11 @@ export function ParentContext({ children }) {
     });
 
     // data.cartEntryId = generateId();
-    const newCartState = [...cart, { ...data, cartEntryId: generateId(), selectedSize: 'S' }];
-    
+    const newCartState = [
+      ...cart,
+      { ...data, cartEntryId: generateId(), selectedSize: "S" },
+    ];
+
     setCart(newCartState);
   };
 
@@ -60,8 +72,6 @@ export function ParentContext({ children }) {
 
     setCart(updatedCart);
   };
-
-  
 
   //Values in Object
   let value = {
@@ -78,6 +88,7 @@ export function ParentContext({ children }) {
     products,
     setProducts,
     removeItemCart,
+    handleHomeLinkClick,
   };
   //Koponents
 
