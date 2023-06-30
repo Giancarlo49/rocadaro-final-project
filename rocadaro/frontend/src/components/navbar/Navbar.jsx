@@ -109,11 +109,22 @@ const Navbar = () => {
                   <span className="total-Items">{cart.length}</span>
                 </button>
               </div>
+              <div className="HeartButton">
+                <button
+                  className="btn btn-light"
+                  type="button"
+                  onClick={() => {
+                    navigate("/heart");
+                  }}
+                >
+                  <i className="bi bi-heart-fill "></i>
+                  {/* <span className="total-Items">{cart.length}</span> */}
+                </button>
+              </div>
             </form>
           </div>
         </div>
-        {/* {isModalOpen && <Modal onClose={handleModalToggle} />}{" "} */}
-        {/* Zeige das Modal-Fenster, wenn isModalOpen true ist */}
+
         <ModalComponents
           isModalOpen={isModalOpen}
           handleModalToggle={handleModalToggle}
