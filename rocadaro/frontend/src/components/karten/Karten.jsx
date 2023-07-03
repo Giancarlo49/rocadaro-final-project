@@ -1,4 +1,4 @@
-import "./Karten.css";
+import "./Karten.scss";
 
 
 
@@ -12,44 +12,47 @@ const Karten = () => {
         </div>
         <div className="previews">
           <div className="preview-image">
-            <img src="https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg" />
+            <img src="/images/Haushaltswaren/Sieb.jpg" />
           </div>
           <div className="preview-image">
-            <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" />
+            <img src="/images/Haushaltswaren/Messer3.jpg" />
           </div>
           <div className="preview-image">
-            <img src="http://thirtyoneseventyfive.com/wp-content/uploads/2018/07/archaicawful-landscape-photo-ideas-design-garden-creative-landscapes-contest-viewbug.jpg" />
+            <img src="/images/Haushaltswaren/hw2.jpg" />
           </div>
           <div className="preview-image">
-            <img src="https://cdn.fstoppers.com/styles/large/s3/lead/2018/07/take_better_shots_with_your_drone_landscape_photos.jpg" />
+            <img src="/images/Haushaltswaren/Kaffemühle4.jpg" />
           </div>
           <div className="preview-image">
-            <img src="https://d31fr2pwly4c4s.cloudfront.net/8/6/c/1080632_0_landscape-photography_400.jpg" />
+            <img src="/images/Haushaltswaren/Gewürzregal.jpg" />
           </div>
         </div>
       </div>
+
       <div className="item">
         <div className="content">
           <h2>Elektro</h2>
         </div>
         <div className="previews">
           <div className="preview-image">
-            <img src="https://cdn.mos.cms.futurecdn.net/raYa9qNMVG8wDY4L3qp9c8.jpg" />
+            <img src="/images/Elektro/Digicam4.jpg" />
           </div>
           <div className="preview-image">
-            <img src="https://www.popphoto.com/sites/popphoto.com/files/styles/1000_1x_/public/images/2018/07/00-otherworldly-national-park.jpg?itok=1bxhktRC&fc=50,50" />
+            <img src="/images/Elektro/DigitalBuero.jpg" />
           </div>
           <div className="preview-image">
-            <img src="https://www.adorama.com/alc/wp-content/uploads/2016/07/americanwest-mezz-1024x576.jpg" />
+            <img src="/images/Elektro/Elektro1.jpg" />
           </div>
           <div className="preview-image">
-            <img src="https://www.nationalgeographic.com/content/dam/photography/photos/000/675/67547.ngsversion.1467941445762.adapt.1900.1.jpg" />
+            <img src="/images/Elektro/Handy3.jpg" />
           </div>
           <div className="preview-image">
-            <img src="https://i2.wp.com/fotogr8.com/wp-content/uploads/2016/08/jeffrey-swanson-landscape-photographer.jpg?resize=600%2C397&ssl=1" />
+            <img src="/images/Elektro/waschmaschiene2.jpg" />
           </div>
         </div>
+        
       </div>
+      
     </div>
     
   );

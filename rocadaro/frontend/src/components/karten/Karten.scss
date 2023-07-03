@@ -10,11 +10,11 @@ $grey1:#e8e8ee;
 $grey2:#9497aa;
 $grey3:#5a5863;
 $brown:#ab816b;
-$blue:#1a7fa8;
+$blue:#09c2c2;
 
 body{
   height:100vh;
-  background:linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: linear-gradient(to top, #212424 0%, #09c2c2 100%);
 }
 
 @function randomNum($min, $max) {
@@ -55,11 +55,12 @@ body{
       display:flex;
       align-items:flex-end;
       padding:10px 15px;
-      border-radius:4px;
+      border-radius:7px;
       background:#fff;
       transform:rotate(0) scale(1);
       transition:all .2s cubic-bezier(.28,.05,.65,.97);
       box-shadow:0 0 0 0 rgba(0,0,0,0.3);
+      
       
       h2{
         font-weight:600;
