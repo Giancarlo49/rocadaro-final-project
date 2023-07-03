@@ -1,3 +1,5 @@
+import LikeButton from "../LikeButton";
+
 export const CategoryItem = ({ item, addCart }) => {
   return (
     <div className="product-card">
@@ -13,7 +15,9 @@ export const CategoryItem = ({ item, addCart }) => {
             Add to cart
           </button>
 
-          <button className="buy-now-button">Like</button>
+          <button className="buy-now-button">
+            <LikeButton />
+          </button>
         </div>
       </div>
     </div>
