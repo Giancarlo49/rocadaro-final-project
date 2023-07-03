@@ -1,4 +1,3 @@
-
 import "./Home.css";
 // import GroupExample from "../components/cards/Cards.jsx";
 import DarkVariantExample from "../components/carousel/Carousel";
@@ -8,24 +7,21 @@ import Brands from "./Brands";
 import VariationsExample from "../components/footer/Footerbuttons";
 import AnimationExample from "../components/footer/Endproject";
 import Searchbar from "../components/Seachbar";
-
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 // import DarkVariantExample from "./components/carousel/images/Carousel.jsx";
 
 const Home = () => {
   return (
-    <>
-      <section className="page" id="home">
-        <Searchbar />
-        <DarkVariantExample />
+    <section className="page" id="home">
+      <Searchbar />
+      <DarkVariantExample />
 
-        <Products />
-        <Brands />
-        <VariationsExample />
-        <AnimationExample />
-      </section>
-    </>
+      <Products />
+      <Brands />
+      <VariationsExample />
+      <AnimationExample />
+    </section>
   );
 };
 

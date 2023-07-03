@@ -5,7 +5,9 @@
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    border-color: #09c2c2;
     width: 300px;
+    background-color: white;
   }
   
   .product-image {
@@ -50,4 +52,22 @@
   .buy-now-button {
     background-color: #f08080;
     color: #fff;
+    text-align: center;
   }
+
+  /* Like Button */
+  .like-button {
+    align-items: center;
+    
+  }
+  .like-button:hover{
+    cursor: pointer;
+  
+  
+  }
+  
+  .liked{
+    color: crimson;
+  }
+
+ 

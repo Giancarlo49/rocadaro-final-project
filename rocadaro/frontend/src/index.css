@@ -10,8 +10,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/background/bgNewYork.jpg");
-  background-size: cover; /* Das Hintergrundbild wird auf die volle Größe skaliert */
+  background-image: url("/images/background/Fondo1.jpg");
+  background-size: cover; /*Das Hintergrundbild wird auf die volle Größe skaliert */
   background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
   z-index: -1;
 }
@@ -25,4 +25,9 @@ body {
   height: 450px;
   border-radius: 6px;
   border: 5px solid rgb(43, 165, 226);
+}
+
+/* Carousel grösse */
+.d-block {
+  height: 750px;
 }

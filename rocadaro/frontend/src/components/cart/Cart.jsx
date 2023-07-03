@@ -1,5 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Store from "../../store/Context";
+import "../../pages/ListCart.css";
 
 
 
@@ -7,7 +8,7 @@ export default function ListCart(props) {
     const { item } = props
     const { removeItemCart } = Store()
 
-    const [cart, setCart] = useState([]);
+    
 
 
    

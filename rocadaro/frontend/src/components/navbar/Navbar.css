@@ -1,5 +1,5 @@
-
 .mynavbar {
+  background-color: #09c2c2;
   position: fixed;
   top: 0;
   left: 0;
@@ -67,7 +67,9 @@
 .bi-cart {
   color: red;
 }
-
+.HeartButton .bi-heart-fill {
+  color: red;
+}
 .modal-overlay {
   position: fixed;
   top: 0;

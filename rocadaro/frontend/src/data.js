@@ -4,9 +4,81 @@ const data = {
       {
         id: 1,
         title: "Topf",
+        description: "skadhfhfskasfhhfs",
         price: 6,
         image: "../images/Haushaltswaren/Topf.jpg",
         category: "Haushaltswaren",
+        
+      },
+      {
+        id: 1,
+        title: "Topf",
+        description: "skadhfhfskasfhhfs",
+        price: 6,
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 1,
+        title: "Topf",
+        description: "skadhfhfskasfhhfs",
+        price: 6,
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 1,
+        title: "Topf",
+        description: "skadhfhfskasfhhfs",
+        price: 6,
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 1,
+        title: "Topf",
+        description: "skadhfhfskasfhhfs",
+        price: 6,
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 1,
+        title: "Topf",
+        description: "skadhfhfskasfhhfs",
+        price: 6,
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 1,
+        title: "Topf",
+        description: "skadhfhfskasfhhfs",
+        price: 6,
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 1,
+        title: "Topf",
+        description: "skadhfhfskasfhhfs",
+        price: 6,
+        image: "../images/Haushaltswaren/Topf.jpg",
+        category: "Haushaltswaren",
+        
+      },
+      {
+        id: 2,
+        title: "Digicam",
+        price: 7,
+        image: '../images/Elektro/Digicam4.jpg',
+        category: "Elektro",
         
       },
       {

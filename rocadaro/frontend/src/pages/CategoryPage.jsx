@@ -1,13 +1,16 @@
-
-import  "./CategoryPage.css"
+import "./CategoryPage.css";
 import { useParams } from "react-router-dom";
 import data from "../data";
-import { useState } from "react";
+import LikeButton from "../components/LikeButton";
+import { Row, Col } from "react-bootstrap";
+
+import Store from "../store/Context";
 
 const CategoryPage = () => {
-
   //add to cart.
-  const [cart, setCart] = useState([]);
+  const { cart, setCart } = Store();
+
+  // const [cart, setCart] = useState([]);
 
   const addCart = (id) => {
     const product = filterItems.find((item) => item.id === id);
@@ -25,28 +28,40 @@ const CategoryPage = () => {
 
   return (
     <>
-      <section className="page" id="Haushaltsware">
-        <h1>{category}</h1>
+      <section className="page">
+        <h1 className="titleCategory">{category}</h1>
 
-        {filterItems.map((item, index) => (
-          <div key={index} className="product-card">
-            <img className="product-image" src={item.image} alt="Producto" />
-            <div className="product-info">
-              <h2 className="product-title">{item.title}</h2>
-              <p className="product-price">{item.price}</p>
-              <div className="product-actions">
-                <button
-                  className="add-to-cart-button"
-                  onClick={() => addCart(item.id)}
-                >
-                  Add to cart
-                </button>
+        <Row>
+          {filterItems.map((item, index) => (
+            <Col sm={6} md={3} key={index}>
+              <div key={index} className="product-card">
+                <img
+                  className="product-image"
+                  src={item.image}
+                  alt="Producto"
+                />
 
-                <button className="buy-now-button">Like</button>
+                <div className="product-info">
+                  <h1 className="product-title">{item.title}</h1>
+                  <h5 className="product-description">{item.description}</h5>
+                  <p className="product-price">{item.price}€</p>
+                  <div className="product-actions">
+                    <button
+                      className="add-to-cart-button"
+                      onClick={() => addCart(item.id)}
+                    >
+                      Add to cart
+                    </button>
+
+                    <button className="buy-now-button">
+                      <LikeButton />
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </Col>
+          ))}
+        </Row>
       </section>
     </>
   );
