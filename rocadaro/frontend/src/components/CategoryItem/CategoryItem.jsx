@@ -2,7 +2,7 @@ import LikeButton from "../LikeButton";
 
 export const CategoryItem = ({ item, addCart }) => {
   return (
-    <div className="product-card">
+    <div className="product-card hover-effect">
       <img className="product-image" src={item.image} alt="Producto" />
       <div className="product-info">
         <h2 className="product-title">{item.title}</h2>

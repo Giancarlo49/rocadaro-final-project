@@ -22,7 +22,7 @@ function Cards() {
   return (
     <CardGroup>
       {newData.categorys.map((card, index) => (
-        <Card key={index}>
+        <Card className="hover-effect" key={index}>
           <Card.Img className="cardImage" variant="top" src={card.image} />
           {console.log(card)}
           <Card.Body>
