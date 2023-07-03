@@ -3,6 +3,7 @@ import { useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Cart from "../components/cart/Cart";
 import Store from "../store/Context";
+import "./ListCart.css"
 
 export default function ListCart() {
 
@@ -18,14 +19,14 @@ export default function ListCart() {
 
 
     
-    // useEffect(()=> {
+    useEffect(()=> {
       
-      //Total price
-    //   let cost = cart.reduce((cost, item) =>{ 
-    //     return cost + item.price
-    //   }, 0)
-    //   setTotal(cost)
-    // }, [cart])
+      // Total price
+      let cost = cart.reduce((cost, item) =>{ 
+        return cost + item.price
+      }, 0)
+      setTotal(cost)
+    }, [cart])
 
 
 
