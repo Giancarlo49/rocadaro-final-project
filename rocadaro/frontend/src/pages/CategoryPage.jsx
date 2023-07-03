@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import data from "../data";
 import { useState } from "react";
 import { CategoryItem } from "../components/CategoryItem/CategoryItem";
+import { Row, Col } from "react-bootstrap";
 const CategoryPage = () => {
   //add to cart.
   const [cart, setCart] = useState([]);
@@ -25,10 +26,11 @@ const CategoryPage = () => {
     <>
       <section className="page" id="Haushaltsware">
         <h1>{category}</h1>
-
-        {filterItems.map((item, index) => (
-          <CategoryItem key={index} item={item} addCart={addCart} />
-        ))}
+        <Row>
+          {filterItems.map((item, index) => (
+            <CategoryItem key={index} item={item} addCart={addCart} />
+          ))}
+        </Row>
       </section>
     </>
   );
