@@ -2,19 +2,20 @@ import { useState } from "react";
 import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ModalComponents from "../ModalComponents";
-
 import { Link } from "react-scroll";
 import { Outlet, useNavigate } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import Store from "../../store/Context";
 
-
 const Navbar = () => {
-  const { cart } = Store()
+  const {
+    cart,
+    handleHomeLinkClick,
+    handleBrandsLinkClick,
+    handleProductsLinkClick,
+  } = Store();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
-  
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,27 +23,7 @@ const Navbar = () => {
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
   };
-  const handleBrandsLinkClick = (event) => {
-    event.preventDefault();
-    navigate("/");
-    setTimeout(() => {
-      const brandsElement = document.getElementById("brands");
-      if (brandsElement) {
-        brandsElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  };
 
-  const handleProductsLinkClick = (event) => {
-    event.preventDefault();
-    navigate("/");
-    setTimeout(() => {
-      const productsElement = document.getElementById("products");
-      if (productsElement) {
-        productsElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  };
   return (
     <>
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
@@ -70,11 +51,12 @@ const Navbar = () => {
           >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link to="home" className="nav-link">
-                  <NavLink to="/" className="nav-link active">
-                    Home
-                    <span className="visually-hidden">(current)</span>
-                  </NavLink>
+                <Link
+                  to="home"
+                  className="nav-link"
+                  onClick={handleHomeLinkClick}
+                >
+                  Home
                 </Link>
               </li>
 
@@ -114,25 +96,35 @@ const Navbar = () => {
               >
                 Login
               </button>
-              
-                
-                  <div className="CartButton">
-                    
-                    <button className="btn btn-light"
-                    type="button"
-                    onClick={() => {navigate("/cart")}}>
-                      
-                      <i className="bi bi-cart"></i>
-                      <span className="total-Items">{cart.length}</span>
-                    </button>
-                  </div>
-                
-              
+
+              <div className="CartButton">
+                <button
+                  className="btn btn-light"
+                  type="button"
+                  onClick={() => {
+                    navigate("/cart");
+                  }}
+                >
+                  <i className="bi bi-cart"></i>
+                  <span className="total-Items">{cart.length}</span>
+                </button>
+              </div>
+              <div className="HeartButton">
+                <button
+                  className="btn btn-light"
+                  type="button"
+                  onClick={() => {
+                    navigate("/heart");
+                  }}
+                >
+                  <i className="bi bi-heart-fill "></i>
+                  {/* <span className="total-Items">{cart.length}</span> */}
+                </button>
+              </div>
             </form>
           </div>
         </div>
-        {/* {isModalOpen && <Modal onClose={handleModalToggle} />}{" "} */}
-        {/* Zeige das Modal-Fenster, wenn isModalOpen true ist */}
+
         <ModalComponents
           isModalOpen={isModalOpen}
           handleModalToggle={handleModalToggle}
