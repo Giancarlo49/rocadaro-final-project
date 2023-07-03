@@ -1,12 +1,13 @@
 import "./CategoryPage.css";
 import { useParams } from "react-router-dom";
 import data from "../data";
-import { useState } from "react";
 import { CategoryItem } from "../components/CategoryItem/CategoryItem";
 import { Row, Col } from "react-bootstrap";
+import Store from "../store/Context";
+
 const CategoryPage = () => {
   //add to cart.
-  const [cart, setCart] = useState([]);
+  const { cart, setCart } = Store();
 
   const addCart = (id) => {
     const product = filterItems.find((item) => item.id === id);
@@ -25,10 +26,10 @@ const CategoryPage = () => {
   return (
     <>
       <section className="page" id="Haushaltsware">
-        <h1>{category}</h1>
+        <h1 className="titleCategory">{category}</h1>
         <Row>
           {filterItems.map((item, index) => (
-            <CategoryItem key={index} item={item} addCart={addCart} />
+            <CategoryItem item={item} addCart={addCart} />
           ))}
         </Row>
       </section>
