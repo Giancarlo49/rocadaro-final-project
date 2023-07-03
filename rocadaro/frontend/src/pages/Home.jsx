@@ -1,7 +1,7 @@
 import "./Home.css";
 // import GroupExample from "../components/cards/Cards.jsx";
 import DarkVariantExample from "../components/carousel/Carousel";
-
+import Karten from "../components/karten/Karten";
 import Products from "./Products";
 import Brands from "./Brands";
 import VariationsExample from "../components/footer/Footerbuttons";
@@ -18,6 +18,7 @@ const Home = () => {
       <DarkVariantExample />
 
       <Products />
+      <Karten />
       <Brands />
       <VariationsExample />
       <AnimationExample />
