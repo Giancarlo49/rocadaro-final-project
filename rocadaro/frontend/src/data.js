@@ -109,7 +109,7 @@ const data = {
     categorys: [
       {
         id: 1,
-        title: "Haushaltswaren",
+        title: "Haushalt",
         image: "images/imagesCard/scott-umstattd-wxruheY5nG8-unsplash.jpg",
         category: "Haushaltswaren",
         

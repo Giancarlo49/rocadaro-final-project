@@ -19,6 +19,7 @@ const Karten = () => {
 
 
   return (
+    
     <div id="container">
       {newData.categorys.map((card, index) => (
       <Link to={`/category/${card.category}`}>
