@@ -28,10 +28,10 @@ body{
 
 #container{
   display:grid;
-  grid-template-columns:repeat(2, 2fr);
+  grid-template-columns:repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap:10px;
-  outline:solid 3px #dd0b0b;
+  // outline:solid 3px #dd0b0b;
   justify-content: space-between;
   height:100%;
   padding:0 30%;
