@@ -3,21 +3,26 @@ import dotenv from "dotenv";
 import cors from "cors";
 dotenv.config();
 import UserRouter from "./routes/userRouter.js";
+import productRouter from './routes/productRouter.js';
 import connectDB from "./database/connectDB.js";
 
 
 const app = express();
 app.use(cors());
 
+// wischtiger MIDDLEWARES
+app.use(express.json());
+
 
 const port = process.env.PORT || 5030;
 
-app.get("/", (req, res) => {
-    res.send("Hallo von GET");
-  });
+// app.get("/", (req, res) => {
+//     res.send("Hallo von GET");
+//   });
 
 
   app.use("/user", UserRouter);
+  app.use('/products', productRouter);
 
 
 

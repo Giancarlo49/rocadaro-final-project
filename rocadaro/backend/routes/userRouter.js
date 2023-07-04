@@ -1,6 +1,6 @@
 import express from "express";
 import { getAllUsers, getUserById, createUser, updateUser,
-deleteUser } from "../controllers/userController.js"
+deleteUser, login } from "../controllers/userController.js"
 
 
 
@@ -20,5 +20,8 @@ userRouter.put('/:id', updateUser);
 
 // Route to delete a user
 userRouter.delete('/:id', deleteUser);
+
+// Route to Login
+userRouter.post('/login', login);
 
 export default userRouter
