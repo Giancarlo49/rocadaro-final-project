@@ -18,7 +18,7 @@ function ModalComponents({ isModalOpen, handleModalToggle }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-
+// 
   return (
     <Modal
       //className="modal show"
