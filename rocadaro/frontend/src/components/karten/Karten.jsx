@@ -1,14 +1,15 @@
 import "./Karten.scss";
 
 
-
-
 const Karten = () => {
+  
   return (
+    
     <div id="container">
-      <div className="item">
+      
+      <div className="item" >
         <div className="content">
-          <h2>Haushalt</h2>
+          <h2>Haushalt</h2> 
         </div>
         <div className="previews">
           <div className="preview-image">
@@ -58,42 +59,42 @@ const Karten = () => {
         </div>
         <div className="previews">
           <div className="preview-image">
-            <img src="/images/Elektro/Digicam4.jpg" />
+            <img src="/images/Garten/gartenkanne1.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/DigitalBuero.jpg" />
+            <img src="/images/Garten/Rechen.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/Elektro1.jpg" />
+            <img src="/images/Garten/WerkzeugTasche.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/Handy3.jpg" />
+            <img src="/images/Garten/Werkzeug3.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/waschmaschiene2.jpg" />
+            <img src="/images/Garten/Werkzeug1.jpg" />
           </div>
         </div>
       </div>
 
       <div className="item">
         <div className="content">
-          <h2>Mode</h2>
+          <h2>Schuhe</h2>
         </div>
         <div className="previews">
           <div className="preview-image">
-            <img src="/images/Elektro/Digicam4.jpg" />
+            <img src="/images/Schuhe/Roller.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/DigitalBuero.jpg" />
+            <img src="/images/Schuhe/Tracking.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/Elektro1.jpg" />
+            <img src="/images/Schuhe/Lichter.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/Handy3.jpg" />
+            <img src="/images/Schuhe/Nike.jpg" />
           </div>
           <div className="preview-image">
-            <img src="/images/Elektro/waschmaschiene2.jpg" />
+            <img src="/images/Schuhe/Stöckelschuhe.jpg" />
           </div>
         </div>
       </div>

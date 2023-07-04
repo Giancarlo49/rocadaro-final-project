@@ -25,16 +25,21 @@ body{
   /* e.g. font-size: #{randomNum(5, 10)}px; */
 }
 
+
 #container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display:grid;
+  grid-template-columns:repeat(2, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap:10px;
+  outline:solid 3px #dd0b0b;
+  justify-content: space-between;
   height:100%;
-  padding:0 20%;
+  padding:0 30%;
   
   @media (max-width:968px){
     flex-wrap:wrap;
   }
+  
   
   .item{
     position:relative;
