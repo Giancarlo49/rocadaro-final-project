@@ -29,7 +29,7 @@ const getProductById = async (req, res) => {
   try {
     const product = await Product.findById(productId);
     if (!product) {
-      return res.status(404).json({ error: 'Producto no encontrado' });
+      return res.status(404).json({ error: 'Product gefunden' });
     }
     res.status(200).json(product);
   } catch (error) {
@@ -37,7 +37,7 @@ const getProductById = async (req, res) => {
   }
 };
 
-// Crear un nuevo producto
+// Create product
 const createProduct = async (req, res) => {
   const { name, description, price, image, category } = req.body;
 
