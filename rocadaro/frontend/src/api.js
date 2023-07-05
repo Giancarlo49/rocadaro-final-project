@@ -1,5 +1,6 @@
 //1. Hier alle API dass wir brauchen
 
+
 export const loginApi = async(data) => {
     // TODO: Implementierung der APIs
     console.log("hello von login");
@@ -21,5 +22,10 @@ export const loginApi = async(data) => {
         throw new Error("Anmeldung fehlgeschlagen!");
     } catch (error) {
         console.log(error);
+
     }
-}
+    throw new Error("Anmeldung fehlgeschlagen!");
+  } catch (error) {
+    console.log(error);
+  }
+};

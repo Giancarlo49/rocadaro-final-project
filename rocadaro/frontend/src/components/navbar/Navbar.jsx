@@ -96,7 +96,7 @@ const Navbar = () => {
                 type="button"
                 onClick={handleModalToggle}
               >
-                Login
+                <i class="bi bi-person-fill"></i>
               </button>
 
               <div className="CartButton">
