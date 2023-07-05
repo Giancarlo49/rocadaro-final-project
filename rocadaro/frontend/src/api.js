@@ -15,7 +15,8 @@ export const loginApi = async (data) => {
     const userData = await response.json();
     if (response.status === 200) {
       console.log("Anmeldung erfolgreich!");
-      window.location.href = "/";
+      //   window.location.href = "/";
+      loginButton.classList.add("green");
       return userData;
     }
     throw new Error("Anmeldung fehlgeschlagen!");

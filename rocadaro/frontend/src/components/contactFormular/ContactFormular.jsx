@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Store from "../../store/Context";
 import { Modal, Button, Form } from "react-bootstrap";
-
 const ContactForm = () => {
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
+  const { showModal, setShowModal } = Store();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
