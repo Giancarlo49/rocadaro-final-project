@@ -23,7 +23,7 @@ function CreateUser() {
         console.log(error);
       });
 
-    // Limpiar el formulario después de enviar la solicitud
+    // 
     setName('');
     setEmail('');
     setPassword('');

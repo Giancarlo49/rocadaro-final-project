@@ -3,8 +3,9 @@ import "./Home.css";
 import DarkVariantExample from "../components/carousel/Carousel";
 import Karten from "../components/karten/Karten";
 import Products from "./Products";
+import CreateUser from "../components/CreateUser";
 import Brands from "./Brands";
-import VariationsExample from "../components/footer/Footerbuttons";
+import VariationsExample from "../components/footer/FooterButtons";
 import AnimationExample from "../components/footer/Endproject";
 import Searchbar from "../components/Seachbar";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -16,7 +17,7 @@ const Home = () => {
     <section className="page" id="home">
       <Searchbar />
       <DarkVariantExample />
-
+      <CreateUser/>
       <Products />
       <Karten />
       <Brands />

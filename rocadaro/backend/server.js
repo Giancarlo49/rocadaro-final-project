@@ -9,7 +9,7 @@ import connectDB from "./database/connectDB.js";
 
 const app = express();
 //Url frontend ====>
-app.use(cors({credentials:true, origin:"http://localhost:5173"}));
+app.use(cors({credentials:true, origin:"http://localhost:5174"}));
 
 // wischtiger MIDDLEWARES
 app.use(express.json());
