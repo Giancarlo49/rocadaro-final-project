@@ -1,6 +1,8 @@
 //1. Hier alle API dass wir brauchen
 
+
 export const loginApi = async (data) => {
+
   // TODO: Implementierung der APIs
   console.log("hello von login");
   try {
@@ -18,9 +20,8 @@ export const loginApi = async (data) => {
       //   window.location.href = "/";
       loginButton.classList.add("green");
       return userData;
+
     }
-    throw new Error("Anmeldung fehlgeschlagen!");
-  } catch (error) {
-    console.log(error);
-  }
-};
+  };
+  
+

@@ -9,7 +9,10 @@ import connectDB from "./database/connectDB.js";
 dotenv.config();
 const app = express();
 //Url frontend ====>
+
 app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+
+
 
 // wichtiger MIDDLEWARES
 app.use(express.json());
