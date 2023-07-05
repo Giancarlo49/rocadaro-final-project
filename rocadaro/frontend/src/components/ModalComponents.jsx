@@ -4,11 +4,18 @@ import Form from "react-bootstrap/Form";
 import PropTypes from "prop-types";
 import { loginApi } from "../api";
 import { useState } from "react";
-
+import Store from "../store/Context";
 function ModalComponents({ isModalOpen, handleModalToggle }) {
-  const handleSubmit = (e) => {
+  const { setShowModal } = Store();
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    loginApi({ email: email, password: password });
+    // loginApi({ email: email, password: password });
+    const result = await loginApi({ email: email, password: password });
+    console.log(result);
+    if (result?.message === "Anmeldung erfolgreich") {
+      handleModalToggle();
+    }
+    //setShowModal(false);
   };
 
   //1.
