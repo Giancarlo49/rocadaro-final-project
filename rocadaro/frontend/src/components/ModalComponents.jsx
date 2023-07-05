@@ -8,18 +8,16 @@ import { useState } from "react";
 function ModalComponents({ isModalOpen, handleModalToggle }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    loginApi({email: email,
-              password: password
-            });
+    loginApi({ email: email, password: password });
   };
 
   //1.
-  // 
+  //
   // const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-// 
+  //
   return (
     <Modal
       //className="modal show"
@@ -27,7 +25,11 @@ function ModalComponents({ isModalOpen, handleModalToggle }) {
       centered
     >
       <Modal.Dialog>
-        <Modal.Header closeButton>
+        <Modal.Header
+          closeButton
+          variant="secondary"
+          onClick={handleModalToggle}
+        >
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
 
@@ -35,11 +37,21 @@ function ModalComponents({ isModalOpen, handleModalToggle }) {
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formUsername">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter Email" value={email} onChange={(evt)=>setEmail(evt.target.value)}/>
+              <Form.Control
+                type="email"
+                placeholder="Enter Email"
+                value={email}
+                onChange={(evt) => setEmail(evt.target.value)}
+              />
             </Form.Group>
             <Form.Group controlId="formPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Enter password" value={password} onChange={(evt)=>setPassword(evt.target.value)}/>
+              <Form.Control
+                type="password"
+                placeholder="Enter password"
+                value={password}
+                onChange={(evt) => setPassword(evt.target.value)}
+              />
             </Form.Group>
             <Button variant="primary" type="submit">
               Login
@@ -51,7 +63,7 @@ function ModalComponents({ isModalOpen, handleModalToggle }) {
           <Button variant="secondary" onClick={handleModalToggle}>
             Close
           </Button>
-          <Button variant="primary">Save changes</Button>
+          <Button variant="primary">Create User</Button>
         </Modal.Footer>
       </Modal.Dialog>
     </Modal>
