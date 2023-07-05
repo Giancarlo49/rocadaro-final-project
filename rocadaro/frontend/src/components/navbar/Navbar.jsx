@@ -5,6 +5,7 @@ import ModalComponents from "../ModalComponents";
 import { Link } from "react-scroll";
 import { Outlet, useNavigate } from "react-router-dom";
 import Store from "../../store/Context";
+import ContactForm from "../contactFormular/ContactFormular.jsx";
 
 const Navbar = () => {
   const {
@@ -82,13 +83,14 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="contact" className="nav-link">
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <form className="d-flex">
+              <ContactForm />
               <button
                 className="btn btn-secondary me-2"
                 type="button"
