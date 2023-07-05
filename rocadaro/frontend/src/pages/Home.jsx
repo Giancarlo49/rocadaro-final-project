@@ -3,6 +3,7 @@ import "./Home.css";
 import DarkVariantExample from "../components/carousel/Carousel";
 import Karten from "../components/karten/Karten";
 import Products from "./Products";
+import CreateUser from "../components/CreateUser";
 import Brands from "./Brands";
 import VariationsExample from "../components/footer/Footerbuttons";
 import AnimationExample from "../components/footer/Endproject";
@@ -16,7 +17,7 @@ const Home = () => {
     <section className="page" id="home">
       <Searchbar />
       <DarkVariantExample />
-
+      <CreateUser/>
       <Products />
       <Karten />
       <Brands />
