@@ -50,8 +50,8 @@ const createProduct = async (req, res) => {
   }
 };
 
-// Actualizar un producto
-const updateProduct = async (req, res) => {
+// update product
+async function updateProduct(req, res) {
   const productId = req.params.id;
   const { name, description, price, image, category } = req.body;
 
@@ -68,7 +68,7 @@ const updateProduct = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Error al actualizar el producto' });
   }
-};
+}
 
 // Eliminar un producto
 const deleteProduct = async (req, res) => {
