@@ -17,6 +17,7 @@ export function ParentContext({ children }) {
 
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([...data.items]);
+  const [showModal, setShowModal] = useState(false);
   //Fuctionen
   const handleHomeLinkClick = (event) => {
     event.preventDefault();
@@ -109,6 +110,8 @@ export function ParentContext({ children }) {
     handleHomeLinkClick,
     handleBrandsLinkClick,
     handleProductsLinkClick,
+    showModal,
+    setShowModal,
   };
   //Koponents
 

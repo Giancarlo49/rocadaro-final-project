@@ -19,7 +19,7 @@ const Home = () => {
       <DarkVariantExample />
       <CreateUser />
       <Products />
-      {/* <Karten /> */}
+      <Karten />
       <Brands />
       <VariationsExample />
       <AnimationExample />
