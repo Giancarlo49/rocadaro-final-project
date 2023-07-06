@@ -17,9 +17,9 @@ const Home = () => {
     <section className="page" id="home">
       <Searchbar />
       <DarkVariantExample />
-      <CreateUser/>
+      <CreateUser />
       <Products />
-      <Karten />
+
       <Brands />
       <VariationsExample />
       <AnimationExample />
