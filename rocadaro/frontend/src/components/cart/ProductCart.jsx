@@ -1,6 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Store from "../../store/Context";
-import "../../pages/ListCart.css";
+import "../../pages/Cart.css";
 
 
 

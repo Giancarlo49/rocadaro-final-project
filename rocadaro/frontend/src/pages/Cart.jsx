@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Cart from "../components/cart/Cart";
+import Cart from "../components/cart/ProductCart";
 import Store from "../store/Context";
-import "./ListCart.css"
+import "../pages/Cart.css"
 
 export default function ListCart() {
 
