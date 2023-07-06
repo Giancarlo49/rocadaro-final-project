@@ -24,7 +24,9 @@ const Navbar = () => {
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
   };
-
+  const handleLoginClick = () => {
+    setIsModalOpen(true);
+  };
   return (
     <>
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
@@ -94,7 +96,7 @@ const Navbar = () => {
               <button
                 className="btn btn-secondary me-2"
                 type="button"
-                onClick={handleModalToggle}
+                onClick={handleLoginClick}
               >
                 <i className="bi bi-person-fill" id="loginButton"></i>
               </button>
