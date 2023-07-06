@@ -1,15 +1,11 @@
 import "./Karten.scss";
 
-
 const Karten = () => {
-  
   return (
-    
     <div id="container">
-      
-      <div className="item" >
+      <div className="item">
         <div className="content">
-          <h2>Haushalt</h2> 
+          <h2>Haushalt</h2>
         </div>
         <div className="previews">
           <div className="preview-image">
