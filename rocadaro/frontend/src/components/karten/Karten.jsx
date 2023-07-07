@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 const Karten = () => {
   return (
     <div id="container">
+      
       <Link to="/category/Haushaltswaren">
         <div className="item">
           <div className="content">
+            
+            <img src="/images/Haushaltswaren/Gewürzregal.jpg" alt="" />
             <h2>Haushalt</h2>
           </div>
           <div className="previews">
@@ -28,6 +31,7 @@ const Karten = () => {
           </div>
         </div>
       </Link>
+
       <Link to="/category/Elektro">
         <div className="item">
           <div className="content">
