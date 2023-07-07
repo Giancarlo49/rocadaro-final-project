@@ -152,14 +152,14 @@ function Carousel() {
   </div>
 </header>
 
-<div class="posts-wrapper hide-on-mobile">
+<div    class="posts-wrapper hide-on-mobile">
   <article class="post post--active">
     <div class="progress-bar">
       <div class="progress-bar__fill"></div>
     </div>
     <header class="post__header">
       <span class="post__tag">News</span>
-      <p class="post__published"></p>
+      <p class="post__published">Beste Marke</p>
     </header>
     <h2 class="post__title"> Schauen sie einfach unsere Produkte auf der Gallery an </h2>
   </article>
@@ -169,7 +169,7 @@ function Carousel() {
     </div>
     <header class="post__header">
       <span class="post__tag">Video</span>
-      <p class="post__published">12 August 2019</p>
+      <p class="post__published">04 Februar 2091</p>
     </header>
     <h2 class="post__title">Dieses video wird zeigen wie man Erfolg mit E-Commerce haben kann</h2>
   </article>
@@ -179,7 +179,7 @@ function Carousel() {
     </div>
     <header class="post__header">
       <span class="post__tag">News</span>
-      <p class="post__published">08 August 2019</p>
+      <p class="post__published">12 Dezember 2067</p>
     </header>
     <h2 class="post__title">unsere Brands zeigen ihnen was wir anbieten können 
     </h2>
