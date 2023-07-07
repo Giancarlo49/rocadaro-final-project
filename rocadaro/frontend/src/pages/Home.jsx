@@ -1,6 +1,6 @@
 import "./Home.css";
 // import GroupExample from "../components/cards/Cards.jsx";
-import DarkVariantExample from "../components/carousel/Carousel";
+import Carousel from "../components/carousel/Carousel";
 import Products from "./Products";
 import Werbung from "../components/werbung/Werbung";
 import CreateUser from "../components/CreateUser";
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <section className="page" id="home">
       <Searchbar />
-      <DarkVariantExample />
+      <Carousel />
       <Werbung />
       <CreateUser />
       <Products />
