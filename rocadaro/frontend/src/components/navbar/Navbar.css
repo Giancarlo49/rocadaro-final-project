@@ -18,8 +18,7 @@
 }
 
 .logo {
-  margin: 2px 0 2px 2px;
-  max-width: 100%;
+  max-width: 65%;
   max-height: 76px;
   object-fit: contain;
   display: inline-block;
