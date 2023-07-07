@@ -64,15 +64,15 @@ function Carousel() {
   <div class="slides">
     <article class="main-post main-post--active">
       <div class="main-post__image">
-        <img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Races/Monaco2019/McLarenMonaco19.jpg.transform/9col/image.jpg" alt="New McLaren wind tunnel 'critical' to future performance, says Tech Director Key" />
+        <img src="./images/Logo/LogoHeader.png" alt="Wir bieten mehrere Marken mit guten Preisen an" />
       </div>
       <div class="main-post__content">
         <div class="main-post__tag-wrapper">
           <span class="main-post__tag">News</span>
         </div>
-        <h1 class="main-post__title">New McLaren wind tunnel 'critical' to future performance, says Tech Director Key</h1>
+        <h1 class="main-post__title">Mit unser Logo bieten mehrere Marken mit guten Preisen an  </h1>
         <a class="main-post__link" href="#">
-              <span class="main-post__link-text">find out more</span>
+              <span class="main-post__link-text">Finde mehr heraus</span>
               <svg
                 class="main-post__link-icon main-post__link-icon--arrow"
                 width="37"
@@ -91,13 +91,13 @@ function Carousel() {
     </article>
     <article class="main-post main-post--not-active">
       <div class="main-post__image">
-        <img src="https://www.formula1.com/content/dam/fom-website/sutton/2019/Hungary/Saturday/1017645792-LAT-20190803-_2ST5188.jpg.transform/9col-retina/image.jpg" alt="What To Watch For in the 2019 Hungarian Grand Prix" />
+        <img src="./images/Elektro/Elektro1.jpg" alt="What To Watch For in the 2019 Hungarian Grand Prix" />
       </div>
       <div class="main-post__content">
         <div class="main-post__tag-wrapper">
           <span class="main-post__tag">Video</span>
         </div>
-        <h1 class="main-post__title">What To Watch For in the 2019 Hungarian Grand Prix</h1>
+        <h1 class="main-post__title">hier schauen sie alles was es mit E-Commerce zu tuen hat wie wir unsere seite aufgebaut haben </h1>
         <a class="main-post__link" href="#">
               <svg
                 class="main-post__link-icon main-post__link-icon--play-btn"
@@ -122,14 +122,14 @@ function Carousel() {
     </article>
     <article class="main-post main-post--not-active">
       <div class="main-post__image">
-        <img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Races/Austria-2019/Top3Austria2019.jpg.transform/9col-retina/image.jpg" alt="Hamilton wants harder championship fight from Leclerc and
+        <img src="./images/Haushaltswaren/hw2.jpg" alt="Hamilton wants harder championship fight from Leclerc and
             Verstappen" />
       </div>
       <div class="main-post__content">
         <div class="main-post__tag-wrapper">
           <span class="main-post__tag">News</span>
         </div>
-        <h1 class="main-post__title">Hamilton wants harder championship fight from Leclerc and Verstappen
+        <h1 class="main-post__title">Ob es Elektro Geräte,Haushaltswaren oder nur Schuhe sind alles dabei
         </h1>
         <a class="main-post__link" href="#">
               <span class="main-post__link-text">find out more</span>
@@ -159,9 +159,9 @@ function Carousel() {
     </div>
     <header class="post__header">
       <span class="post__tag">News</span>
-      <p class="post__published">16 August 2019</p>
+      <p class="post__published"></p>
     </header>
-    <h2 class="post__title">New McLaren wind tunnel 'critical' to future performance, says Tech Director Key</h2>
+    <h2 class="post__title"> Schauen sie einfach unsere Produkte auf der Gallery an </h2>
   </article>
   <article class="post">
     <div class="progress-bar">
@@ -171,7 +171,7 @@ function Carousel() {
       <span class="post__tag">Video</span>
       <p class="post__published">12 August 2019</p>
     </header>
-    <h2 class="post__title">What To Watch For in the 2019 Hungarian Grand Prix</h2>
+    <h2 class="post__title">Dieses video wird zeigen wie man Erfolg mit E-Commerce haben kann</h2>
   </article>
   <article class="post">
     <div class="progress-bar">
@@ -181,7 +181,7 @@ function Carousel() {
       <span class="post__tag">News</span>
       <p class="post__published">08 August 2019</p>
     </header>
-    <h2 class="post__title">Hamilton wants harder championship fight from Leclerc and Verstappen
+    <h2 class="post__title">unsere Brands zeigen ihnen was wir anbieten können 
     </h2>
   </article>
 </div>
