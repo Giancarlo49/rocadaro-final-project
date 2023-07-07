@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./Carousel.scss";
 import React, { useEffect, useState } from 'react';
 
@@ -134,8 +135,8 @@ function Carousel() {
           </div>
           <h1 class="main-post__title">Ob es Elektro Geräte,Haushaltswaren oder nur Schuhe sind alles dabei
           </h1>
-          <a class="main-post__link" href="#">
-                <span class="main-post__link-text">find out more</span>
+             <Link class="main-post__link">
+               <span class="main-post__link-text">find out more</span>
                 <svg
                   class="main-post__link-icon main-post__link-icon--arrow"
                   width="37"
@@ -143,15 +144,16 @@ function Carousel() {
                   viewBox="0 0 37 12"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                 >
                   <path
                     d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
                     stroke="white"
                   />
                 </svg>
-              </a>
+            </Link>
         </div>
       </article>
+
     </div>
    </header>
 
