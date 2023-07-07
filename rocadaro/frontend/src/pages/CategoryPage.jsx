@@ -28,10 +28,10 @@ const CategoryPage = () => {
       <section className="page" id="Haushaltsware">
         <h1 className="titleCategory">{category}</h1>
         <Row>
-          {filterItems.map((item, index) => (
-            <CategoryItem item={item} addCart={addCart} />
-          ))}
-        </Row>
+  {filterItems.map((item, index) => (
+    <CategoryItem key={item.id} item={item} addCart={addCart} />
+  ))}
+</Row>
       </section>
     </>
   );
