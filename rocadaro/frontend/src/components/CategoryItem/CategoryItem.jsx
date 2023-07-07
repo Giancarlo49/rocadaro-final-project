@@ -1,19 +1,10 @@
 import LikeButton from "../LikeButton";
-import { useState } from "react";
+import FavoriteStore from "../../store/FavoritesContext";
 
 export const CategoryItem = ({ item, addCart }) => {
-  const [favorites, setFavorites] = useState([]);
-
-  const addToFavorites = (id) => {
-    const product = item; // El producto actual es el que queremos agregar a los favoritos
-    setFavorites([...favorites, product]);
-    console.log("Product added to favorites", favorites);
-  };
-
-  const removeFromFavorites = (item) => {
-    const updatedFavorites = favorites.filter((favoriteItem) => favoriteItem.id !== item.id);
-    setFavorites(updatedFavorites);
-  };
+  const { favorites, addToFavorites, removeFromFavorites } = FavoriteStore();
+  
+  
 
   return (
     <div className="product-card hover-effect">
@@ -27,7 +18,7 @@ export const CategoryItem = ({ item, addCart }) => {
           </button>
 
           <button className="buy-now-button">
-            <LikeButton item={item} addToFavorites={addToFavorites} removeFromFavorites={removeFromFavorites} />
+            <LikeButton item={item} addToFavorites={() => addToFavorites(item.id)} removeFromFavorites={() => removeFromFavorites(item.id)} />
           </button>
         </div>
       </div>
