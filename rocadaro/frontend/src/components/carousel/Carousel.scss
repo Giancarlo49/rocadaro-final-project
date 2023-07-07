@@ -48,8 +48,8 @@ body {
 .main-post-wrapper {
   
   // height: 100vh;
-  // border: solid 2px green;
-  
+  // border: solid 2px rgb(23, 236, 219);
+  border-radius: 5px;
   grid-row: 1 / 4;
   grid-column: 1 / 7;
   
@@ -141,8 +141,8 @@ body {
 
 .main-post__link:hover .main-post__link-text,
 .main-post__link:hover .main-post__link-icon--arrow path {
-  color: #c20000;
-  stroke: #c20000;
+  color: #00c2c2;
+  stroke: #00c2c2;
 }
 
 .main-post--active {
