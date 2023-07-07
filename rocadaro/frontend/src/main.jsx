@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { ParentContext } from "./store/Context.jsx";
+import { FavoriteProvider } from "./store/FavoritesContext.jsx";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -11,7 +12,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
      
         <ParentContext>
-          <App />
+          <FavoriteProvider>
+            <App />
+          </FavoriteProvider>
         </ParentContext>
       
     </BrowserRouter>
