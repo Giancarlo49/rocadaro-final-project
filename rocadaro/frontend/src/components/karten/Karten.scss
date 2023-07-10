@@ -6,15 +6,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
-$grey1:#e8e8ee;
+$grey1:#afafaf;
 $grey2:#9497aa;
 $grey3:#5a5863;
-$brown:#ab816b;
+$brown:#b44407;
 $blue:#09c2c2;
 
 body{
   height:100vh;
-  background: linear-gradient(to top, #212424 0%, #09c2c2 100%);
+  background: linear-gradient(to top, #000000 0%, #09c2c2 100%);
 }
 
 @function randomNum($min, $max) {
@@ -28,16 +28,16 @@ body{
 
 #container{
   display:grid;
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:repeat(4, 2fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap:10px;
+  // grid-gap:20px;
   // outline:solid 3px #dd0b0b;
-  justify-content: space-between;
-  height:100%;
-  padding:0 30%;
+  // height:100%;
+  // padding:30%;
   
   
   @media (max-width:968px){
+    
     flex-wrap:wrap;
   }
   
@@ -60,13 +60,11 @@ body{
       height:100%;
       width:100%;
       background-image: none;
-      
       border:2px solid $grey1;
       display:flex;
       align-items:flex-end;
       // padding:10px 15px;
       border-radius:7px;
-      background:#fff;
       transform:rotate(0) scale(1);
       transition:all .2s cubic-bezier(.28,.05,.65,.97);
       box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);

@@ -8,8 +8,7 @@ const Karten = () => {
       <Link to="/category/Haushaltswaren">
         <div className="item">
           <div className="content">
-            
-            <img src="/images/Haushaltswaren/Gewürzregal.jpg" alt="" />
+            <img src="/images/Haushaltswaren/Töpfe3.jpg" alt="" />
             <h2>Haushalt</h2>
           </div>
           <div className="previews">
@@ -35,6 +34,7 @@ const Karten = () => {
       <Link to="/category/Elektro">
         <div className="item">
           <div className="content">
+          <img src="/images/Elektro/Laptop1.jpg" alt="" />
             <h2>Elektro</h2>
           </div>
           <div className="previews">
@@ -59,6 +59,7 @@ const Karten = () => {
       <Link to="/category/Garten">
         <div className="item">
           <div className="content">
+          <img src="/images/Garten/Werkzeug1.jpg" alt="" />
             <h2>Garten</h2>
           </div>
           <div className="previews">
@@ -83,6 +84,107 @@ const Karten = () => {
       <Link to="/category/Schuhe">
         <div className="item">
           <div className="content">
+          <img src="/images/Schuhe/NikeJordan.png" alt="" />
+            <h2>Schuhe</h2>
+          </div>
+          <div className="previews">
+            <div className="preview-image">
+              <img src="/images/Schuhe/Roller.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Tracking.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Lichter.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Nike.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Stöckelschuhe.jpg" />
+            </div>
+          </div>
+        </div>
+      </Link>
+      <Link to="/category/Schuhe">
+        <div className="item">
+          <div className="content">
+          <img src="/images/Schuhe/NikeJordan.png" alt="" />
+            <h2>Schuhe</h2>
+          </div>
+          <div className="previews">
+            <div className="preview-image">
+              <img src="/images/Schuhe/Roller.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Tracking.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Lichter.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Nike.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Stöckelschuhe.jpg" />
+            </div>
+          </div>
+        </div>
+      </Link>
+      <Link to="/category/Schuhe">
+        <div className="item">
+          <div className="content">
+          <img src="/images/Schuhe/NikeJordan.png" alt="" />
+            <h2>Schuhe</h2>
+          </div>
+          <div className="previews">
+            <div className="preview-image">
+              <img src="/images/Schuhe/Roller.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Tracking.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Lichter.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Nike.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Stöckelschuhe.jpg" />
+            </div>
+          </div>
+        </div>
+      </Link>
+      <Link to="/category/Schuhe">
+        <div className="item">
+          <div className="content">
+          <img src="/images/Schuhe/NikeJordan.png" alt="" />
+            <h2>Schuhe</h2>
+          </div>
+          <div className="previews">
+            <div className="preview-image">
+              <img src="/images/Schuhe/Roller.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Tracking.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Lichter.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Nike.jpg" />
+            </div>
+            <div className="preview-image">
+              <img src="/images/Schuhe/Stöckelschuhe.jpg" />
+            </div>
+          </div>
+        </div>
+      </Link>
+      <Link to="/category/Schuhe">
+        <div className="item">
+          <div className="content">
+          <img src="/images/Schuhe/NikeJordan.png" alt="" />
             <h2>Schuhe</h2>
           </div>
           <div className="previews">
