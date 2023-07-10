@@ -10,7 +10,7 @@ import CreateUser from "./CreateUser";
 function ModalComponents({ isModalOpen, handleModalToggle }) {
   const { setShowModal } = Store();
   const [showCreateUser, setShowCreateUser] = useState(false); // Zustand hinzugefügt
-  const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showLoginForm, setShowLoginForm] = useState(true);
   const handleSubmit = async (e) => {
     e.preventDefault();
     // loginApi({ email: email, password: password });
@@ -27,20 +27,22 @@ function ModalComponents({ isModalOpen, handleModalToggle }) {
   // const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const handleCreateUserClick = () => {
-    setShowCreateUser(true);
-    setShowLoginForm(false);
-  };
-  const handleCreateUserSuccess = () => {
-    setShowCreateUser(false);
-    setShowLoginForm(true);
-    handleModalToggle();
-  };
 
   const handleLoginClick = () => {
     setShowCreateUser(false);
     setShowLoginForm(true);
   };
+
+  const handleCreateUserClick = () => {
+    setShowCreateUser(true);
+    setShowLoginForm(false);
+  };
+  const handleCreateUserSuccess = () => {
+    setShowCreateUser(true);
+    setShowLoginForm(true);
+    handleModalToggle();
+  };
+
   //
   return (
     <Modal
