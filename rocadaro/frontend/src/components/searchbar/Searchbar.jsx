@@ -18,7 +18,7 @@ const Searchbar = () => {
       <form action="" method="">
         <input
           type="search"
-          placeholder="What are you looking for?"
+          placeholder="Was du suchen willst gibt es hier ?"
           value={searchTerm}
           onChange={handleChange}
         />
