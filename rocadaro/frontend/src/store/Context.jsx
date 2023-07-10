@@ -79,7 +79,7 @@ export function ParentContext({ children }) {
     const newCartState = [
       ...cart,
       { ...data, cartEntryId: generateId(), selectedSize: "S" },
-    ];
+    ];addCart
 
     setCart(newCartState);
   };

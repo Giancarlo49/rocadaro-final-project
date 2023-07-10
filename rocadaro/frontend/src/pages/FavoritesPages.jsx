@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import FavoriteStore from "../store/FavoritesContext";
+import data from "../data";
 
 
-import { useState } from "react";
-
-const FavoritesPage = () => {
-  const [favorites, setFavorites] = useState([]);
-  const navigate = useNavigate();
-
+const FavoritesPage = (props) => {
+  const {item}=props
   
+  
+  const { favorites } = FavoriteStore();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -20,7 +21,7 @@ const FavoritesPage = () => {
           <ul>
             {favorites.map((item) => (
               <li key={item.id}>
-                <img src={item.image} alt="Product" />
+                <img src={item.image} alt="Products" />
                 <h2>{item.title}</h2>
                 <p>{item.price}</p>
               </li>
@@ -37,3 +38,4 @@ const FavoritesPage = () => {
 };
 
 export default FavoritesPage;
+

@@ -19,12 +19,39 @@ export function FavoriteProvider({ children }) {
         setFavorites(updatedFavorites);
       };
 
+      const addCart = (id) => {
+        // console.log("add card called", id);
+    
+        const data = products.find((product) => {
+          return product.id === id;
+        });
+    
+        // data.cartEntryId = generateId();
+        const newCartState = [
+          ...cart,
+          { ...data, cartEntryId: generateId(), selectedSize: "S" },
+        ];addCart
+    
+        setCart(newCartState);
+      };
+    
+      // Löschen den Artikel aus dem Cart mit der neuen ID, die wir in (generateId) erstellt haben =>
+      const removeItemCart = (entryId) => {
+        const updatedCart = cart.filter((entry) => {
+          return entry.cartEntryId !== entryId;
+        });
+    
+        setCart(updatedCart);
+      };
+
     //values in object
       const value = {
         favorites,
         addToFavorites,
         removeFromFavorites,
       };
+
+    
 
     return (
         <FavoriteContext.Provider value={value}>{children}</FavoriteContext.Provider>
