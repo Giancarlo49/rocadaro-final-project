@@ -86,11 +86,11 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link to="contact" className="nav-link">
-                  Contact
+                  Gallery
                 </Link>
-              </li> */}
+              </li>
             </ul>
             <form className="d-flex">
               <ContactForm />
