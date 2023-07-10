@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import { Outlet, useNavigate } from "react-router-dom";
 import Store from "../../store/Context";
 import ContactForm from "../contactFormular/ContactFormular.jsx";
+import FavoritesPage from "../../pages/FavoritesPages";
 
 const Navbar = () => {
   const {
@@ -24,7 +25,9 @@ const Navbar = () => {
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
   };
-
+  const handleLoginClick = () => {
+    setIsModalOpen(true);
+  };
   return (
     <>
       <nav className="mynavbar navbar navbar-expand-lg fixed-top">
@@ -83,20 +86,20 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link to="contact" className="nav-link">
-                  Contact
+                  Gallery
                 </Link>
-              </li> */}
+              </li>
             </ul>
             <form className="d-flex">
               <ContactForm />
               <button
                 className="btn btn-secondary me-2"
                 type="button"
-                onClick={handleModalToggle}
+                onClick={handleLoginClick}
               >
-                <i class="bi bi-person-fill"></i>
+                <i className="bi bi-person-fill" id="loginButton"></i>
               </button>
 
               <div className="CartButton">
@@ -116,7 +119,7 @@ const Navbar = () => {
                   className="btn btn-light"
                   type="button"
                   onClick={() => {
-                    navigate("/heart");
+                    navigate("/favorites");
                   }}
                 >
                   <i className="bi bi-heart-fill "></i>
@@ -132,7 +135,9 @@ const Navbar = () => {
           handleModalToggle={handleModalToggle}
         />
       </nav>
-      <Outlet />
+      <Outlet>
+        <FavoritesPage path="/favorites" />
+      </Outlet>
     </>
   );
 };

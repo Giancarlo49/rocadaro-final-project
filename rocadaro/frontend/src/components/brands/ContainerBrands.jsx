@@ -70,28 +70,7 @@ function ContainerBrands() {
             </a>
           </div>
         </div>
-        <div className="row">
-          <div className="box hover-effect">
-            <a href="https://www.adidas.com/us">
-              <img src="images/brands/adidas.jpeg" alt="Logo" />
-            </a>
-          </div>
-          <div className="box hover-effect">
-            <a href="https://www.adidas.com">
-              <img src="images/brands/adidas.jpeg" alt="Logo" />
-            </a>
-          </div>
-          <div className="box hover-effect">
-            <a href="https://www.adidas.com">
-              <img src="images/brands/adidas.jpeg" alt="Logo" />
-            </a>
-          </div>
-          <div className="box hover-effect">
-            <a href="https://www.adidas.com">
-              <img src="images/brands/adidas.jpeg" alt="Logo" />
-            </a>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
