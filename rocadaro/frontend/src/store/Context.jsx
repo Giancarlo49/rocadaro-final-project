@@ -14,7 +14,7 @@ export function ParentContext({ children }) {
   const [menu, setMenu] = useState(true);
   const show1 = menu ? "carts show" : "carts";
   const show2 = menu ? "cart show" : "cart";
-  const [favorites, setFavorites] = useState([]);
+  // const [favorites, setFavorites] = useState([]);
 
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([...data.items]);
@@ -113,8 +113,8 @@ export function ParentContext({ children }) {
     handleProductsLinkClick,
     showModal,
     setShowModal,
-    favorites,
-    setFavorites
+    // favorites,
+    // setFavorites
   };
   //Koponents
 

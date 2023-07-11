@@ -10,7 +10,7 @@ const FavoritesPage = (props) => {
   
   const { favorites } = FavoriteStore();
   const navigate = useNavigate();
-
+  console.log(favorites)
   return (
     <>
       <div className="page">
@@ -19,9 +19,9 @@ const FavoritesPage = (props) => {
           <p>No favorites selected.</p>
         ) : (
           <ul>
-            {favorites.map((item) => (
-              <li key={item.id}>
-                <img src={item.image} alt="Products" />
+            {favorites.map((item, index) => (
+              <li key={index}>
+                <img src={item.image} alt="Product" />
                 <h2>{item.title}</h2>
                 <p>{item.price}</p>
               </li>
