@@ -6,15 +6,20 @@ const FavoriteContext = createContext();
 export function FavoriteProvider({ children }) {
     //Variblen
     const [favorites, setFavorites] = useState([]);
-    const addToFavorites = (id) => {
+
+    useEffect(()=>{
+      console.log({favorites})
+    },[favorites])
+
+    const addToFavorites = (item) => {
      
         setFavorites((favorites)=>{
-          return [...favorites, id]
+          return [...favorites, item]
         });
         console.log("Product added to favorites", favorites);
-      };
+    };
     
-      const removeFromFavorites = (id) => {
+      const removeFromFavorites = (item) => {
         const updatedFavorites = favorites.filter((favoriteItem) => favoriteItem!== id);
         setFavorites(updatedFavorites);
       };

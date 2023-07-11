@@ -18,7 +18,7 @@ export const CategoryItem = ({ item, addCart }) => {
           </button>
 
           <button className="buy-now-button">
-            <LikeButton item={item} addToFavorites={() => addToFavorites(item.id)} removeFromFavorites={() => removeFromFavorites(item.id)} />
+            <LikeButton item={item} addToFavorites={() => addToFavorites(item)} removeFromFavorites={() => removeFromFavorites(item)} />
           </button>
         </div>
       </div>
