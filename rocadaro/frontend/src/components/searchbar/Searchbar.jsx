@@ -1,12 +1,16 @@
 import "./Searchbar.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handleSearch = () => {
-    // Hier kannst du die Logik für die Suche implementieren
-    console.log("Suchbegriff:", searchTerm);
+  const handleSearch = (e) => {
+    e.preventDefault();
+    // Den Benutzer zur Amazon-Suchseite in einem neuen Tab weiterleiten
+    window.open(
+      `https://www.amazon.com/s?k=${encodeURIComponent(searchTerm)}`,
+      "_blank"
+    );
   };
 
   const handleChange = (event) => {
@@ -15,18 +19,17 @@ const Searchbar = () => {
 
   return (
     <section className="webdesigntuts-workshop">
-      <form action="" method="">
+      <form onSubmit={handleSearch} target="_blank">
         <input
           type="search"
-          placeholder="Was du suchen willst gibt es hier ?"
+          placeholder="Was du suchen willst gibt es hier?"
           value={searchTerm}
           onChange={handleChange}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button type="submit">Search</button>
       </form>
     </section>
   );
 };
 
 export default Searchbar;
-
