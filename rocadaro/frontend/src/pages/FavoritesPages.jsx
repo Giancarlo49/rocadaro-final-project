@@ -1,16 +1,17 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import FavoriteStore from "../store/FavoritesContext";
-import data from "../data";
-
+import Store from "../store/Context";
 
 const FavoritesPage = (props) => {
-  const {item}=props
-  
-  
-  const { favorites } = FavoriteStore();
+  const { addCart } = Store();
+  const { item } = props;
+
+  const { favorites, removeFromFavorites } = FavoriteStore();
   const navigate = useNavigate();
-  console.log(favorites)
+
+  console.log(favorites);
+
   return (
     <>
       <div className="page">
@@ -24,6 +25,15 @@ const FavoritesPage = (props) => {
                 <img src={item.image} alt="Product" />
                 <h2>{item.title}</h2>
                 <p>{item.price}</p>
+                <button
+                  className="add-to-cart-button"
+                  onClick={() => {
+                    addCart(item.id);
+                    removeFromFavorites(item);
+                  }}
+                >
+                  Add to cart
+                </button>
               </li>
             ))}
           </ul>
@@ -38,4 +48,5 @@ const FavoritesPage = (props) => {
 };
 
 export default FavoritesPage;
+
 
