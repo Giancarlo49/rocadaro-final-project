@@ -3,12 +3,12 @@ import LikeButton from "../LikeButton";
 import FavoriteStore from "../../store/FavoritesContext";
 import Store from "../../store/Context";
 
-export const CategoryItem = ({ item, addCart }) => {
-  const { favorites, addToFavorites, removeFromFavorites } = FavoriteStore();
+// export const CategoryItem = ({ item, addCart }) => {
+//   const { favorites, addToFavorites, removeFromFavorites } = FavoriteStore();
 
-  // export const CategoryItem = ({ item }) => {
-  //   const { addCart } = Store();
-  //   const { addToFavorites, removeFromFavorites } = FavoriteStore();
+export const CategoryItem = ({ item }) => {
+  const { addCart } = Store();
+  const { addToFavorites, removeFromFavorites } = FavoriteStore();
 
   return (
     <div className="product-card hover-effect">
