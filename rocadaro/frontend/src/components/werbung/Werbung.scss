@@ -4,13 +4,14 @@ body {
 	display: flex;
 	height: 100vh;
 	justify-content: center;
+	
 }
 
 @mixin white-gradient {
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
 
-$animationSpeed: 40s;
+$animationSpeed: 30s;
 
 // Animation
 @keyframes scroll {
@@ -27,7 +28,9 @@ $animationSpeed: 40s;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 860px;
+	width: 1360px;
+	border-radius: 100px;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
 	
 	&::before,
 	&::after {

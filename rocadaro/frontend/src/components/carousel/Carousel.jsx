@@ -66,7 +66,7 @@ function Carousel() {
           <article className="main-post main-post--active">
             <div className="main-post__image">
               <img
-                src="./images/Logo/LogoHeader.png"
+                src="./images/Logo/Logocarusel.png"
                 alt="Wir bieten mehrere Marken mit guten Preisen an"
               />
             </div>
