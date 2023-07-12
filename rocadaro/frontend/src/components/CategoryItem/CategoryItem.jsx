@@ -11,6 +11,7 @@ export const CategoryItem = ({ item, addCart }) => {
       <img className="product-image" src={item.image} alt="Producto" />
       <div className="product-info">
         <h2 className="product-title">{item.title}</h2>
+        <h5 className="product-description">{item.description}</h5>
         <p className="product-price">{item.price}</p>
         <div className="product-actions">
           <button className="add-to-cart-button" onClick={() => addCart(item.id)}>

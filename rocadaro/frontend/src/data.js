@@ -9,12 +9,12 @@ const data = {
       category: "Haushaltswaren",
     },
     {
-      id: 1,
-      title: "Topf",
+      id: 2,
+      title: "messe",
       description: "skadhfhfskasfhhfs",
-      price: 6,
-      image: "../images/Haushaltswaren/Topf.jpg",
-      category: "Haushaltswaren",
+      price: 10,
+      image: "../images/Haushaltswaren/Messer.jpg",
+      category: "Elektro",
     },
     {
       id: 1,
@@ -97,7 +97,7 @@ const data = {
       title: "Mode",
       price: 50,
       image: "",
-      category: "Mode",
+      category: "sh",
     },
   ],
   // categorys: [
