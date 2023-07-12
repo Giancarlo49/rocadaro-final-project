@@ -6,7 +6,7 @@ function Werbung() {
       <div className="slide-track">
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+            src="./images/Werbungbanner/Lacoste.jpg"
             height="100"
             width="250"
             alt=""
@@ -14,7 +14,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+            src="./images/Werbungbanner/bosch2.jpg"
             height="100"
             width="250"
             alt=""
@@ -22,7 +22,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+            src="./images/Werbungbanner/samsung.png"
             height="100"
             width="250"
             alt=""
@@ -30,7 +30,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+            src="./images/Werbungbanner/Nike.jpg"
             height="100"
             width="250"
             alt=""
@@ -38,7 +38,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+            src="./images/Werbungbanner/LG2.jpg"
             height="100"
             width="250"
             alt=""
@@ -46,7 +46,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+            src="./images/Werbungbanner/gucci.png"
             height="100"
             width="250"
             alt=""
@@ -54,7 +54,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+            src="./images/Werbungbanner/diesel.jpg"
             height="100"
             width="250"
             alt=""
@@ -62,7 +62,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+            src="./images/Werbungbanner/Lacoste.jpg"
             height="100"
             width="250"
             alt=""
@@ -70,7 +70,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+            src="./images/Werbungbanner/bosch2.jpg"
             height="100"
             width="250"
             alt=""
@@ -78,7 +78,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+            src="./images/Werbungbanner/samsung.png"
             height="100"
             width="250"
             alt=""
@@ -86,7 +86,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+            src="./images/Werbungbanner/Nike.jpg"
             height="100"
             width="250"
             alt=""
@@ -94,7 +94,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+            src="./images/Werbungbanner/LG2.jpg"
             height="100"
             width="250"
             alt=""
@@ -102,7 +102,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+            src="./images/Werbungbanner/gucci.png"
             height="100"
             width="250"
             alt=""
@@ -110,7 +110,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+            src="./images/Werbungbanner/diesel.jpg"
             height="100"
             width="250"
             alt=""
