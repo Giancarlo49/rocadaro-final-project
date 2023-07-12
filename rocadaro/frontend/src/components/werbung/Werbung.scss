@@ -4,6 +4,7 @@ body {
 	display: flex;
 	height: 100vh;
 	justify-content: center;
+	
 }
 
 @mixin white-gradient {
@@ -28,6 +29,8 @@ $animationSpeed: 30s;
 	overflow:hidden;
 	position: relative;
 	width: 1360px;
+	border-radius: 100px;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
 	
 	&::before,
 	&::after {

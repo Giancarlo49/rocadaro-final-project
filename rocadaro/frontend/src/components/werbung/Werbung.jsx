@@ -5,12 +5,15 @@ function Werbung() {
     <div className="slider">
       <div className="slide-track">
         <div className="slide">
-          <img
+        <a href="https://www.adidas.com/us">
+        <img 
             src="./images/Werbungbanner/Lacoste.jpg"
             height="100"
             width="250"
             alt=""
-          />
+          />    
+            </a>
+          
         </div>
         <div className="slide">
           <img
