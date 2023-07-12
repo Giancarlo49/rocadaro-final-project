@@ -14,7 +14,19 @@ export function ParentContext({ children }) {
   const [menu, setMenu] = useState(true);
   const show1 = menu ? "carts show" : "carts";
   const show2 = menu ? "cart show" : "cart";
-  const [favorites, setFavorites] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+  useEffect(() => {
+    const storedCartItems = localStorage.getItem('cartItems');
+    if (storedCartItems) {
+      setCartItems(JSON.parse(storedCartItems));
+    }
+  
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+  }, []);
+  
 
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([...data.items]);
@@ -69,19 +81,17 @@ export function ParentContext({ children }) {
   };
   //Artikel mit ID in den Cart legen.
   const addCart = (id) => {
-    // console.log("add card called", id);
-
-    const data = products.find((product) => {
-      return product.id === id;
-    });
-
-    // data.cartEntryId = generateId();
+    const updatedCartItems = [...cartItems, id];
+    setCartItems(updatedCartItems);
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+  
+    const data = products.find((product) => product.id === id);
     const newCartState = [
       ...cart,
-      { ...data, cartEntryId: generateId(), selectedSize: "S" },
+      { ...data, cartEntryId: generateId(), selectedSize: 'S' },
     ];
-
     setCart(newCartState);
+    localStorage.setItem('cart', JSON.stringify(newCartState));
   };
 
   // Löschen den Artikel aus dem Cart mit der neuen ID, die wir in (generateId) erstellt haben =>
@@ -113,8 +123,8 @@ export function ParentContext({ children }) {
     handleProductsLinkClick,
     showModal,
     setShowModal,
-    favorites,
-    setFavorites
+    // favorites,
+    // setFavorites
   };
   //Koponents
 

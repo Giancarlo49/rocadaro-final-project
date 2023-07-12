@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import FavoriteStore from "../store/FavoritesContext";
+import Store from "../store/Context";
 
+const FavoritesPage = (props) => {
+  const { addCart } = Store();
+  const { item } = props;
 
-import { useState } from "react";
-
-const FavoritesPage = () => {
-  const [favorites, setFavorites] = useState([]);
+  const { favorites, removeFromFavorites } = FavoriteStore();
   const navigate = useNavigate();
 
-  
+  console.log(favorites);
 
   return (
     <>
@@ -18,11 +20,20 @@ const FavoritesPage = () => {
           <p>No favorites selected.</p>
         ) : (
           <ul>
-            {favorites.map((item) => (
-              <li key={item.id}>
+            {favorites.map((item, index) => (
+              <li key={index}>
                 <img src={item.image} alt="Product" />
                 <h2>{item.title}</h2>
                 <p>{item.price}</p>
+                <button
+                  className="add-to-cart-button"
+                  onClick={() => {
+                    addCart(item.id);
+                    removeFromFavorites(item);
+                  }}
+                >
+                  Add to cart
+                </button>
               </li>
             ))}
           </ul>
@@ -37,3 +48,5 @@ const FavoritesPage = () => {
 };
 
 export default FavoritesPage;
+
+
