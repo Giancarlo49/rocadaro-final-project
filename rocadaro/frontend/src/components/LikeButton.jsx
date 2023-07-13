@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import "../pages/CategoryPage.css";
 
@@ -13,12 +13,15 @@ const LikeButton = ({ item, addToFavorites, removeFromFavorites }) => {
       addToFavorites(item);
     }
   };
-  
+
   return (
-    <div onClick={handleClick} className={`like-button ${isClicked ? 'liked' : ''}`}>
+    <div
+      onClick={handleClick}
+      className={`like-button ${isClicked ? "liked" : ""}`}
+    >
       <i className="bi bi-heart-fill"></i>
     </div>
   );
-}
+};
 
 export default LikeButton;
