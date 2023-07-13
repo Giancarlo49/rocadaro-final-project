@@ -16,17 +16,16 @@ export function ParentContext({ children }) {
   const show2 = menu ? "cart show" : "cart";
   const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
-    const storedCartItems = localStorage.getItem('cartItems');
+    const storedCartItems = localStorage.getItem("cartItems");
     if (storedCartItems) {
       setCartItems(JSON.parse(storedCartItems));
     }
-  
-    const storedCart = localStorage.getItem('cart');
+
+    const storedCart = localStorage.getItem("cart");
     if (storedCart) {
       setCart(JSON.parse(storedCart));
     }
   }, []);
-  
 
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([...data.items]);
@@ -83,15 +82,15 @@ export function ParentContext({ children }) {
   const addCart = (id) => {
     const updatedCartItems = [...cartItems, id];
     setCartItems(updatedCartItems);
-    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
-  
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+
     const data = products.find((product) => product.id === id);
     const newCartState = [
       ...cart,
-      { ...data, cartEntryId: generateId(), selectedSize: 'S' },
+      { ...data, cartEntryId: generateId(), selectedSize: "S" },
     ];
     setCart(newCartState);
-    localStorage.setItem('cart', JSON.stringify(newCartState));
+    localStorage.setItem("cart", JSON.stringify(newCartState));
   };
 
   // Löschen den Artikel aus dem Cart mit der neuen ID, die wir in (generateId) erstellt haben =>
@@ -101,6 +100,7 @@ export function ParentContext({ children }) {
     });
 
     setCart(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
   //Values in Object
