@@ -7,6 +7,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import Store from "../../store/Context";
 import ContactForm from "../contactFormular/ContactFormular.jsx";
 import FavoritesPage from "../../pages/FavoritesPages";
+import FavoriteStore from "../../store/FavoritesContext";
 
 const Navbar = () => {
   const {
@@ -15,6 +16,7 @@ const Navbar = () => {
     handleBrandsLinkClick,
     handleProductsLinkClick,
   } = Store();
+  const { favorites } = FavoriteStore();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); //* Zustand für das Modal-Fenster
@@ -123,7 +125,7 @@ const Navbar = () => {
                   }}
                 >
                   <i className="bi bi-heart-fill "></i>
-                  {/* <span className="total-Items">{cart.length}</span> */}
+                  <span className="total-Items">{favorites.length}</span>
                 </button>
               </div>
             </form>
