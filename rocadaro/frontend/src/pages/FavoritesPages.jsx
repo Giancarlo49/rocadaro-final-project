@@ -24,29 +24,33 @@ const FavoritesPage = (props) => {
             {favorites.map((item, index) => (
               
                 <li key={index}>
-                  <div className="product-card hover-effect">
-                    <img src={item.image} alt="Product" />
-                    <h2>{item.title}</h2>
-                    <p>{item.price}</p>
+                  
                     
-                      <button
-                        className="add-to-cart-button"
-                        onClick={() => {
-                          addCart(item.id);
-                          removeFromFavorites(item);
-                        }}
-                      >
-                        Add to cart
-                      </button>
-                      <div
-                        className="remove_item"
-                        onClick={() => {
-                          removeFromFavorites(item);
-                        }}
-                        >
-                        <i className="bi bi-trash"></i>
+                      <div className="product-card hover-effect">
+                        <img className="product-image"src={item.image} alt="Product" />
+                        <h2>{item.title}</h2>
+                        <p>{item.price}</p>
+                        
+                          <button
+                            className="add-to-cart-button"
+                            onClick={() => {
+                              addCart(item.id);
+                              removeFromFavorites(item);
+                            }}
+                          >
+                            Add to cart
+                          </button>
+                          <div
+                            className="remove_item"
+                            onClick={() => {
+                              removeFromFavorites(item);
+                            }}
+                            >
+                            <i className="bi bi-trash"></i>
+                          </div>
                       </div>
-                  </div>
+                    
+                  
                   
                 </li>
               
