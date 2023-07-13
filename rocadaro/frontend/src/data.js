@@ -79,18 +79,19 @@ const data = {
     },
     {
       id: 102,
-      title: "Handy",
-      description: "Ganz tolles Handy mit 5G und 4 Kameras",
-      price: 7,
-      image: "../images/Elektro/Handy2.jpg",
+      title: "Samsung Galaxy Z Flip 3",
+      description: "5G, 128 GB, Black, Dual SIM",
+      price: 599.95,
+      image: "../images/Elektro/samsungHandy.jpg",
       category: "Elektro",
     },
     {
       id: 103,
-      title: "Laptop",
-      description: "Laptop mit 16GB RAM und 1TB SSD",
-      price: 999,
-      image: "../images/Elektro/Laptop1.jpg",
+      title: "Apple 2023 MacBook Pro",
+      description:
+        "M2 Pro Chip: 16,2 Liquid Retina Display, 16 GB RAM, 512 GB SSD",
+      price: 2547.05,
+      image: "../images/Elektro/macbook.jpg",
       category: "Elektro",
     },
     {
