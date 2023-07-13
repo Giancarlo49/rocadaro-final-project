@@ -8,24 +8,24 @@ const Karten = () => {
       <Link to="/category/Haushaltswaren">
         <div className="item">
           <div className="content">
-            <img src="/images/Haushaltswaren/Töpfe3.jpg" alt="" />
+            <img src="/images/haushaltswaren/töpfe3.jpg" alt="" />
             <h2>Haushalt</h2>
           </div>
           <div className="previews">
             <div className="preview-image">
-              <img src="/images/Haushaltswaren/Sieb.jpg" />
+              <img src="/images/haushaltswaren/sieb.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Haushaltswaren/Messer3.jpg" />
+              <img src="/images/haushaltswaren/messer3.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Haushaltswaren/hw2.jpg" />
+              <img src="/images/haushaltswaren/hw2.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Haushaltswaren/Kaffemühle4.jpg" />
+              <img src="/images/haushaltswaren/kaffemühle4.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Haushaltswaren/Gewürzregal.jpg" />
+              <img src="/images/haushaltswaren/gewürzregal.jpg" />
             </div>
           </div>
         </div>
@@ -35,24 +35,24 @@ const Karten = () => {
       <Link to="/category/Elektro">
         <div className="item">
           <div className="content">
-            <img src="/images/Elektro/Laptop1.jpg" alt="" />
+            <img src="/images/elektro/laptop1.jpg" alt="" />
             <h2>Elektro</h2>
           </div>
           <div className="previews">
             <div className="preview-image">
-              <img src="/images/Elektro/Digicam4.jpg" />
+              <img src="/images/elektro/digicam4.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Elektro/DigitalBuero.jpg" />
+              <img src="/images/elektro/digitalBuero.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Elektro/Elektro1.jpg" />
+              <img src="/images/elektro/elektro1.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Elektro/Handy3.jpg" />
+              <img src="/images/elektro/handy3.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Elektro/waschmaschiene2.jpg" />
+              <img src="/images/elektro/waschmaschiene2.jpg" />
             </div>
           </div>
         </div>
@@ -62,24 +62,24 @@ const Karten = () => {
       <Link to="/category/Garten">
         <div className="item">
           <div className="content">
-            <img src="/images/Garten/Werkzeug1.jpg" alt="" />
+            <img src="/images/garten/werkzeug1.jpg" alt="" />
             <h2>Garten</h2>
           </div>
           <div className="previews">
             <div className="preview-image">
-              <img src="/images/Garten/gartenkanne1.jpg" />
+              <img src="/images/garten/gartenkanne1.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Garten/Rechen.jpg" />
+              <img src="/images/garten/rechen.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Garten/WerkzeugTasche.jpg" />
+              <img src="/images/garten/werkzeugTasche.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Garten/Werkzeug3.jpg" />
+              <img src="/images/garten/werkzeug3.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Garten/Werkzeug1.jpg" />
+              <img src="/images/garten/werkzeug1.jpg" />
             </div>
           </div>
         </div>
@@ -89,24 +89,24 @@ const Karten = () => {
       <Link to="/category/Schuhe">
         <div className="item">
           <div className="content">
-            <img src="/images/Schuhe/NikeJordan.png" alt="" />
+            <img src="/images/schuhe/nikeJordan.png" alt="" />
             <h2>Schuhe</h2>
           </div>
           <div className="previews">
             <div className="preview-image">
-              <img src="/images/Schuhe/Roller.jpg" />
+              <img src="/images/schuhe/roller.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Schuhe/Tracking.jpg" />
+              <img src="/images/schuhe/tracking.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Schuhe/Lichter.jpg" />
+              <img src="/images/schuhe/lichter.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Schuhe/Nike.jpg" />
+              <img src="/images/schuhe/nike.jpg" />
             </div>
             <div className="preview-image">
-              <img src="/images/Schuhe/Stöckelschuhe.jpg" />
+              <img src="/images/schuhe/stöckelschuhe.jpg" />
             </div>
           </div>
         </div>
