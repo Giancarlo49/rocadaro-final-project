@@ -5,20 +5,16 @@ import Cart from "../components/cart/ProductCart";
 import Store from "../store/Context";
 import "../pages/Cart.css";
 
-
 export default function ListCart() {
   const { show1, show2, toggleClose, cart } = Store();
 
   const [total, setTotal] = useState(0);
 
-  
-  
-
   useEffect(() => {
     let cost = cart.reduce((cost, item) => {
       return cost + item.price;
     }, 0);
-    setTotal(cost);
+    setTotal(parseFloat(cost.toFixed(2)));
   }, [cart]);
 
   return (
