@@ -37,7 +37,7 @@ body{
   
   
   @media (max-width:968px){
-    
+    grid-template-columns:repeat(1, 2fr);
     flex-wrap:wrap;
   }
   
