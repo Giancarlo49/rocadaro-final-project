@@ -100,7 +100,7 @@
 	border-left-color: #666666;
 	border-radius: 0 5px 5px 0;
 	box-shadow: 0 2px 0 #757575;
-	color: #b1b0b0;
+	color: #414141;
 	display: block;
 	float: left;
 	font-family: 'Cabin', helvetica, arial, sans-serif;
@@ -111,7 +111,7 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
-	text-shadow: 0 -1px 0 #6b6b6b;
+	text-shadow: 0 -1px 0 #929292;
 	width: 80px;
 }	
 
@@ -130,6 +130,8 @@
 	top: 1px;
 }
 
+
+
 @keyframes glow {
     0% {
 		border-color: rgb(33, 202, 194);
@@ -140,3 +142,4 @@
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #a5a3a3;
     }
 }
+
