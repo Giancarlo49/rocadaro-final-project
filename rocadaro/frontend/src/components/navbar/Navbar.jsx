@@ -41,9 +41,18 @@ const Navbar = () => {
               className="logo"
             />
           </div>
-          <div>
+          {/* <div>
             <button
               className="navbar-toggler"
+              type="button"
+              onClick={handleMenuToggle}
+            >
+              <i className="bi bi-list"></i>
+            </button>
+          </div> */}
+          <div>
+            <button
+              className={`navbar-toggler ${isMenuOpen ? "active" : ""}`}
               type="button"
               onClick={handleMenuToggle}
             >

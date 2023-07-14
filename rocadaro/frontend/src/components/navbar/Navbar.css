@@ -5,21 +5,19 @@
   left: 0;
   width: 100%;
   z-index: 9999;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 1.0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
 .container-fluid {
   padding: 0px 0px 0px 0px;
   margin: 4px;
   height: 35px;
-  
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
   color: #fff;
-  
 }
 
 .logo {
@@ -28,15 +26,17 @@
   object-fit: contain;
   display: inline-block;
   vertical-align: middle;
-  
 }
 
 .navbar-toggler {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: white;
   font-size: 1.5rem;
-  
+}
+.collapse.navbar-collapse {
+  background-color: rgb(228, 225, 225);
+  padding: 20px;
 }
 
 .navbar-toggler:focus {
@@ -56,14 +56,13 @@
 }
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: black;
   font-size: 25px;
-  
 }
 
 .navbar-nav .nav-link:hover {
   color: rgb(2, 61, 95);
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .btn-secondary {
