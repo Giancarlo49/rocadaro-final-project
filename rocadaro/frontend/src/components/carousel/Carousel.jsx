@@ -99,7 +99,7 @@ function Carousel() {
           <article className="main-post main-post--not-active">
             <div className="main-post__image">
               <img
-                src="./images/Elektro/Elektro1.jpg"
+                src="./images/elektro/elektro1.jpg"
                 alt="What To Watch For in the 2019 Hungarian Grand Prix"
               />
             </div>
@@ -137,9 +137,8 @@ function Carousel() {
           <article className="main-post main-post--not-active">
             <div className="main-post__image">
               <img
-                src="./images/Haushaltswaren/hw2.jpg"
-                alt="Hamilton wants harder championship fight from Leclerc and
-              Verstappen"
+                src="./images/haushaltswaren/hw2.jpg"
+                alt=""
               />
             </div>
             <div className="main-post__content">
