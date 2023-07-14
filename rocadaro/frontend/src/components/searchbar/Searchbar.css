@@ -32,10 +32,10 @@
 }
 
 .webdesigntuts-workshop form {
-	background: linear-gradient(#ebebeb, #969595);
+	background: linear-gradient(#cacaca, #494949);
 	
 	border-radius: 5px;
-	box-shadow: inset 0 0 0 1px #7e7878;
+	box-shadow: inset 0 0 0 1px #0a0a0a;
 	display: inline-block;
 	font-size: 0px;
 	padding: 5px;
