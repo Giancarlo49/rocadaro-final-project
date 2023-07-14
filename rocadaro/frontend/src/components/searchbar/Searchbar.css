@@ -45,7 +45,7 @@
 
 .webdesigntuts-workshop input {
 	background: #868686;	
-	background: linear-gradient(#d1d1d1, #c7c7c7);	
+	background: linear-gradient(#d1d1d1, #a09e9e);	
 	border: 1px solid #444;
 	border-radius: 5px 0 0 5px;
 	box-shadow: 0 2px 0 #7a7a7a;
@@ -94,7 +94,7 @@
 
 .webdesigntuts-workshop button {
 	background: #555555;
-	background: linear-gradient(#d1d1d1, #c7c7c7);
+	background: linear-gradient(#d1d1d1, #a09e9e);
 	box-sizing: border-box;
 	border: 1px solid #444;
 	border-left-color: #666666;
