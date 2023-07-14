@@ -44,12 +44,12 @@
 }
 
 .webdesigntuts-workshop input {
-	background: #222;	
-	background: linear-gradient(#b9b9b9, #222);	
+	background: #000000;	
+	background: linear-gradient(#a1a1a1, #222);	
 	border: 1px solid #444;
 	border-radius: 5px 0 0 5px;
-	box-shadow: 0 2px 0 #333333;
-	color: #7c7a7a;
+	box-shadow: 0 2px 0 #4d4c4c;
+	color: #afafaf;
 	display: block;
 	float: left;
 	font-family: 'Cabin', helvetica, arial, sans-serif;
