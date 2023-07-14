@@ -5,10 +5,10 @@ import "./Products.css";
 
 const Products = () => {
   return (
-    <section className="page" id="products">
+    <section className="page-products" id="products">
       <h1>Products</h1>
 
-      <Karten />
+      <div className="karten-section"><Karten /></div>
     </section>
   );
 };

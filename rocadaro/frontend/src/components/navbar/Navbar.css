@@ -1,6 +1,6 @@
 .mynavbar {
   background-color: #09c2c2;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  
 }
 
 .modal-content {

@@ -30,6 +30,7 @@ body{
   display:grid;
   grid-template-columns:repeat(4, 2fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
   // grid-gap:20px;
   // outline:solid 3px #dd0b0b;
   // height:100%;
@@ -49,6 +50,7 @@ body{
     cursor:pointer;
     z-index:0;
     margin:20px;
+    
     
     @media (max-width:968px){
       width:100%;

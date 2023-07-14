@@ -1,3 +1,9 @@
+.categorypage{
+  
+    min-height: 60pv;
+    padding: 6%;
+}
+
 .product-card {
     display: flex;
     flex-direction: column;

@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import FavoriteStore from "../store/FavoritesContext";
 import Store from "../store/Context";
+import "./favoritesPages.css";
 
 const FavoritesPage = (props) => {
   const { addCart, removeItemCart } = Store();
@@ -15,12 +16,12 @@ const FavoritesPage = (props) => {
 
   return (
     <>
-      <div className="page">
+      <div className="page" id="favorites-pages">
         <h1>My Favorites</h1>
         {favorites.length === 0 ? (
           <p>No favorites selected.</p>
         ) : (
-          <ul>
+          <ul className="ulFavorites">
             {favorites.map((item, index) => (
               
                 <li key={index}>
