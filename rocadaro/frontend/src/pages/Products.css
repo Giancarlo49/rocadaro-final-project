@@ -1,0 +1,11 @@
+.page-products{
+    
+    min-width: 50vh;
+    padding: 6%;
+  
+}
+
+.karten-section{
+    display: flex;
+    justify-content: center;
+}

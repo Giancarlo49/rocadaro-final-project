@@ -10,7 +10,7 @@ import FavoritesPage from "./pages/FavoritesPages";
 
 const App = () => {
   return (
-    <div className="app">
+    
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="AGB" element={<AGB />} />
         </Route>
       </Routes>
-    </div>
+    
   );
 };
 

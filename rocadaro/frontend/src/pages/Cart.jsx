@@ -6,7 +6,7 @@ import Store from "../store/Context";
 import "../pages/Cart.css";
 
 export default function ListCart() {
-  const { show1, show2, toggleClose, cart } = Store();
+  const { show1, show2, cart } = Store();
 
   const [total, setTotal] = useState(0);
 
@@ -18,20 +18,22 @@ export default function ListCart() {
   }, [cart]);
 
   return (
-    <div className={show1}>
-      <div className={`${show2} page`}>
-        <div className="cart_close">
-          {/* <i onClick={toggleClose} className="bi bi-x-lg"></i> */}
-        </div>
-        <h2>Your cart</h2>
-        {cart.map((item, index) => (
-          <Cart key={index} item={item} />
-        ))}
-        <div className="cart_footer">
-          <h3>Total:{total}€</h3>
-          <button>Payment</button>
+   
+      <div className={show1}>
+        <div className={`${show2} page`}>
+          <div className="cart_close">
+            {/* <i onClick={toggleClose} className="bi bi-x-lg"></i> */}
+          </div>
+          <h2>Your cart</h2>
+          {cart.map((item, index) => (
+            <Cart key={index} item={item} />
+          ))}
+          <div className="cart_footer">
+            <h3>Total:{total}€</h3>
+            <button>Payment</button>
+          </div>
         </div>
       </div>
-    </div>
+   
   );
 }
