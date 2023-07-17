@@ -16,8 +16,8 @@ const FavoritesPage = (props) => {
 
   return (
     <>
-      <div className="page" id="favorites-pages">
-        <h1>My Favorites</h1>
+      <div className="page center-content" id="favorites-pages">
+      <h1 className="page-title">My Favorites</h1>
         {favorites.length === 0 ? (
           <p>No favorites selected.</p>
         ) : (
