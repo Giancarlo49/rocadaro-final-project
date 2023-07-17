@@ -32,7 +32,7 @@
 }
 
 .webdesigntuts-workshop form {
-	background: linear-gradient(#e2e2e2, #09c2c2);
+	background: linear-gradient(#e2e2e2, #494949);
 	
 	border-radius: 5px;
 	box-shadow: inset 0 0 0 1px #0a0a0a;
@@ -126,7 +126,7 @@
 .webdesigntuts-workshop button:active {
 	background: #696969;
 	background: linear-gradient(#393939, #292929);
-	box-shadow: 0 1px 0 #000, inset 1px 0 1px #15d6cd;
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px #aeafaf;
 	top: 1px;
 }
 
