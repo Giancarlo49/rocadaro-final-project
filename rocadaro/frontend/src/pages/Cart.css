@@ -1,4 +1,3 @@
-
 .carts {
   margin: auto;
   /* top: 0; */
@@ -9,11 +8,11 @@
   background-color: #09c2c262;
   z-index: 2;
   padding-bottom: 5rem;
+  padding-top: 8rem;
   visibility: hidden;
 }
 
 .cart {
-  
   /* top: 50%;
   left: 50%; */
   /* transform: translate(-50%, -50%) scale(.5); */
@@ -34,7 +33,6 @@
 }
 
 .carts.show {
-
   visibility: visible;
 }
 
@@ -114,9 +112,9 @@
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1px;
-} 
+}
 
-#paypal-button-container{
+#paypal-button-container {
   width: 100px;
   height: 80px;
   background-color: blue;
