@@ -6,7 +6,7 @@ import Werbung from "../components/werbung/Werbung";
 
 const Brands = () => {
   return (
-    <section className="page" id="brands">
+    <section className="page-brands" id="brands">
       <h1>Brands</h1>
       <Werbung />
       <div className="brands-container">

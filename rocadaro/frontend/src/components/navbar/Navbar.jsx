@@ -137,9 +137,11 @@ const Navbar = () => {
           handleModalToggle={handleModalToggle}
         />
       </nav>
-      <Outlet>
-        <FavoritesPage path="/favorites" />
-      </Outlet>
+      
+        <Outlet>
+          <FavoritesPage path="/favorites" />
+        </Outlet>
+      
     </>
   );
 };

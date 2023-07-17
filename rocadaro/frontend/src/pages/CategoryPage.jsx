@@ -25,7 +25,7 @@ const CategoryPage = () => {
 
   return (
     <>
-      <section className="page" id="Haushaltsware">
+      <section className="categorypage">
         <h1 className="titleCategory">{category}</h1>
         <Row>
   {filterItems.map((item, index) => (
