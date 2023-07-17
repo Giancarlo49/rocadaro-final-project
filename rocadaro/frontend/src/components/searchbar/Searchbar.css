@@ -31,6 +31,7 @@
 }
 
 .webdesigntuts-workshop form {
+
   background: linear-gradient(#e2e2e2, #09c2c2);
   width: 50%;
   min-width: 300px;
@@ -42,6 +43,7 @@
   margin-top: 75px;
   position: relative;
   z-index: 1;
+
 }
 
 .webdesigntuts-workshop input {
@@ -126,10 +128,12 @@
 }
 
 .webdesigntuts-workshop button:active {
+
   background: #696969;
   background: linear-gradient(#393939, #292929);
   box-shadow: 0 1px 0 #000, inset 1px 0 1px #15d6cd;
   top: 1px;
+
 }
 
 @keyframes glow {
