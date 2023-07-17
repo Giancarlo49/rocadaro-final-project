@@ -87,12 +87,6 @@ const Navbar = () => {
                   Brands
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link to="contact" className="nav-link">
-                  Gallery
-                </Link>
-              </li>
             </ul>
             <form className="d-flex">
               <ContactForm />
@@ -137,11 +131,10 @@ const Navbar = () => {
           handleModalToggle={handleModalToggle}
         />
       </nav>
-      
-        <Outlet>
-          <FavoritesPage path="/favorites" />
-        </Outlet>
-      
+
+      <Outlet>
+        <FavoritesPage path="/favorites" />
+      </Outlet>
     </>
   );
 };
