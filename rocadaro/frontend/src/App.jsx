@@ -8,6 +8,7 @@ import AboutUsPage from "./pages/Footer/AboutUsPage";
 import AGB from "./pages/Footer/AGB";
 import FavoritesPage from "./pages/FavoritesPages";
 
+
 const App = () => {
   return (
     
