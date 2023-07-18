@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import config from '../../config';
+import './PaymentFormular.css';
 
 const PaymentForm = () => {
   const stripe = useStripe();
@@ -28,15 +29,18 @@ const PaymentForm = () => {
     }
   };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <CardElement />
-      {error && <div>{error}</div>}
-      {success && <div>yesss!!!</div>}
-      <button type="submit">Pay</button>
-    </form>
-  );
-};
+  
+    return (
+      <div className="form-container">
+        <form onSubmit={handleSubmit}>
+          <CardElement />
+          {error && <div>{error}</div>}
+          {success && <div>yesss!!!</div>}
+          <button className='payButton' type="submit">Pay</button>
+        </form>
+      </div>
+    );
+  };
 
 export default PaymentForm;
 
