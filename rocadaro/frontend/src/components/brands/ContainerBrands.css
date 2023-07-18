@@ -19,8 +19,8 @@
   height: 150px;
   background-color: #fdfdfd;
   margin: 10px;
-  border: 1px solid #09c2c2;
-  box-shadow: 5px 5px 5px rgb(9, 194, 194);
+  border: 1px solid #777878;
+  box-shadow: 5px 5px 5px rgb(132, 132, 132);
   border-radius: 8px;
 }
 .box img {
