@@ -26,7 +26,9 @@ const Searchbar = () => {
           value={searchTerm}
           onChange={handleChange}
         />
-        <button type="submit">Search</button>
+        <button type="submit">
+          <i className="bi bi-search" id="searchButton"></i>
+        </button>
       </form>
     </section>
   );

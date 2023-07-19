@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:400);
 
-.webdesigntuts-workshop {
+/* .webdesigntuts-workshop {
   height: 100%;
   position: inherit;
   text-align: center;
   width: 100%;
-}
+} */
 
 .webdesigntuts-workshop:before,
 .webdesigntuts-workshop:after {
@@ -18,20 +18,7 @@
   width: 800px;
 }
 
-.webdesigntuts-workshop:before {
-  /* background: #444;
-	background: linear-gradient(left, #151515, #444, #151515);
-	top: 192px; */
-}
-
-.webdesigntuts-workshop:after {
-  /* background: #000;
-	background: linear-gradient(left, #615e5e, #000, #151515);	
-	top: 191px; */
-}
-
 .webdesigntuts-workshop form {
-
   background: linear-gradient(#e2e2e2, #6b6b6b);
   width: 50%;
   min-width: 300px;
@@ -40,10 +27,9 @@
   display: inline-block;
   font-size: 0px;
   padding: 5px;
-  margin-top: 75px;
+  margin-top: 5px;
   position: relative;
   z-index: 1;
-
 }
 
 .webdesigntuts-workshop input {
@@ -128,12 +114,13 @@
 }
 
 .webdesigntuts-workshop button:active {
-
   background: #696969;
   background: linear-gradient(#393939, #292929);
   box-shadow: 0 1px 0 #000, inset 1px 0 1px #15d6cd;
   top: 1px;
-
+}
+#searchButton {
+  font-size: large;
 }
 
 @keyframes glow {
