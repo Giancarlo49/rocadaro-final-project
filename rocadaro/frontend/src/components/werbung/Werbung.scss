@@ -29,15 +29,14 @@ $animationSpeed: 30s;
 // Styling
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px #00000020;
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 80%;
-  border: 1px solid #1c1c1c;
+  // border: 1px solid #1c1c1c;
   border-radius: 100px;
-  box-shadow: 5px 5px 5px rgb(157, 157, 157);
+  box-shadow: 3px 3px 5px 2px rgb(157, 157, 157);
 
   &::before,
   &::after {
