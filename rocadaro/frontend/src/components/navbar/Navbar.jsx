@@ -8,6 +8,7 @@ import Store from "../../store/Context";
 import ContactForm from "../contactFormular/ContactFormular.jsx";
 import FavoritesPage from "../../pages/FavoritesPages";
 import FavoriteStore from "../../store/FavoritesContext";
+import Searchbar from "../searchbar/Searchbar";
 
 const Navbar = () => {
   const {
@@ -87,7 +88,8 @@ const Navbar = () => {
                   Brands
                 </Link>
               </li>
-            </ul>
+            </ul>{" "}
+            <Searchbar />
             <form className="d-flex">
               <ContactForm />
               <button
