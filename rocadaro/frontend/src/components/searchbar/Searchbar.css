@@ -18,6 +18,8 @@
   width: 800px;
 }
 
+
+
 .webdesigntuts-workshop form {
   background: linear-gradient(#e2e2e2, #6b6b6b);
   width: 50%;
@@ -82,7 +84,7 @@
   color: #efe;
 }
 
-.webdesigntuts-workshop button {
+.webdesigntuts-workshop .searchbutton {
   background: #555555;
   background: linear-gradient(#ffffff, #969696);
   box-sizing: border-box;
@@ -104,16 +106,21 @@
   text-shadow: 0 -1px 0 #929292;
   width: 20%;
 }
+.webdesigntuts-workshop button.togglesearch {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
 
-.webdesigntuts-workshop button:hover,
-.webdesigntuts-workshop button:focus {
+.webdesigntuts-workshop .searchbutton:hover,
+.webdesigntuts-workshop .searchbutton:focus {
   background: #2c2c2c;
   background: linear-gradient(#a3a2a2, #0f0f0f);
   color: rgb(28, 201, 192);
   outline: none;
 }
 
-.webdesigntuts-workshop button:active {
+.webdesigntuts-workshop .searchbutton:active {
   background: #696969;
   background: linear-gradient(#393939, #292929);
   box-shadow: 0 1px 0 #000, inset 1px 0 1px #15d6cd;
