@@ -89,7 +89,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>{" "}
-            <Searchbar />
+            <Searchbar/>
             <form className="d-flex">
               <ContactForm />
               <button
