@@ -1,6 +1,7 @@
 import "./Searchbar.css";
 import { useState } from "react";
 
+
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   // button toggle
@@ -32,7 +33,7 @@ const Searchbar = () => {
 
   return (
     <section className="webdesigntuts-workshop">
-      {!showSearch && <button onClick={toggleSearch}>
+      {!showSearch && <button className="togglesearch" onClick={toggleSearch}>
         <i className="bi bi-search" id=""></i>
         
       </button>}
@@ -46,7 +47,7 @@ const Searchbar = () => {
           onBlur={hideSearch}
           autoFocus
         />
-        <button type="submit">
+        <button className="searchbutton" type="submit">
           <i className="bi bi-search" id="searchButton"></i>
         </button>
       </form>}
