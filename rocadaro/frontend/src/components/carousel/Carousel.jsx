@@ -71,14 +71,11 @@ function Carousel() {
               />
             </div>
             <div className="main-post__content">
-              <div className="main-post__tag-wrapper">
-                <span className="main-post__tag">News</span>
-              </div>
               <h1 className="main-post__title">
-                Mit unser Logo bieten mehrere Marken mit guten Preisen an{" "}
+                RoCaDaRo steht für eine Auswahl an qualitativen Produkten{" "}
               </h1>
-              <a className="main-post__link" href="#">
-                <span className="main-post__link-text">Finde mehr heraus</span>
+              <a className="main-post__link" href="/about">
+                <span className="main-post__link-text">Über uns</span>
                 <svg
                   className="main-post__link-icon main-post__link-icon--arrow"
                   width="37"
@@ -98,73 +95,27 @@ function Carousel() {
 
           <article className="main-post main-post--not-active">
             <div className="main-post__image">
-              <img
-                src="./images/elektro/elektro1.jpg"
-                alt="What To Watch For in the 2019 Hungarian Grand Prix"
-              />
+              <img src="./images/elektro/elektro1.jpg" />
             </div>
             <div className="main-post__content">
-              <div className="main-post__tag-wrapper">
-                <span className="main-post__tag">Video</span>
-              </div>
+              <div className="main-post__tag-wrapper"></div>
               <h1 className="main-post__title">
-                hier schauen sie alles was es mit E-Commerce zu tuen hat wie wir
-                unsere seite aufgebaut haben{" "}
+                Wir selektieren für Sie. Qualität und Preisleistung. Ob Hobby
+                oder Professionell.{" "}
               </h1>
-              <a className="main-post__link" href="#">
-                <svg
-                  className="main-post__link-icon main-post__link-icon--play-btn"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="10"
-                    cy="10"
-                    r="9"
-                    stroke="#C20000"
-                    strokeWidth="2"
-                  />
-                  <path d="M14 10L8 6V14L14 10Z" fill="white" />
-                </svg>
-                <span className="main-post__link-text">play video</span>
-              </a>
+              <a className="main-post__link" href="#"></a>
             </div>
           </article>
 
           <article className="main-post main-post--not-active">
             <div className="main-post__image">
-              <img
-                src="./images/haushaltswaren/hw2.jpg"
-                alt=""
-              />
+              <img src="./images/haushaltswaren/hw2.jpg" alt="" />
             </div>
             <div className="main-post__content">
-              <div className="main-post__tag-wrapper">
-                <span className="main-post__tag">News</span>
-              </div>
               <h1 className="main-post__title">
-                Ob es Elektro Geräte,Haushaltswaren oder nur Schuhe sind alles
-                dabei
+                Von Elektro, Haushaltswaren bis hin zu Mode, bei RoCaDaRo finden
+                sie es{" "}
               </h1>
-              <Link className="main-post__link">
-                <span className="main-post__link-text">find out more</span>
-                <svg
-                  className="main-post__link-icon main-post__link-icon--arrow"
-                  width="37"
-                  height="12"
-                  viewBox="0 0 37 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
-                    stroke="white"
-                  />
-                </svg>
-              </Link>
             </div>
           </article>
         </div>
@@ -176,12 +127,11 @@ function Carousel() {
             <div className="progress-bar__fill"></div>
           </div>
           <header className="post__header">
-            <span className="post__tag">News</span>
             <p className="post__published">Beste Marke</p>
           </header>
           <h2 className="post__title">
             {" "}
-            Schauen sie einfach unsere Produkte auf der Gallery an{" "}
+            Schauen sie einfach unsere Produkte an{" "}
           </h2>
         </article>
 
