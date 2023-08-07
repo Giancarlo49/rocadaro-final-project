@@ -39,7 +39,7 @@ const Searchbar = () => {
         
     //   </button>}
       
-      <form  onSubmit={handleSearch} >
+      <form className="searchLupe" onSubmit={handleSearch} >
         <input className="search"
           type="search"
           placeholder="Was du suchen willst gibt es hier?"
