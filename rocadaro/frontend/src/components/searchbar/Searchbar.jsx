@@ -1,16 +1,31 @@
 import "./Searchbar.css";
 import { useState } from "react";
 
+
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  // button toggle
+  const [showSearch, setShowSearch] = useState(false);
+  
 
   const handleSearch = (e) => {
+    console.log("corrio")
     e.preventDefault();
     // Den Benutzer zur Amazon-Suchseite in einem neuen Tab weiterleiten
     window.open(
       `https://www.amazon.com/s?k=${encodeURIComponent(searchTerm)}`,
       "_blank"
-    );
+    ); 
+    // neuen Tab öffnen und schließt die Leiste
+    setShowSearch(false)
+  };
+   
+  // const toggleSearch = () => {setShowSearch(!showSearch)};
+  const hideSearch = () => {
+    
+    if (searchTerm === "") {
+      setShowSearch(false)
+    }
   };
 
   const handleChange = (event) => {
@@ -18,17 +33,26 @@ const Searchbar = () => {
   };
 
   return (
-    <section className="webdesigntuts-workshop">
-      <form onSubmit={handleSearch} target="_blank">
-        <input
+    // <section className="webdesigntuts-workshop">
+    //   {!showSearch && <button className="togglesearch" onClick={toggleSearch}>
+    //     <i className="bi bi-search" id=""></i>
+        
+    //   </button>}
+      
+      <form  onSubmit={handleSearch} >
+        <input className="search"
           type="search"
           placeholder="Was du suchen willst gibt es hier?"
           value={searchTerm}
           onChange={handleChange}
+          onBlur={hideSearch}
+          autoFocus
         />
-        <button type="submit">Search</button>
+        <button className="searchbutton" type="submit">
+          <i className="bi bi-search" id="searchButton"></i>
+        </button>
       </form>
-    </section>
+    // </section>
   );
 };
 

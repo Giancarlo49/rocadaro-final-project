@@ -5,9 +5,24 @@
     align-items: center;
     justify-content: center;
     height: auto; /* Ajusta la altura según tus necesidades */
-    padding-bottom: 5rem;
+    padding: 5rem;
   }
 
-  /* .page-title{
-    margin-bottom: 20px;
-  } */ 
+.btn-primary{
+  background-color: #f0c14b;
+  border: none;
+  color: #111;
+  
+}
+.btn-primary:hover{
+  background-color:#e69d28 ;
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  padding-left: 0;
+}

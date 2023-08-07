@@ -8,6 +8,7 @@ import Store from "../../store/Context";
 import ContactForm from "../contactFormular/ContactFormular.jsx";
 import FavoritesPage from "../../pages/FavoritesPages";
 import FavoriteStore from "../../store/FavoritesContext";
+import Searchbar from "../searchbar/Searchbar";
 
 const Navbar = () => {
   const {
@@ -87,42 +88,58 @@ const Navbar = () => {
                   Brands
                 </Link>
               </li>
-            </ul>
-            <form className="d-flex">
-              <ContactForm />
-              <button
-                className="btn btn-secondary me-2"
-                type="button"
-                onClick={handleLoginClick}
-              >
-                <i className="bi bi-person-fill" id="loginButton"></i>
-              </button>
+            </ul>{" "}
 
-              <div className="CartButton">
-                <button
-                  className="btn btn-light"
-                  type="button"
-                  onClick={() => {
-                    navigate("/cart");
-                  }}
-                >
-                  <i className="bi bi-cart"></i>
-                  <span className="total-Items">{cart.length}</span>
-                </button>
+            
+              
+              <div className="top-right-menu d-flex">
+
+                <div className="item search">
+                  <Searchbar/>
+                </div>
+
+                <div className="item">
+                  <ContactForm />
+                </div>
+
+                <div className="item">
+                  <button
+                    className="btn btn-secondary me-2"
+                    type="button"
+                    onClick={handleLoginClick}
+                  >
+                    <i className="bi bi-person-fill" id="loginButton"></i>
+                  </button>
+                </div>
+
+                <div className="CartButton item">
+                  <button
+                    className="btn btn-light"
+                    type="button"
+                    onClick={() => {
+                      navigate("/cart");
+                    }}
+                  >
+                    <i className="bi bi-cart"></i>
+                    <span className="total-Items">{cart.length}</span>
+                  </button>
+                </div>
+
+                <div className="HeartButton item">
+                  <button
+                    className="btn btn-light"
+                    type="button"
+                    onClick={() => {
+                      navigate("/favorites");
+                    }}
+                  >
+                    <i className="bi bi-heart-fill "></i>
+                    <span className="total-Items">{favorites.length}</span>
+                  </button>
+                </div>
               </div>
-              <div className="HeartButton">
-                <button
-                  className="btn btn-light"
-                  type="button"
-                  onClick={() => {
-                    navigate("/favorites");
-                  }}
-                >
-                  <i className="bi bi-heart-fill "></i>
-                  <span className="total-Items">{favorites.length}</span>
-                </button>
-              </div>
-            </form>
+              
+            
           </div>
         </div>
 

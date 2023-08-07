@@ -59,7 +59,8 @@
 
 .navbar-nav .nav-link:hover {
   color: rgb(2, 61, 95);
-  font-size: 35px;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -122,4 +123,25 @@
 }
 .green {
   color: green;
+}
+
+.navbar .top-right-menu .item {
+  padding-right: 5px;
+}
+
+.navbar .top-right-menu .item.search {
+  padding-right: 30px;
+  padding-top: 8px;
+}
+
+.navbar .top-right-menu .item .bi {
+  padding-right: 7px;
+}
+
+.navbar .top-right-menu .item.search{
+  padding-top: 0;
+}
+
+.navbar-nav{
+  padding-left: 30%;
 }
