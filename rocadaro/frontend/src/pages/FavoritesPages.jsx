@@ -30,7 +30,7 @@ const FavoritesPage = (props) => {
                       <div className="product-card hover-effect">
                         <img className="product-image"src={item.image} alt="Product" />
                         <h2>{item.title}</h2>
-                        <p>{item.price}</p>
+                        <p>€{item.price}</p>
                         
                           <button
                             className="add-to-cart-button"

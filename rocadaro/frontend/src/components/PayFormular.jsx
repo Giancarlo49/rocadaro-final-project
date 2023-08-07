@@ -35,7 +35,7 @@ const PaymentForm = () => {
         <form onSubmit={handleSubmit}>
           <CardElement />
           {error && <div>{error}</div>}
-          {success && <div>yesss!!!</div>}
+          {success && <div>Pay!!!</div>}
           <button className='payButton' type="submit">Pay</button>
         </form>
       </div>

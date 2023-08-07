@@ -9,6 +9,7 @@ const Searchbar = () => {
   
 
   const handleSearch = (e) => {
+    console.log("corrio")
     e.preventDefault();
     // Den Benutzer zur Amazon-Suchseite in einem neuen Tab weiterleiten
     window.open(
@@ -19,7 +20,7 @@ const Searchbar = () => {
     setShowSearch(false)
   };
    
-  const toggleSearch = () => {setShowSearch(!showSearch)};
+  // const toggleSearch = () => {setShowSearch(!showSearch)};
   const hideSearch = () => {
     
     if (searchTerm === "") {
@@ -32,14 +33,14 @@ const Searchbar = () => {
   };
 
   return (
-    <section className="webdesigntuts-workshop">
-      {!showSearch && <button className="togglesearch" onClick={toggleSearch}>
-        <i className="bi bi-search" id=""></i>
+    // <section className="webdesigntuts-workshop">
+    //   {!showSearch && <button className="togglesearch" onClick={toggleSearch}>
+    //     <i className="bi bi-search" id=""></i>
         
-      </button>}
+    //   </button>}
       
-      {showSearch &&<form onSubmit={handleSearch} target="_blank">
-        <input
+      <form  onSubmit={handleSearch} >
+        <input className="search"
           type="search"
           placeholder="Was du suchen willst gibt es hier?"
           value={searchTerm}
@@ -50,8 +51,8 @@ const Searchbar = () => {
         <button className="searchbutton" type="submit">
           <i className="bi bi-search" id="searchButton"></i>
         </button>
-      </form>}
-    </section>
+      </form>
+    // </section>
   );
 };
 

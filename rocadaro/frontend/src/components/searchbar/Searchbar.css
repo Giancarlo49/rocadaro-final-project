@@ -7,7 +7,7 @@
   width: 100%;
 } */
 
-.webdesigntuts-workshop:before,
+/* .webdesigntuts-workshop:before,
 .webdesigntuts-workshop:after {
   content: "";
   display: block;
@@ -16,11 +16,11 @@
   margin: 0 0 0 -400px;
   position: absolute;
   width: 800px;
-}
+} */
 
 
 
-.webdesigntuts-workshop form {
+/* .webdesigntuts-workshop form {
   background: linear-gradient(#e2e2e2, #6b6b6b);
   width: 50%;
   min-width: 300px;
@@ -32,9 +32,9 @@
   margin-top: 5px;
   position: relative;
   z-index: 1;
-}
+} */
 
-.webdesigntuts-workshop input {
+/* .webdesigntuts-workshop input {
   background: #868686;
   background: linear-gradient(#ffffff, #969696);
   border: 1px solid #444;
@@ -51,21 +51,21 @@
   padding: 0 10px;
   text-shadow: 0 -1px 0 #000;
   width: 80%;
-}
+} */
 
-.ie .webdesigntuts-workshop input {
+/* .ie .webdesigntuts-workshop input {
   line-height: 40px;
-}
+} */
 
-.webdesigntuts-workshop input::-webkit-input-placeholder {
+/* .webdesigntuts-workshop input::-webkit-input-placeholder {
   color: #949292;
-}
+} */
 
-.webdesigntuts-workshop input:-moz-placeholder {
+/* .webdesigntuts-workshop input:-moz-placeholder {
   color: #888;
-}
+} */
 
-.webdesigntuts-workshop input:focus {
+/* .webdesigntuts-workshop input:focus {
   animation: glow 800ms ease-out infinite alternate;
   background: #33a533;
   background: linear-gradient(#333933, #565856);
@@ -74,17 +74,17 @@
     0 2px 0 #000;
   color: #efe;
   outline: none;
-}
+} */
 
-.webdesigntuts-workshop input:focus::-webkit-input-placeholder {
+/* .webdesigntuts-workshop input:focus::-webkit-input-placeholder {
   color: rgb(141, 141, 141);
-}
+} */
 
-.webdesigntuts-workshop input:focus:-moz-placeholder {
+/* .webdesigntuts-workshop input:focus:-moz-placeholder {
   color: #efe;
-}
+} */
 
-.webdesigntuts-workshop .searchbutton {
+/* .webdesigntuts-workshop .searchbutton {
   background: #555555;
   background: linear-gradient(#ffffff, #969696);
   box-sizing: border-box;
@@ -141,4 +141,23 @@
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.6),
       inset 0 0 10px rgba(0, 255, 0, 0.4), 0 2px 0 #a5a3a3;
   }
+} */
+
+input.search{
+  height: 38px;
+  border-radius: 7px;
+  padding-left: 10px;
+  width: 300px;
+}
+
+
+.searchbutton{
+  height: 36px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 10px;
+  
 }
