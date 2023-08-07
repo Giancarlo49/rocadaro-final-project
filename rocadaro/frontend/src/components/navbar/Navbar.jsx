@@ -89,42 +89,57 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>{" "}
-            <Searchbar/>
-            <form className="d-flex">
-              <ContactForm />
-              <button
-                className="btn btn-secondary me-2"
-                type="button"
-                onClick={handleLoginClick}
-              >
-                <i className="bi bi-person-fill" id="loginButton"></i>
-              </button>
 
-              <div className="CartButton">
-                <button
-                  className="btn btn-light"
-                  type="button"
-                  onClick={() => {
-                    navigate("/cart");
-                  }}
-                >
-                  <i className="bi bi-cart"></i>
-                  <span className="total-Items">{cart.length}</span>
-                </button>
+            
+              
+              <div className="top-right-menu d-flex">
+
+                <div className="item search">
+                  <Searchbar/>
+                </div>
+
+                <div className="item">
+                  <ContactForm />
+                </div>
+
+                <div className="item">
+                  <button
+                    className="btn btn-secondary me-2"
+                    type="button"
+                    onClick={handleLoginClick}
+                  >
+                    <i className="bi bi-person-fill" id="loginButton"></i>
+                  </button>
+                </div>
+
+                <div className="CartButton item">
+                  <button
+                    className="btn btn-light"
+                    type="button"
+                    onClick={() => {
+                      navigate("/cart");
+                    }}
+                  >
+                    <i className="bi bi-cart"></i>
+                    <span className="total-Items">{cart.length}</span>
+                  </button>
+                </div>
+
+                <div className="HeartButton item">
+                  <button
+                    className="btn btn-light"
+                    type="button"
+                    onClick={() => {
+                      navigate("/favorites");
+                    }}
+                  >
+                    <i className="bi bi-heart-fill "></i>
+                    <span className="total-Items">{favorites.length}</span>
+                  </button>
+                </div>
               </div>
-              <div className="HeartButton">
-                <button
-                  className="btn btn-light"
-                  type="button"
-                  onClick={() => {
-                    navigate("/favorites");
-                  }}
-                >
-                  <i className="bi bi-heart-fill "></i>
-                  <span className="total-Items">{favorites.length}</span>
-                </button>
-              </div>
-            </form>
+              
+            
           </div>
         </div>
 
