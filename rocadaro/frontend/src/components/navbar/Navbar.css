@@ -59,7 +59,7 @@
 
 .navbar-nav .nav-link:hover {
   color: rgb(2, 61, 95);
-  font-size: 30px;
+  font-size: 29px;
   cursor: pointer;
 }
 
@@ -68,8 +68,14 @@
   color: #fff;
 }
 
+.btn-light{
+  background-color: transparent;
+  border: none;
+}
+
 .bi-cart {
   color: red;
+  
 }
 .HeartButton .bi-heart-fill {
   color: red;
@@ -140,8 +146,27 @@
 
 .navbar .top-right-menu .item.search{
   padding-top: 0;
+  
 }
 
 .navbar-nav{
   padding-left: 30%;
+}
+
+.mobil{
+  display : none;
+}
+
+@media screen and (max-width: 992px) {
+  .mobil{
+    display: initial;
+    
+  }
+  
+}
+
+@media screen and (max-width: 992px) {
+  .desktop{
+    display: none;
+  }
 }

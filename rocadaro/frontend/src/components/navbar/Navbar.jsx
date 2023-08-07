@@ -42,6 +42,9 @@ const Navbar = () => {
               className="logo"
             />
           </div>
+          <div className="item search mobil">
+                  <Searchbar/>
+                </div>
           <div>
             <button
               className="navbar-toggler"
@@ -94,7 +97,7 @@ const Navbar = () => {
               
               <div className="top-right-menu d-flex">
 
-                <div className="item search">
+                <div className="item search desktop">
                   <Searchbar/>
                 </div>
 
