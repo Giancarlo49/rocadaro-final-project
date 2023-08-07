@@ -68,18 +68,18 @@
   color: #fff;
 }
 
-.btn-light{
+.btn-light {
   background-color: transparent;
   border: none;
 }
 
 .bi-cart {
   color: red;
-  
 }
 .HeartButton .bi-heart-fill {
   color: red;
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -144,29 +144,32 @@
   padding-right: 7px;
 }
 
-.navbar .top-right-menu .item.search{
+.navbar .top-right-menu .item.search {
   padding-top: 0;
-  
 }
 
-.navbar-nav{
+.navbar-nav {
   padding-left: 30%;
 }
 
-.mobil{
-  display : none;
+.mobil {
+  display: none;
 }
 
+.d-flex {
+  align-items: center;
+}
+.search {
+  align-items: center;
+}
 @media screen and (max-width: 992px) {
-  .mobil{
+  .mobil {
     display: initial;
-    
   }
-  
 }
 
 @media screen and (max-width: 992px) {
-  .desktop{
+  .desktop {
     display: none;
   }
 }
