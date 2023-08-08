@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import LikeButton from "../LikeButton";
 import FavoriteStore from "../../store/FavoritesContext";
 import Store from "../../store/Context";
+import "./CategoryItem.css";
 
 // export const CategoryItem = ({ item, addCart }) => {
 //   const { favorites, addToFavorites, removeFromFavorites } = FavoriteStore();
