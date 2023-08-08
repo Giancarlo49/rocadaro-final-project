@@ -72,7 +72,7 @@ function Carousel() {
             </div>
             <div className="main-post__content">
               <h1 className="main-post__title">
-                RoCaDaRo steht für eine Auswahl an qualitativen Produkten{" "}
+              Entdecken Sie bei uns eine erlesene Auswahl hochwertiger Produkte.{" "}
               </h1>
               <a className="main-post__link" href="/about">
                 <span className="main-post__link-text">Über uns</span>
@@ -100,8 +100,7 @@ function Carousel() {
             <div className="main-post__content">
               <div className="main-post__tag-wrapper"></div>
               <h1 className="main-post__title">
-                Wir selektieren für Sie. Qualität und Preisleistung. Ob Hobby
-                oder Professionell.{" "}
+              Eine erlesene Auswahl an Affiliate-Partnerschaften mit renommierte Marken.{" "}
               </h1>
               <a className="main-post__link" href="#"></a>
             </div>
@@ -113,8 +112,7 @@ function Carousel() {
             </div>
             <div className="main-post__content">
               <h1 className="main-post__title">
-                Von Elektro, Haushaltswaren bis hin zu Mode, bei RoCaDaRo finden
-                sie es{" "}
+              Verwenden Sie die Suchleiste, um direkt zu Amazon-Produkten zu gelangen. Erkunden Sie unsere vielfältigen Partnermarken über den Reiter "Brands".{" "}
               </h1>
             </div>
           </article>
@@ -127,11 +125,11 @@ function Carousel() {
             <div className="progress-bar__fill"></div>
           </div>
           <header className="post__header">
-            <p className="post__published">Beste Marke</p>
+            <p className="post__published"></p>
           </header>
           <h2 className="post__title">
             {" "}
-            Schauen sie einfach unsere Produkte an{" "}
+            RoCaDaRo steht für Qualität ein.{" "}
           </h2>
         </article>
 
@@ -140,11 +138,11 @@ function Carousel() {
             <div className="progress-bar__fill"></div>
           </div>
           <header className="post__header">
-            <span className="post__tag">Video</span>
-            <p className="post__published">Youtube</p>
+            <span className="post__tag"></span>
+            <p className="post__published"></p>
           </header>
           <h2 className="post__title">
-            Dieses video wird zeigen wie man Erfolg mit E-Commerce haben kann
+          RoCaDaRo wählt für Sie Qualität und ein hervorragendes Preis-Leistungs-Verhältnis aus.
           </h2>
         </article>
 
@@ -157,7 +155,7 @@ function Carousel() {
             <p className="post__published">Brands</p>
           </header>
           <h2 className="post__title">
-            unsere Brands zeigen ihnen was wir anbieten können
+          RoCaDaRo Kooperationen – Eine Stufe höher in unseren Partnerschaften.
           </h2>
         </article>
       </div>

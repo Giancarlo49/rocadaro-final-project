@@ -23,7 +23,7 @@ const data = {
       id: 3,
       title: "Messerblock",
       description: "Damaszener Stahl Messerblock mit 5 Messern",
-      price: 3347,
+      price: 3347.99,
       image: "../images/haushaltswaren/messer.jpg",
       category: "Haushaltswaren",
     },
@@ -90,7 +90,7 @@ const data = {
       title: "Apple 2023 MacBook Pro",
       description:
         "M2 Pro Chip: 16,2 Liquid Retina Display, 16 GB RAM, 512 GB SSD",
-      price: 2547.05,
+      price: 2547.95,
       image: "../images/elektro/macbook.jpg",
       category: "Elektro",
     },
@@ -232,7 +232,7 @@ const data = {
       title: "Rollschuh Kombi",
       description: "Tracking Schuhe Größe 40",
       image: "../images/schuhe/roller.jpg",
-      price: 49.9,
+      price: 49.99,
       category: "Schuhe",
     },
     {
@@ -240,7 +240,7 @@ const data = {
       title: "sOliver",
       description: "sOliver Sommer",
       image: "../images/schuhe/sOliver.jpg",
-      price: 19.9,
+      price: 19.99,
       category: "Schuhe",
     },
     {
@@ -248,7 +248,7 @@ const data = {
       title: "Nike Air Max ",
       description: "Axis Premium Men's Athletics Shoes Grösse 42",
       image: "../images/schuhe/nikeblack.jpg",
-      price: 49.9,
+      price: 49.99,
       category: "Schuhe",
     },
     {
@@ -256,7 +256,7 @@ const data = {
       title: "Dockers by Gerli",
       description: "Women's Lace-Up Boots Größe 40",
       image: "../images/schuhe/dockers.jpg",
-      price: 50.9,
+      price: 50.99,
       category: "Schuhe",
     },
     {

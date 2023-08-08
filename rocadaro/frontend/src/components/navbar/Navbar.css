@@ -64,13 +64,14 @@
 }
 
 .btn-secondary {
+  border: 1px solid #09c2c2;
   background-color: #aaa;
   color: #fff;
 }
 
 .btn-light {
   background-color: white;
-  border: gray solid 0.3px;
+  border:  1px solid #09c2c2;
 }
 
 .bi-cart {
