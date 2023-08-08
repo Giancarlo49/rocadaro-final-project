@@ -42,9 +42,11 @@ const Navbar = () => {
               className="logo"
             />
           </div>
+
           <div className="item search mobil">
             <Searchbar />
           </div>
+          
           <div>
             <button
               className="navbar-toggler"
@@ -91,12 +93,16 @@ const Navbar = () => {
                   Brands
                 </Link>
               </li>
-            </ul>{" "}
-            <div className="top-right-menu d-flex">
-              <div className="item search desktop">
-                <Searchbar />
-              </div>
+            </ul>
+            
+            {" "}
 
+            <div className="item search menu">
+              <Searchbar />
+            </div>
+
+            <div className="top-right-menu d-flex">
+              
               <div className="item">
                 <ContactForm />
               </div>
@@ -138,6 +144,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          
         </div>
       </nav>
       <ModalComponents
