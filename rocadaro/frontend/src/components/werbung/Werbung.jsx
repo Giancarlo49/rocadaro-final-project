@@ -31,7 +31,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="./images/Werbungbanner/Nike.jpg"
+            src="./images/Werbungbanner/nike.png"
             height="160"
             width="250"
             alt=""
@@ -105,7 +105,7 @@ function Werbung() {
         </div>
         <div className="slide">
           <img
-            src="./images/Werbungbanner/Nike.jpg"
+            src="./images/Werbungbanner/nike.png"
             height="160"
             width="250"
             alt=""
