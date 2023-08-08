@@ -72,7 +72,8 @@ function Carousel() {
             </div>
             <div className="main-post__content">
               <h1 className="main-post__title">
-              Entdecken Sie bei uns eine erlesene Auswahl hochwertiger Produkte.{" "}
+                Entdecken Sie bei uns ein selektiertes Sortiment hochwertiger
+                Produkte.{" "}
               </h1>
               <a className="main-post__link" href="/about">
                 <span className="main-post__link-text">Über uns</span>
@@ -100,7 +101,8 @@ function Carousel() {
             <div className="main-post__content">
               <div className="main-post__tag-wrapper"></div>
               <h1 className="main-post__title">
-              Eine erlesene Auswahl an Affiliate-Partnerschaften mit renommierte Marken.{" "}
+                Eine erlesene Auswahl an Affiliate-Partnerschaften mit
+                renommierte Marken.{" "}
               </h1>
               <a className="main-post__link" href="#"></a>
             </div>
@@ -112,7 +114,9 @@ function Carousel() {
             </div>
             <div className="main-post__content">
               <h1 className="main-post__title">
-              Verwenden Sie die Suchleiste, um direkt zu Amazon-Produkten zu gelangen. Erkunden Sie unsere vielfältigen Partnermarken über den Reiter "Brands".{" "}
+                Verwenden Sie die Suchleiste, um direkt zu Amazon-Produkten zu
+                gelangen. Erkunden Sie unsere vielfältigen Partnermarken über
+                den Reiter "Brands".{" "}
               </h1>
             </div>
           </article>
@@ -127,9 +131,20 @@ function Carousel() {
           <header className="post__header">
             <p className="post__published"></p>
           </header>
+          <h2 className="post__title"> RoCaDaRo steht für Qualität ein. </h2>
+        </article>
+
+        <article className="post">
+          <div className="progress-bar">
+            <div className="progress-bar__fill"></div>
+          </div>
+          <header className="post__header">
+            <span className="post__tag"></span>
+            <p className="post__published"></p>
+          </header>
           <h2 className="post__title">
-            {" "}
-            RoCaDaRo steht für Qualität ein.{" "}
+            RoCaDaRo wählt für Sie Qualität und ein hervorragendes
+            Preis-Leistungs-Verhältnis aus.
           </h2>
         </article>
 
@@ -142,20 +157,8 @@ function Carousel() {
             <p className="post__published"></p>
           </header>
           <h2 className="post__title">
-          RoCaDaRo wählt für Sie Qualität und ein hervorragendes Preis-Leistungs-Verhältnis aus.
-          </h2>
-        </article>
-
-        <article className="post">
-          <div className="progress-bar">
-            <div className="progress-bar__fill"></div>
-          </div>
-          <header className="post__header">
-            <span className="post__tag">News</span>
-            <p className="post__published">Brands</p>
-          </header>
-          <h2 className="post__title">
-          RoCaDaRo Kooperationen – Eine Stufe höher in unseren Partnerschaften.
+            RoCaDaRo Kooperationen – Eine Stufe höher in unseren
+            Partnerschaften.
           </h2>
         </article>
       </div>

@@ -22,7 +22,7 @@ $animationSpeed: 30s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 9));
   }
 }
 
@@ -68,5 +68,8 @@ $animationSpeed: 30s;
   .slide {
     height: 100px;
     width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
