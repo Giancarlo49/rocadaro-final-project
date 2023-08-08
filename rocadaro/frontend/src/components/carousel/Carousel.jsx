@@ -151,8 +151,8 @@ function Carousel() {
             <div className="progress-bar__fill"></div>
           </div>
           <header className="post__header">
-            <span className="post__tag">News</span>
-            <p className="post__published">Brands</p>
+            <span className="post__tag"></span>
+            <p className="post__published"></p>
           </header>
           <h2 className="post__title">
           RoCaDaRo Kooperationen – Eine Stufe höher in unseren Partnerschaften.
