@@ -78,7 +78,8 @@
 }
 
 .cart_item .details {
-  width: 320px;
+  min-width: 200px;
+  width: 70%;
 }
 
 .cart_item img {

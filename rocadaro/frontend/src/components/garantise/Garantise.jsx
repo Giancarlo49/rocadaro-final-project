@@ -2,7 +2,7 @@ import "./Garantise.scss" ;
 
 function Garantise () {
   return (
-    <div>
+    <div className="garantise">
       <h1 className="">
         Kaufen ohne Risiko 
         <br />
