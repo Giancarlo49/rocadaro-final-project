@@ -6,9 +6,11 @@ import "./Products.css";
 const Products = () => {
   return (
     <section className="page-products" id="products">
-      <h1>Products</h1>
+      {/* <h1>Products</h1> */}
 
-      <div className="karten-section"><Karten /></div>
+      <div className="karten-section">
+        <Karten />
+      </div>
     </section>
   );
 };
