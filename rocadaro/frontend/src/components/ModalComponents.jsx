@@ -89,7 +89,7 @@ function ModalComponents({ isModalOpen, handleModalToggle }) {
           )}
         </Modal.Body>
 
-        <Modal.Footer>
+        <Modal.Footer style={{display: "flex", justifyContent: "center"}}>
           {showLoginForm ? (
             <Button onClick={handleCreateUserClick} variant="primary">
               CreateUser{" "}
