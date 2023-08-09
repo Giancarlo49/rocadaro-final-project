@@ -27,7 +27,7 @@ const FavoritesPage = (props) => {
                 <li key={index}>
                   
                     
-                      <div className="product-card hover-effect">
+                      <div className="product-card favorite hover-effect">
                         <img className="product-image"src={item.image} alt="Product" />
                         <h2>{item.title}</h2>
                         <p>€{item.price}</p>

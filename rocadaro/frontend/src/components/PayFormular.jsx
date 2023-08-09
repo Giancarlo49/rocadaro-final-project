@@ -36,7 +36,7 @@ const PaymentForm = () => {
           <CardElement />
           {error && <div>{error}</div>}
           {success && <div>Pay!!!</div>}
-          <button className='payButton' type="submit">Pay</button>
+          <button className='btn-primary' type="submit" style={{width:"90px",height:"30px",borderRadius: "5px"}}>Pay</button>
         </form>
       </div>
     );
