@@ -43,7 +43,7 @@ export default function ListCart() {
         <div className="cart_footer">
           <h3>Total: {total}€</h3>
           {!showPaymentForm ? (
-            <button onClick={handlePaymentButtonClick}>Payment</button>
+            <button className="btn-primary" onClick={handlePaymentButtonClick} style={{width:"100px",height:"35px",borderRadius: "5px"}}>Payment</button>
           ) : (
             <Elements stripe={stripePromise}>
               <PaymentForm totalCost={total}/>

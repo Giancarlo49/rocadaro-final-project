@@ -1,6 +1,8 @@
 .categorypage {
   min-height: 60pv;
   padding: 5rem;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .product-card {

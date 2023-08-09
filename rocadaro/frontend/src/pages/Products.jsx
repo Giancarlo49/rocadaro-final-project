@@ -6,11 +6,12 @@ import "./Products.css";
 const Products = () => {
   return (
     <section className="page-products" id="products">
-      {/* <h1>Products</h1> */}
+    
 
       <div className="karten-section">
         <Karten />
       </div>
+      <p className="productText">Für Sie auserlesene Produkte</p>
     </section>
   );
 };

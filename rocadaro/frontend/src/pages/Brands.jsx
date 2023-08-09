@@ -10,6 +10,7 @@ const Brands = () => {
       <div className="brands-container">
         <ContainerBrands />
       </div>
+      <p className="brandsText">Unsere Affiliate Partner</p>
     </section>
   );
 };
