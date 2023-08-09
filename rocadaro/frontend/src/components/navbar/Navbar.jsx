@@ -46,7 +46,7 @@ const Navbar = () => {
           <div className="item search mobil">
             <Searchbar />
           </div>
-          
+
           <div>
             <button
               className="navbar-toggler"
@@ -64,7 +64,10 @@ const Navbar = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link
-                  to="home"
+                  to="carousel"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
                   className="nav-link"
                   onClick={handleHomeLinkClick}
                 >
@@ -75,6 +78,9 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="products"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
                   className="nav-link"
                   onClick={handleProductsLinkClick}
                 >
@@ -93,16 +99,11 @@ const Navbar = () => {
                   Brands
                 </Link>
               </li>
-            </ul>
-            
-            {" "}
-
+            </ul>{" "}
             <div className="item search menu">
               <Searchbar />
             </div>
-
             <div className="top-right-menu d-flex">
-              
               <div className="item">
                 <ContactForm />
               </div>
@@ -144,7 +145,6 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </nav>
       <ModalComponents
