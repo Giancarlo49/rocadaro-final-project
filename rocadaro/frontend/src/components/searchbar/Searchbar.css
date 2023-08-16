@@ -1,26 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:400);
 
-/* .webdesigntuts-workshop {
+/* .Suchkasten-werkshop {
   height: 100%;
   position: inherit;
   text-align: center;
   width: 100%;
 } */
 
-.webdesigntuts-workshop:before,
-.webdesigntuts-workshop:after {
+.Suchkasten-werkshop:before,
+.Suchkasten-werkshop:after {
   content: "";
   display: block;
   height: 1px;
   left: 50%;
   margin: 0 0 0 -400px;
   position: absolute;
-  width: 800px;
+  width: 600px;
 }
 
 
 
-.webdesigntuts-workshop form {
+.Suchkasten-werkshop form {
   background: linear-gradient(#e2e2e2, #6b6b6b);
   width: 50%;
   min-width: 300px;
@@ -34,7 +34,7 @@
   z-index: 1;
 }
 
-.webdesigntuts-workshop input {
+.Suchkasten-werkshop input {
   background: #868686;
   background: linear-gradient(#ffffff, #969696);
   border: 1px solid #444;
@@ -53,19 +53,19 @@
   width: 80%;
 }
 
-.ie .webdesigntuts-workshop input {
-  line-height: 40px;
+.ie .Suchkasten-werkshop input {
+  line-height: 5px;
 }
 
-.webdesigntuts-workshop input::-webkit-input-placeholder {
+.Suchkasten-werkshop input::-webkit-input-placeholder {
   color: #949292;
 }
 
-.webdesigntuts-workshop input:-moz-placeholder {
+.Suchkasten-werkshop input:-moz-placeholder {
   color: #888;
 }
 
-.webdesigntuts-workshop input:focus {
+.Suchkasten-werkshop input:focus {
   animation: glow 800ms ease-out infinite alternate;
   background: #33a533;
   background: linear-gradient(#333933, #565856);
@@ -76,15 +76,15 @@
   outline: none;
 }
 
-.webdesigntuts-workshop input:focus::-webkit-input-placeholder {
+.Suchkasten-werkshop input:focus::-webkit-input-placeholder {
   color: rgb(141, 141, 141);
 }
 
-.webdesigntuts-workshop input:focus:-moz-placeholder {
+.Suchkasten-werkshop input:focus:-moz-placeholder {
   color: #efe;
 }
 
-.webdesigntuts-workshop .searchbutton {
+.Suchkasten-werkshop .searchbutton {
   background: #555555;
   background: linear-gradient(#ffffff, #969696);
   box-sizing: border-box;
@@ -97,7 +97,7 @@
   float: left;
   font-family: "Cabin", helvetica, arial, sans-serif;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 400px;
   height: 40px;
   line-height: 40px;
   margin: 0;
@@ -106,21 +106,21 @@
   text-shadow: 0 -1px 0 #929292;
   width: 20%;
 }
-.webdesigntuts-workshop button.togglesearch {
+.Suchkasten-werkshop button.togglesearch {
   background: none;
   border: none;
   box-shadow: none;
 }
 
-.webdesigntuts-workshop .searchbutton:hover,
-.webdesigntuts-workshop .searchbutton:focus {
+.Suchkasten-werkshop .searchbutton:hover,
+.Suchkasten-werkshop .searchbutton:focus {
   background: #2c2c2c;
   background: linear-gradient(#a3a2a2, #0f0f0f);
   color: rgb(28, 201, 192);
   outline: none;
 }
 
-.webdesigntuts-workshop .searchbutton:active {
+.Suchkasten-werkshop .searchbutton:active {
   background: #696969;
   background: linear-gradient(#393939, #292929);
   box-shadow: 0 1px 0 #000, inset 1px 0 1px #15d6cd;
@@ -132,13 +132,13 @@
 
 @keyframes glow {
   0% {
-    border-color: rgb(33, 202, 194);
+    border-color: rgb(233, 233, 233);
     box-shadow: 0 0 5px rgba(0, 255, 0, 0.2), inset 0 0 5px rgba(0, 255, 0, 0.1),
       0 2px 0 #8d8b8b;
   }
   100% {
-    border-color: rgb(20, 230, 230);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6),
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(117, 117, 117, 0.6),
       inset 0 0 10px rgba(0, 255, 0, 0.4), 0 2px 0 #a5a3a3;
   }
 }

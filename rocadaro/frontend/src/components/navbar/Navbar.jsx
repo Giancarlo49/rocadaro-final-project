@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <div className="navbar-brand ">
             <img
-              src="/images/Logo/LogoRocadaro.png"
+              src="/images/Logo/Logocarusel.png"
               alt="Logo"
               className="logo"
             />
@@ -88,11 +88,23 @@ const Navbar = () => {
                   Brands
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  to="brands"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                  onClick={handleModalToggle}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>{" "}
             <Searchbar/>
+            <ContactForm />
             <form className="d-flex">
-              <ContactForm />
-              <button
+             <button
                 className="btn btn-secondary me-2"
                 type="button"
                 onClick={handleLoginClick}

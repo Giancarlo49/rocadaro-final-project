@@ -32,7 +32,7 @@ const Searchbar = () => {
   };
 
   return (
-    <section className="webdesigntuts-workshop">
+    <section className="Suchkasten-werkshop">
       {!showSearch && <button className="togglesearch" onClick={toggleSearch}>
         <i className="bi bi-search" id=""></i>
         
